@@ -8,4 +8,4 @@
      2.羽球  
      3.電影
     我最喜歡的職棒球員是目前效力於Lamigo桃猿隊背號9號的大王 王柏融
-![大王](C:\Users\jerry\Pictures)
+![大王](https://i.ytimg.com/vi/zeJCsutxCPQ/hqdefault.jpg)
