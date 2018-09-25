@@ -1,6 +1,5 @@
-# My name is Zhe Chia Wu.
-![0.0](https://www.moedict.tw/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.png)
-          very easy because I don't know what could say
-1. I come from Chiayi 
-2. I like to play the **basketball** but I am seldom doing it before the semester started 
-3. I hope I could learn more knowledge about the computer or program 
+# 自我介紹 
+## 我是吳哲嘉,來自嘉義,性格外向活潑,最重要是* 奮發進取 
+![奮發向上](https://pic.pimg.tw/rukawa1003/1187838293.jpg)
+## 我的興趣是打籃球,歡迎找我打籃球(? 
+
