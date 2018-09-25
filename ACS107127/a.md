@@ -4,5 +4,5 @@
 ###    興趣是打籃球
 ###    我皮膚很黑
 ###    可以叫我黑人
-![alt text](file:///C:/Users/%E9%A8%B0%E6%B8%85/Downloads/1535813361155.pdf)
+![alt text](file:///C:/Users/%E9%A8%B0%E6%B8%85/Desktop/1535813361155.pdf)
     
