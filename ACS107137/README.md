@@ -7,7 +7,7 @@
 - 打籃球    
 - 打排球    
 - 轉魔方    
-![image](http://pic.pimg.tw/bb511/800aadfd54b57b992fe187e8e7bc223e.jpg)    
+![image](https://stickershop.line-scdn.net/stickershop/v1/product/1303972/LINEStorePC/main@2x.png;compress=true)    
     
 ## 請大家多多指教
 
