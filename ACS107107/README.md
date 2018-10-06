@@ -20,4 +20,4 @@
 ##19.按下安裝後設定ROOT和USER用戶的帳密![](https://i.imgur.com/zeqhHO1.jpg)
 ##20.點下重新開機就行了![](https://i.imgur.com/t3b185D.jpg)
 ##21.輸入帳密![](https://i.imgur.com/RCje08c.jpg)
-##22.目錄下已有ROOT和HOME了![](https://i.imgur.com/uzoKGBh.jpg)
+##22.目錄下已有ROOT和HOME了![](https://i.imgur.com/UUs7LfU.jpg)
