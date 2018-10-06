@@ -7,9 +7,9 @@
 ![2.5](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/2.5.jpg)
 
 # 二:設定安裝程序:
-## 若成功了，會進入到一個選擇語言的地方，為了接下來方便安裝，選擇完要的語言就按左下角的繼續鍵
+### 若成功了，會進入到一個選擇語言的地方，為了接下來方便安裝，選擇完要的語言就按左下角的繼續鍵
 ![3](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/3.jpg)
-## 可以確認一下安裝來源，基本上是不會有甚麼問題，確認完就按左上角的鍵
+### 可以確認一下安裝來源，基本上是不會有甚麼問題，確認完就按左上角的鍵
 ![4](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/4.jpg)
 ![5](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/5.jpg)
 ## 接者是最複雜的地方了，要注意看喔不然會不懂。
@@ -18,7 +18,7 @@
 ![7](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/7.jpg)
 ## 會來到一個畫面，我們要來劃分囉，首先點擊"+"
 ![8](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/8.jpg)
-## Mount Pont是選擇掛載點
+### Mount Pont是選擇掛載點
 ## Desired Capacity是叫你要分配多少容量
 ![9](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/9.jpg)
 ## 分配完之後就可以按完成(Done)
