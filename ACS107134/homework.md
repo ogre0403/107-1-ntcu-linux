@@ -1,9 +1,9 @@
 # 一:設定印象檔
-## 先選取要設定的虛擬機器
+#### 先選取要設定的虛擬機器
 ![1](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/1.jpg)
-## 選取存放裝置，裡面有個空位是即將讓你設定印象檔的位置
+#### 選取存放裝置，裡面有個空位是即將讓你設定印象檔的位置
 ![2](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/2.jpg)
-## 設定完之後就按"確定"，並啟動虛擬機器囉
+#### 設定完之後就按"確定"，並啟動虛擬機器囉
 ![2.5](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/2.5.jpg)
 
 # 二:設定安裝程序:
@@ -12,7 +12,7 @@
 #### 可以確認一下安裝來源，基本上是不會有甚麼問題，確認完就按左上角的鍵
 ![4](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/4.jpg)
 ![5](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/5.jpg)
-#### 接者是最複雜的地方了，要注意看喔不然會不懂。
+### <font color=Lime>接者是最複雜的地方了，要注意看喔不然會不懂。</font>
 ![6](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/6.jpg)
 #### 這裡，我們選擇自行分割
 ![7](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/7.jpg)
