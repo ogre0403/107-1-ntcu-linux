@@ -2,7 +2,7 @@
 ==========================
 
 
-###所有圖片接來自[鳥哥](http://linux.vbird.org/linux_basic/0157installcentos7.php)
+### 所有圖片接來自[鳥哥](http://linux.vbird.org/linux_basic/0157installcentos7.php)
 
 
 ***	首先要確認安裝後希望達成的效果
