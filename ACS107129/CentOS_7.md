@@ -42,35 +42,35 @@
 
 ***	進入啟動畫面
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_01.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_01.jpg)
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_04.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_04.jpg)
 
 >因為是在模擬器上練習、檔案也是官網抓的，所以就直接選擇Install CentOS 7，接著經過一段等待時間後進入語言安裝的選擇介面，選擇中文 _繁體中文(台灣)_，接著進入安裝摘要，等待系統的自動設定結束後再手動調整設定。
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_05.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_05.jpg)
 
 >確認時間、支援語言、鍵盤配置正確後記得設定鍵盤配置中的配置切換來協助輸入語言切換。
 
-[id]: http://linux.vbird.org/linux_basic/0157installcentos7/centos7_10.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_10.jpg)
 
 >安裝來源會自動設定，軟體選擇可自行選擇安裝但Minimal只有最小型安裝。
 
 ***	磁碟分割
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_11.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_11.jpg)
 
 >點選進入安裝目的地後，在本機標準磁碟中選擇Virtualbox預設的CentOS_7磁碟，下方的其他儲存選項中的_分割硬碟_點選_我將配置分頁_，然後點擊左上方完成。
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_14.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_14.jpg)
 
 >進入分割頁面後，選擇_標準分割區_再點選左下角的加號，掛在點選擇_biosboot_、輸入2M容量後按新增，再依相同步驟建立_/boot_的掛載點、輸入1G容量。
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_21.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_21.jpg)
 
 >同樣步驟新增_/_和_/home_的掛載點，只是根據鳥哥的建議，將前兩者的裝置類型由標準分割區更改為_LVM_。
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_24.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_24.jpg)
 
 >確認以上步驟完成後確認biosboot下方的_vda1_、/boot下方的_vda2_、/下方的_centos-root_和/home下方的_centos-home_。結束後點擊左上方完成，會跳出變更摘要的視窗，看過之後選擇左下方接受變更即完成手動分割硬碟。
 
@@ -80,11 +80,11 @@
 
 ***	用戶設定
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_32.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_32.jpg)
 
 >設定_root密碼_並記好
 >建立用戶，並根據鳥哥的建議將用戶升級成管理員，萬一真的忘記root密碼才有救。
 
-[id]:http://linux.vbird.org/linux_basic/0157installcentos7/centos7_35.jpg
+![id](http://linux.vbird.org/linux_basic/0157installcentos7/centos7_35.jpg)
 
 >完成設定後選擇左下方重新開機，重啟後即完成安裝，但是Minimal沒有圖形介面。
