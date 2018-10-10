@@ -47,4 +47,4 @@
 ![image](https://github.com/boolenboom/ADT105136/blob/boolenboom-image/LinuxOS%20(25).PNG)
 ![image](https://github.com/boolenboom/ADT105136/blob/boolenboom-image/LinuxOS%20(26).PNG)
 21.接下來只要輸入剛剛設定的帳戶登入，就成功完成Linux作業系統的安裝了！
-![image](https://github.com/boolenboom/ADT105136/blob/boolenboom-image/LinuxOS%20(27).PNG)
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-2/ADT105136/LinuxOS%20(27).PNG)
