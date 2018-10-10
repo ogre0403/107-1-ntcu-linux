@@ -1,43 +1,43 @@
-# ¦w¸ËLinux¬yµ{
+# å®‰è£Linuxæµç¨‹
 
-![GITHUB](https://imgur.com/6CxzKVM "git¹Ï¥Ü")
-+ §Ú¿ï¾Üªº¬O VMware §@¬°¦w¸ËLinux§@·~¨t²ÎªºµêÀÀ¾÷
+![GITHUB](https://imgur.com/6CxzKVM.jpg "gitåœ–ç¤º")
++ æˆ‘é¸æ“‡çš„æ˜¯ VMware ä½œç‚ºå®‰è£Linuxä½œæ¥­ç³»çµ±çš„è™›æ“¬æ©Ÿ
 
-![GITHUB](https://imgur.com/HloztuV "git¹Ï¥Ü")
-+ ¥Ñ©óVMªº¤è«K©Ê, ©Ò¥H³oÃä§Ú¿ï¾Ü µy«á¦w¸Ë §@·~¨t²Î
+![GITHUB](https://imgur.com/HloztuV.jpg "gitåœ–ç¤º")
++ ç”±æ–¼VMçš„æ–¹ä¾¿æ€§, æ‰€ä»¥é€™é‚Šæˆ‘é¸æ“‡ ç¨å¾Œå®‰è£ ä½œæ¥­ç³»çµ±
 
 
-![GITHUB](https://imgur.com/dmxMRbg "git¹Ï¥Ü")
-![GITHUB](https://imgur.com/3qloSMQ "git¹Ï¥Ü")
-+ ³oÃä§Ú°t¸m20GBªº®e¶qµ¹µêÀÀ¾÷
+![GITHUB](https://imgur.com/dmxMRbg.jpg "gitåœ–ç¤º")
+![GITHUB](https://imgur.com/3qloSMQ.jpg "gitåœ–ç¤º")
++ é€™é‚Šæˆ‘é…ç½®20GBçš„å®¹é‡çµ¦è™›æ“¬æ©Ÿ
 
-![GITHUB](https://imgur.com/W8YICG9 "git¹Ï¥Ü")
-+ ¥H¤W¬° §ÚµêÀÀ¾÷³Ì²×ªº°t¸m
+![GITHUB](https://imgur.com/W8YICG9.jpg "gitåœ–ç¤º")
++ ä»¥ä¸Šç‚º æˆ‘è™›æ“¬æ©Ÿæœ€çµ‚çš„é…ç½®
 
-![GITHUB](https://imgur.com/OEs8DqE "git¹Ï¥Ü")
-+ ³o¼ËµêÀÀ¾÷´N³Ğ«Ø¦n¤F,²{¦b§Ú­Ì­n¨Ó¦w¸Ëubuntu
+![GITHUB](https://imgur.com/OEs8DqE.jpg "gitåœ–ç¤º")
++ é€™æ¨£è™›æ“¬æ©Ÿå°±å‰µå»ºå¥½äº†,ç¾åœ¨æˆ‘å€‘è¦ä¾†å®‰è£ubuntu
 
-![GITHUB](https://imgur.com/0VVi6pr "git¹Ï¥Ü")
-+ §Ú­Ì¨Ï¥Îªº¬O ±qwww.ubuntu-tw.org ¤U¸üªº16.04.5ª©¥»
+![GITHUB](https://imgur.com/0VVi6pr.jpg "gitåœ–ç¤º")
++ æˆ‘å€‘ä½¿ç”¨çš„æ˜¯ å¾www.ubuntu-tw.org ä¸‹è¼‰çš„16.04.5ç‰ˆæœ¬
 
-![GITHUB](https://imgur.com/gS6qDbC "git¹Ï¥Ü")
-+ ·íµêÀÀ¾÷Åª¨ú¬M¹³ÀÉ«á,¿ï¾Ü"ÀË¬d¥úºĞ¬O§_¦³¯Ê·l" Á×§K¬M¹³ÀÉ¦b¤U¸ü¹Lµ{¤¤·´·l
+![GITHUB](https://imgur.com/gS6qDbC.jpg "gitåœ–ç¤º")
++ ç•¶è™›æ“¬æ©Ÿè®€å–æ˜ åƒæª”å¾Œ,é¸æ“‡"æª¢æŸ¥å…‰ç¢Ÿæ˜¯å¦æœ‰ç¼ºæ" é¿å…æ˜ åƒæª”åœ¨ä¸‹è¼‰éç¨‹ä¸­æ¯€æ
 
-![GITHUB](https://imgur.com/F4L10Yv "git¹Ï¥Ü")
-+ µy«İ¤ù¨è«á,§Ú­Ì´N¶i¤J¤F ubuntuªº¦w¸Ë¤¶­±
+![GITHUB](https://imgur.com/F4L10Yv.jpg "gitåœ–ç¤º")
++ ç¨å¾…ç‰‡åˆ»å¾Œ,æˆ‘å€‘å°±é€²å…¥äº† ubuntuçš„å®‰è£ä»‹é¢
 
-![GITHUB](https://imgur.com/1qn74UX "git¹Ï¥Ü")
-+ ¿ï¾Ü"¦Û¦æ«Ø¥ß¤À³Î°Ï¤j¤p"
+![GITHUB](https://imgur.com/1qn74UX.jpg "gitåœ–ç¤º")
++ é¸æ“‡"è‡ªè¡Œå»ºç«‹åˆ†å‰²å€å¤§å°"
 
-![GITHUB](https://imgur.com/LasFFH8 "git¹Ï¥Ü")
-+ §Ú¤À°tµ¹ /     10GB   ¤À°t±¡§Î¥i¦]¤H¦Ó©w
+![GITHUB](https://imgur.com/LasFFH8.jpg "gitåœ–ç¤º")
++ æˆ‘åˆ†é…çµ¦ /     10GB   åˆ†é…æƒ…å½¢å¯å› äººè€Œå®š
 +          /boot 1GB
 +          /home 5GB
 +          /usr  5GB
 
 
-![GITHUB](https://imgur.com/KpYkkuE "git¹Ï¥Ü")
-+ ¦w¸Ëµ²§ô«á, ´N¶i¤JLinux°Õ!!!
+![GITHUB](https://imgur.com/KpYkkuE.jpg "gitåœ–ç¤º")
++ å®‰è£çµæŸå¾Œ, å°±é€²å…¥Linuxå•¦!!!
 
 
 
