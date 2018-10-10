@@ -9,7 +9,7 @@
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/4.PNG?raw=true)    
 點選動態配置,然後按下一部    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/5.PNG?raw=true)    
-設定虛擬硬碟大小(大小自定),然後按建立,這樣你的虛擬機器就裝好了喔!    
+設定虛擬硬碟大小(大小自訂),然後按建立,這樣你的虛擬機器就裝好了喔!    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/6.PNG?raw=true)    
 點選剛剛建立的虛擬機器,按下設定,然後找到存放位置    
 在畫面的右方有個小小的光碟圖示,按下去之後,點選剛剛下載的虛擬光碟檔    
@@ -43,7 +43,7 @@
 如果有就代表你完成了!    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/20.PNG?raw=true)    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-2/ACS107137/21.PNG?raw=true)    
-#恭喜你完成了Linux虛擬機器的設定!!!
+# 恭喜你完成了Linux虛擬機器的設定!!!
 
 
 
