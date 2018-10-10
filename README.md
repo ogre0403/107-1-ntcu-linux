@@ -3,7 +3,7 @@
 ## **Git繳交作業流程**
 目錄/檔案建立操作為使用command，若使用gui，請自行變通。
 
-Step 1: clone 你 fork 後的git project，注意網址會與我的不同，請換成你的網址
+Step 1: clone 你 fork 後的git project，注意網址會與我的不同，請換成你的網址
 
 ```
 $ git clone https://github.com/<YOUR-FORKED-REPO>/107-1-ntcu-linux.git
@@ -11,7 +11,7 @@ $ git clone https://github.com/<YOUR-FORKED-REPO>/107-1-ntcu-linux.git
 
 Step 2: checkout a76aa3121679a6d67e3456c0798a080c78b920d3 commit, 並查看目錄下內容，會有`123456`目錄與`README.md`檔案。
 
-**注意**: 請不要刪除或修改`123456`目錄與`README.md`檔案。
+**注意**: 請不要刪除或修改`123456`目錄與`README.md`檔案。
 
 
 ```
@@ -23,7 +23,7 @@ drwxr-xr-x  3 jimmy  wheel   102B Oct 10 11:21 123456
 ```
 
 
-Step 3: 建立你自己的學號的目錄(如: `ACS107XXXXX`)，並在裡面建立`README.md`，目錄名稱每人都會不同，但目錄內的檔名一定要為`README.md`。
+Step 3: 建立你自己的學號的目錄(如: `ACS107XXXXX`)，並在裡面建立`README.md`，目錄名稱每人都會不同，但目錄內的檔名一定要為`README.md`。
 ```
 $ mkdir ACS107XXXXX
 $ touch ACS107XXXXX/README.md
@@ -46,7 +46,7 @@ drwxr-xr-x  6 jimmy  wheel  204 Oct 10 11:25 ..
 
 Step 4: 將您的報告撰寫在你的目錄內的`README.md`，例如`ACS107XXXXX/READMD.md`，若有圖片或其他檔案，也一併放在你的目錄內(如: `ACS107XXXXX`)，不要放到別的地方
 
-Step 5: 完成後，commit & push你的目錄到你的github repo。 *若你coomit包含你目錄以外的資料，表示你做錯，會被我退回。*
+Step 5: 完成後，commit & push你的目錄到你的github repo。 *若你coomit包含你目錄以外的資料，表示你做錯，之後會被退回。*
 
 ```
 $ git add ACS107XXXXX/
@@ -80,15 +80,13 @@ To https://github.com/Jimmy-Chuang/107-1-ntcu-linux.git
 
 SETP 6: push後，請至github檢查是否只有把自己的目錄上傳，若有push其他的目錄，請重新操作，不然繳交時會被退回。
 
-**注意**: 因為沒有刪除或修改`123456`目錄與`README.md`檔案，所以這二個存在是正確的。
+**注意**: 因為沒有刪除或修改`123456`目錄與`README.md`檔案，所以這二個存在是正確的。
 ![](./img/fig1.png)
 
-STEP 7
-建立pr，注意從你的HW-2到我的HW-2，標題請註明你的`學號-HW-2`
+STEP 7: 建立pr，注意從你的HW-2到我的HW-2，標題請註明你的`學號-HW-2`
 ![](./img/fig2.png)
 
-STEP 8
-PR建立後，請再三確認是否有動到別的目錄的檔案，正確只會上傳你目錄下的資料，若有修改或上傳其他目錄/檔案，皆會被退回。
+STEP 8: PR建立後，請再三確認是否有動到別的目錄的檔案，正確結果只會上傳你目錄的資料，若有修改或上傳其他目錄/檔案，皆會被退回。
 ![](./img/fig3.png)
 ![](./img/fig4.png)
 
