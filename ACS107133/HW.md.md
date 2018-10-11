@@ -1,0 +1,1 @@
+﻿上網google virtualbox download 即可下載，在到網路上搜尋centos，下載並安裝，打開virtualbox，點左上角的新增，作業系統類型選擇linux，新增完後在點上排第二個設定值，到存放裝置放上下載下來的centos，以及到網路，啟用介面卡2，附加到僅限主機介面卡，就可以啟動了。
