@@ -1,5 +1,6 @@
 ### CentOS7安裝
 
+
 # <ol>
 <li>到CentOS7下載iso檔，基本上現在不會用到太多功能，所以只要安裝"Minimal ISO"就好了</li>
 </ol>
