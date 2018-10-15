@@ -1,8 +1,55 @@
-#�w�˹L�{
-(1)�ϥ��s�����j�M"Virtualbox"�A�ÿ�ܦۤv�q�����@�~�t��(Windows)�I��U���A�g�L�w�˵{�ǧ�����A�N�i�H�b�ۤv���q���W�ݨ�Virtualbox�F�C
-(2)���}Virtualbox�A�I�索�W�����s�W�A�إߵ��������A�W�٦ۥѨ��W�A�����I��Linux�A�������Other Linux(32-bit)�A�O����j�p�ۤv�վ�A�ߧY�إߵ����w�СA�w���ɮ��������VDI(VirtualBox�ϺЬM��)(�Y���ݭn�M��L�������Ƴn��ϥΡA�i�H�O���]�w����)�A��ܹ���w�Ъ��s��˸m���T�w�j�p�A�]�����ǵw���ɮצb�Y�Ǩt�λݭn���������ɶ��إߡA�ҥH��ܩT�w�j�p�ɶ��۹�W�|����֡A�A�Ӧۤv��ܵ����w���ɮת��s���m�A�A�ۭq��������s��b�w�Ъ��ɮ׸�Ƥj�p�A�A���U�إߴN�����o!
-(3)�I�索�W���]�w�ȡA���]�w�����A���}�����d�@���NAT�A�A�}�����d�G�A���"�ȭ��D��"�����d�C
-(4)�b�]�w�ȸ̦A�I��s��˸m�A��ܪŪ����о�:IDE�ĤG�ӥD�A�A�I����䪺�p���СA��Ω�CentOS�x���U���U�Ӫ����о��C
-(5)�Ұʵ������A��ܦۤv�n�ϥΪ��y���A���κϺо��A�w�Ф��Φ��ۤv�Q�n���Ŷ�(�ڬO�إߨ�Ӥ��ΰ�:"/"�B"/home"�A�]�w�����C
-(6)�]�w�ۤv���b���M�K�X�C
-(7)�j�\�i��!!
+#安裝過程
+(1-1)使用瀏覽器搜尋"Virtualbox"，並選擇自己電腦的作業系統(Windows)點選下載，經過安裝程序完成後，就可以在自己的電腦上看到Virtualbox了。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step001.png)
+(1-2)打開Virtualbox。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step002.png)
+***請忽略我事先試做過的Ubuntu***
+(1-3)點選左上角的新增，建立虛擬機器，名稱自由取名，類型點選Linux，版本選擇Other Linux(64-bit)。<接著點選下一步>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step004.PNG)
+(1-4)記憶體大小調整至自己喜歡的大小。(我調整至2048MB)<接著點選下一步>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step005.PNG)
+(1-5)點選立即建立虛擬硬碟。<接著點選下一步>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step006.PNG)
+(1-6)硬碟檔案類型選擇VDI(VirtualBox磁碟映像)(若不需要和其他的虛擬化軟體使用，可以保持設定不變)。<接著點選下一步>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step007.PNG)
+(1-7)選擇實體硬碟的存放裝置為固定大小，因為有些硬碟檔案在某些系統需要花比較長的時間建立，所以選擇固定大小時間相對上會比較快一些。<接著點選下一步>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step008.PNG)
+(1-8)再來自己選擇虛擬硬碟檔案的存放位置(我是將它存在D槽，節省C槽的一些空間)，檔案大小自己調整(我調整至8GB)。<接著點選下一步>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step009.PNG)
+(1-9)再按下建立，就可以在欄位上看見自己建立的虛擬機囉!!(再來點選左上的設定值進行設定)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step010.png)
+(2-1)先設定網路，打開介面卡一選擇NAT，再開介面卡二，選擇"僅限主機"介面卡。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step012.PNG)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step013.PNG)
+(2-2)在設定值裡再點選存放裝置，選擇空的光碟機:IDE第二個主，再點選旁邊的小光碟，選用於CentOS官網下載下來的光碟機。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step003.png)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step011.png)
+<再按下右下的確定鍵，就完成設定囉!>
+(2-3)啟動虛擬機。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step014.PNG)
+(2-4)選擇自己要使用的語言。(我選擇繁體中文)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step015.PNG)
+<在安裝摘要中調整自己想要調整的項目>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step016.PNG)
+(2-5)調整一下日期時間。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step017.PNG)
+(2-6)點選"安裝目的地">讓我自行配置磁碟分割>點選左上繳的"完成"。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step018.png)
+(2-7)將硬碟分割成自己想要的空間，點選左下紅色框起來的+號鍵>加入新的掛載點。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step019.PNG)
+<範例>(可以配置自己想要的大小)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step020.PNG)
+(如果想要刪掉也可以點選左下藍色框起來的-號鍵)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step021.png)
+(2-8)分割、配置好之後就可以點選左上角的"完成"囉!(再來會出現"變更摘要"，可能會摧毀格式，但自己覺得沒問題的話就可以點選"接受並變更")
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step022.PNG)
+<再來就會跳回"安裝摘要"的頁面>
+(2-9)確定沒有問題後，就可以點選右下角的"開始安裝"。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step023.PNG)
+(2-10)用戶設定，自行設定Root密碼，以及用戶建立>設定好後，再按下右下角的"完成設定"即可。
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step024.PNG)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step025.PNG)
+<再按下右下角的重新開機就完成囉!>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step026.PNG)
+重新開機後就可以登入自己的帳號操作啦!
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-2/ACS107109/step027.PNG)
