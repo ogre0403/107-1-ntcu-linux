@@ -1,12 +1,20 @@
-# è‡ªæˆ‘ä»‹ç´¹
+# Linux¦w¸Ë¹Lµ{
 ***
-æˆ‘æ˜¯ACS107142 è³‡å·¥ç³»çš„é‚±å®£å‡±
-
+## ¤U¸ü:
+### ¨ìºô¸ô¤W¤U¸ücentos©Mvurtualbox
+![](https://i.imgur.com/eKYBEPE.jpg)
+![](https://i.imgur.com/lV74OlR.png)
+³o³¡¤À¥u¬O¤U¸ü¦Ó¤w,¨S¹J¨ì¬Æ»ò°İÃD
 ***
-## èˆˆè¶£:
-*è½æ­Œ
-*çœ‹é›»å½±
-*æ‰“é›»å‹•
-
-## ç›®çš„:
-å› ç‚ºæ˜¯è³‡å·¥ç³»çš„,æ‰€ä»¥èƒ½å°ä»¥å¾Œå·¥ä½œæœ‰å¹«åŠ©çš„æ±è¥¿æƒ³ç›¡é‡å¤šå­¸ä¸€äº›
+## ³]©w:
+### ¥´¶}vurtualbox¨Ã¥B¶i¦æ³]©w!
+§â¤U¸ü¦nªºcentos©ñ¤Jvurtualbox°õ¦æ
+![](https://i.imgur.com/cJBeHzD.png)
+³]©wµwºĞ(¤§«e¤w¸g°µ§¹¨Ó¤£¤ÎºI¹Ï)
+µwºĞªº¤è­±¬İ¨ì®É¤£·|°µ,¦ı¤Wºô¬d¨Ç¸ê®Æ«á´N¨S°İÃD¤F
+³]©wroot©M¨Ï¥ÎªÌªº±b±K
+***
+## ³Ì«á:
+¥´¶}µêÀÀ¾÷¾¹´N¯à°÷¨Ï¥Î¤F
+![](https://i.imgur.com/EUgClOU.png)
+![](https://i.imgur.com/bJKcMnd.png)
