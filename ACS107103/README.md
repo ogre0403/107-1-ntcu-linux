@@ -9,6 +9,7 @@
 ![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-2/ACS107103/path.png)
 
 + 硬體配置完成,以下為本次的配置總攬
+<br/> </br>
 ![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-2/ACS107103/hw.png)
 
 + 進入虛擬機器看到以下畫面並選擇"Graphical Install"
