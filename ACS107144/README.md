@@ -1,10 +1,11 @@
 ### 上網下載VirtualBox
 
 * [VirtualBox下載處](https://www.virtualbox.org/wiki/Downloads)
+
 * 選擇Windows hosts 或 OS X hosts，點按下載。
+
    > 因為本人的電腦是Mac，所以接下來的步驟為Mac的安裝步驟。
 
-* 步驟
 1. 選擇OS X hosts。
 2. 下載完成後，在Safari右上角的下載項目中找到VirtualBox的檔案，快速點按兩下開啟。
 3. 開啟後，找到VirtualBox.pkg快速點兩下，開始安裝。
@@ -13,11 +14,10 @@
 6. 開始進行安裝前電腦會要求用戶輸入密碼，輸入密碼後方可執行安裝。
 7. 安裝成功後按下右下角的「關閉」。
 
-
-
 ### CentOS 7 安裝
 
 * [CentOS 7下載處](https://www.centos.org/download/)
+
 1. 選擇Minimal IOS。點按下載。
 2. 下載完畢後，在Safari右上角的下載項目中找到CentOS 7 Minimal ISO，確定下載成功。 
 
@@ -43,6 +43,7 @@
 ### 修改設定值
 
 ## 點選設定值(左上方的橘色齒輪)
+
 ## 1.存放裝置
 * 控制器(IDE)-光碟機(IDE第二個主)-選擇虛擬光碟檔案
 * 找到剛剛下載的CentOS 7 Minimal ISO
@@ -70,7 +71,6 @@
    > /boot:2048MB
 
    > swap:366MB
-
 * 確認新增無誤後，按下右上角的「完成」。
 
 ## 4.網路與主機名稱：
@@ -82,7 +82,8 @@
 
 ### 用戶設定
 
-## 1.rot密碼
+## 1.root密碼
+
 ## 2.用戶建立
 * 勾選「讓這位使用者成為管理員」
 
