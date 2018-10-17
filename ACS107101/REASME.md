@@ -1,40 +1,39 @@
-+#centos ¦w¸Ë¨BÆJ
-+---
-++ ![GITHUB](https://imgur.com/8nysKAt.jpg "git¹Ï¥Ü")
-++ ¶}©l«Ø¥ßcentos,§Ú¤À³Î2048MBµ¹µêÀÀ¾÷
++ #centos å®‰è£æ­¥é©Ÿ
 + ---
-++ ![GITHUB](https://imgur.com/RQ6IEKq.jpg "git¹Ï¥Ü")
-++ centosµêÀÀ¾÷«Ø¥ß§¹¦¨
+![GITHUB](https://imgur.com/8nysKAt.jpg "gitåœ–ç¤º")
++ é–‹å§‹å»ºç«‹centos,æˆ‘åˆ†å‰²2048MBçµ¦è™›æ“¬æ©Ÿ
 + ---
-++ ![GITHUB](https://imgur.com/0PqhKmM.jpg "git¹Ï¥Ü")
-++ ¶}©l°õ¦æ¦w¸ËµêÀÀ¾÷
+![GITHUB](https://imgur.com/RQ6IEKq.jpg "gitåœ–ç¤º")
++ centosè™›æ“¬æ©Ÿå»ºç«‹å®Œæˆ
++ ---
+![GITHUB](https://imgur.com/0PqhKmM.jpg "gitåœ–ç¤º")
++ é–‹å§‹åŸ·è¡Œå®‰è£è™›æ“¬æ©Ÿ
 +---
-++ ![GITHUB](https://imgur.com/vn4uUT7.jpg "git¹Ï¥Ü")
-++ ¿ï¾Ü§Ú­Ì³Ì¼ô±xªº¤¤¤å
+![GITHUB](https://imgur.com/vn4uUT7.jpg "gitåœ–ç¤º")
++ é¸æ“‡æˆ‘å€‘æœ€ç†Ÿæ‚‰çš„ä¸­æ–‡
 +---
-++ ![GITHUB](https://imgur.com/BF9FbcF.jpg "git¹Ï¥Ü")
-++ ¿ï¨ú¨t²Î>¦w¸Ë¥Øªº¦a,¨Ó¶i¦æºÏºĞ¤À³Î
+![GITHUB](https://imgur.com/BF9FbcF.jpg "gitåœ–ç¤º")
++ é¸å–ç³»çµ±>å®‰è£ç›®çš„åœ°,ä¾†é€²è¡Œç£ç¢Ÿåˆ†å‰²
++--![GITHUB](https://imgur.com/LnDi3Gw.jpg "gitåœ–ç¤º")
++ æ¥ä¸‹ä¾†é¸å–<è®“æˆ‘è‡ªè¡Œé…ç½®ç£ç¢Ÿåˆ†å‰²>
 +---
-++ ![GITHUB](https://imgur.com/LnDi3Gw.jpg "git¹Ï¥Ü")
-++ ±µ¤U¨Ó¿ï¨ú<Åı§Ú¦Û¦æ°t¸mºÏºĞ¤À³Î>
-+---
-++ ![GITHUB](https://imgur.com/KrXljRl.jpg "git¹Ï¥Ü")
-++ §Ú¤À°tµ¹/    :3068MB
+![GITHUB](https://imgur.com/KrXljRl.jpg "gitåœ–ç¤º")
++ æˆ‘åˆ†é…çµ¦/    :3068MB
            /home:3068MB
            /boot:1024MB
             swap:1024MB
 +---
-++ ![GITHUB](https://imgur.com/ZR59929.jpg "git¹Ï¥Ü")
-++ ºÏºĞ¤À³Î§¹¦¨!
+![GITHUB](https://imgur.com/ZR59929.jpg "gitåœ–ç¤º")
++ ç£ç¢Ÿåˆ†å‰²å®Œæˆ!
 +---
-++ ![GITHUB](https://imgur.com/YFzFiAK.jpg "git¹Ï¥Ü")
-++ ²{¦b«Ø¥ß¤@­Ó¨Ï¥ÎªÌ»Ù,¨Ã³]¥ß¦Û¤v°O±o¦íªº±K½X³á~
+![GITHUB](https://imgur.com/YFzFiAK.jpg "gitåœ–ç¤º")
++ ç¾åœ¨å»ºç«‹ä¸€å€‹ä½¿ç”¨è€…éšœ,ä¸¦è¨­ç«‹è‡ªå·±è¨˜å¾—ä½çš„å¯†ç¢¼å–”~
 +---
-++ ![GITHUB](https://imgur.com/y5nLHOa.jpg "git¹Ï¥Ü")
-++ ±µ¤U¨Ó¦A«Ø¥ß¤@­Óroot±K½X
+![GITHUB](https://imgur.com/y5nLHOa.jpg "gitåœ–ç¤º")
++ æ¥ä¸‹ä¾†å†å»ºç«‹ä¸€å€‹rootå¯†ç¢¼
 +---
-++ ![GITHUB](https://imgur.com/pdUXQwm.jpg "git¹Ï¥Ü")
-++ ¦w¸Ë§¹¦¨«á´N¥i¥H¶i¤JLINUX¨Ï¥Î?~
+![GITHUB](https://imgur.com/pdUXQwm.jpg "gitåœ–ç¤º")
+++ å®‰è£å®Œæˆå¾Œå°±å¯ä»¥é€²å…¥LINUXä½¿ç”¨?~
 +---
-++ ![GITHUB](https://imgur.com/wyvVpHp.jpg "git¹Ï¥Ü")
-++ ¤w§¹¦¨!
+![GITHUB](https://imgur.com/wyvVpHp.jpg "gitåœ–ç¤º")
++ å·²å®Œæˆ!
