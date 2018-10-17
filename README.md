@@ -3,32 +3,24 @@
 
 ## HW3: Deadline: 2018/10/23 23:59 
 
-*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是改用HW-3分支
+*注意:* 題目已修改完成，都是10/17的進度內容。
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業3改用HW-3分支
 
 1. 請『依序』進行如下的帳號管理任務, 並以Markdown 格式 **詳細整理記錄說明** 每一個步驟，若太精簡成績以50分 記。
 
-    * 建立三個用戶，帳號名稱分別為： examuser1, examuser2, examuser3 ，三個人都加入 examgroup 的次要群組支援，同時三個用戶的密碼都是『 ItIsExam 』。(i 與 e 都是大寫字元)
+    * 建立三個用戶，帳號名稱分別為： examuser1, examuser2, examuser3 ，同時三個用戶的密碼都是『 ItIsExam 』。(請參考書上passwd --stdin的說明)
 
-    *  建立一個用戶，帳號名稱為 examuser4，密碼為『 ItIsExam 』但這個帳號沒加入 examgroup 群組
+    * 請刪除系統中的 examuser3 這個帳號，同時將這個帳號的家目錄與郵件檔案同步刪除。
 
-    * 請刪除系統中的 examuser5 這個帳號，同時將這個帳號的家目錄與郵件檔案同步刪除。
-
-    * 有個帳號 myuser1 不小心被管理員刪除了，但是這個帳號的家目錄與相關郵件都還存在。請參考這個帳號可能的家目錄所保留的 UID 與 GID， 
-並嘗試以該帳號原有的 UID/GID 資訊來重建該帳號。而這個帳號的密碼請給予 ItIsExam 的樣式。(相關建置帳號的指令，請參考 man useradd 等線上文件的說明)
+    * examuser1 不小心被管理員刪除了，但是這個帳號的家目錄與相關郵件都還存在。請參考這個帳號可能的家目錄所保留的 UID 與 GID， 並嘗試以該帳號原有的 UID/GID 資訊來重建該帳號。而這個帳號的密碼請給予 ItIsExam 的樣式。(相關建置帳號的指令，請參考 man useradd 等線上文件的說明)
     
-    * 讓 examuser1 額外加入 student 這個群組，亦即 examuser1 至少有加入 examgroup 與 student 群組
-
 
 2. 請進行如下的權限管理任務, 以Markdown 格式 **詳細整理記錄說明** 每一個步驟，若太精簡成績以50分 記。
 
-    * 使用 root 將 /etc/securetty 複製給 examuser4，且這個帳號要能夠完整使用該檔案才行。
+    * 建立examuser4使用者帳號，密碼任意。
+
+    * 使用 root 將 /etc/securetty 複製給 examuser4，且這個帳號要能夠完整使用該檔案才行，(即有所有的權限)。
     
-    * 建立一個空的檔案，檔名為 /srv/examcheck.txt，這個檔案可以讓 examuser1 完整的使用，而 examuser2 與 examuser3 可以讀取，但不能執行與寫入， 至於 examuser4 什麼權限都沒有。
-
-    * examgroup 群組的成員想要共用 /srv/examdir 目錄，而沒有加入 examgroup 的其他人不具備任何權限，應該如何處理？
-
-    * /usr/local/bin/mymore 複製來自 /bin/more，但我只想要讓 examgroup 的成員能夠執行 /usr/local/bin/mymore 這個指令，其他人不能執行這個指令。
-
     * 建立一個名為 /examdata/change.txt 的空檔案，這個檔案的擁有者為 sshd，擁有群組為 users，sshd 可讀可寫，users 群組成員可讀， 其他人沒權限。且這個檔案的修改日期請調整成 2012 年 12 月 21 日 (日期正確即可，時間隨便)
 
 
@@ -48,7 +40,7 @@
     -rw-------  root root /dev/shm/unit05/dir4/file4 (複製來自 /etc/hosts)
     ```
 
-    * 使用 student 的身份進行各個工作：
+    * 使用一般使用者 的身份進行各項工作：
     
     * 請使用 ls -l /dev/shm/unit05/dir[1-4] 依據輸出的結果說明為何會產生這些問題？
     
@@ -90,6 +82,7 @@ Step 2: checkout a76aa3121679a6d67e3456c0798a080c78b920d3 commit, 並查看目�
 
 
 ```
+$ cd 107-1-ntcu-linux
 $ git checkout a76aa3121679a6d67e3456c0798a080c78b920d3 -b HW-2
 $ ll -al
 total 8
