@@ -31,6 +31,32 @@
 
     * 建立一個名為 /examdata/change.txt 的空檔案，這個檔案的擁有者為 sshd，擁有群組為 users，sshd 可讀可寫，users 群組成員可讀， 其他人沒權限。且這個檔案的修改日期請調整成 2012 年 12 月 21 日 (日期正確即可，時間隨便)
 
+
+3. 請進行如下說明操作, 以Markdown 格式 **詳細整理記錄說明** 每一個步驟，若太精簡成績以50分 記。 
+
+    * 請使用 root 的身份建立底下的檔案與權限：
+
+    ```sh
+    drwxrwxr-x  root root /dev/shm/unit05/
+    drwxr-xr--  root root /dev/shm/unit05/dir1/
+    -rw-r--r--  root root /dev/shm/unit05/dir1/file1 (複製來自 /etc/hosts)
+    drwxr-x--x  root root /dev/shm/unit05/dir2/
+    -rw-r--r--  root root /dev/shm/unit05/dir2/file2 (複製來自 /etc/hosts)
+    drwxr-xr-x  root root /dev/shm/unit05/dir3/
+    -rw-rw-rw-  root root /dev/shm/unit05/dir3/file3 (複製來自 /etc/hosts)
+    drwxrwxrwx  root root /dev/shm/unit05/dir4/
+    -rw-------  root root /dev/shm/unit05/dir4/file4 (複製來自 /etc/hosts)
+    ```
+
+    * 使用 student 的身份進行各個工作：
+    
+    * 請使用 ls -l /dev/shm/unit05/dir[1-4] 依據輸出的結果說明為何會產生這些問題？
+    
+    * 請使用 ls -l /dev/shm/unit05/dir1/file1 ，依序將上述的檔名由 dir1/file1 ~ dir4/file4 執行，依據產生的結果說明為何會如此？
+    
+    * 請使用 vim /dev/shm/unit05/dir1/file1 ~ vim /dev/shm/unit05/dir4/file4，嘗試儲存 (或強制儲存)，說明為何可以/不可以儲存？
+
+
 ## HW2: 安裝Linux, Deadline: 2018/10/11 00:00 
 
 請依下列要求練習安裝Linux，並詳細記錄說明安裝過程。
