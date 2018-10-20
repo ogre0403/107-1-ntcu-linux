@@ -1,38 +1,60 @@
-# 一:設定印象檔
-#### 先選取要設定的虛擬機器
-![1](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/1.jpg)
-#### 選取存放裝置，裡面有個空位是即將讓你設定印象檔的位置
-![2](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/2.jpg)
-#### 設定完之後就按"確定"，並啟動虛擬機器囉
-![2.5](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/2.5.jpg)
+1.
+◆建立三個用戶，帳號名稱分別為： examuser1, examuser2, examuser3 ，同時三個用戶的密碼都是『 ItIsExam 』。(請參考書上passwd --stdin的說明)
+注意useradd的指令要由root來執行，接者設密碼要用passwd+user名 
 
-# 二:設定安裝程序:
-#### 若成功了，會進入到一個選擇語言的地方，為了接下來方便安裝，選擇完要的語言就按左下角的繼續鍵
-![3](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/3.jpg)
-#### 可以確認一下安裝來源，基本上是不會有甚麼問題，確認完就按左上角的鍵
-![4](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/4.jpg)
-![5](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/5.jpg)
-### *§接者是最複雜的地方了，要注意看喔不然會不懂§*
-![6](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/6.jpg)
-#### 這裡，我們選擇自行分割
-![7](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/7.jpg)
-#### 會來到一個畫面，我們要來劃分囉，首先點擊"+"
-![8](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/8.jpg)
-#### Mount Pont是選擇掛載點
-#### Desired Capacity是問你要分配多少容量
-![9](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/9.jpg)
-#### 分配完之後就可以按完成(Done)
-![10](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/10.jpg)
-#### 當你按下去時，電腦會跟你確定你創建哪些東西，刪除哪些東西，大概確認一下沒有錯誤就好了
-![11](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/11.jpg)
-#### 困難的就這樣弄完了，快?自己一個掌聲，
-![](https://data.ac-illust.com/data/thumbnails/ec/ec3223eb6cfad4d37b05bcb983cc98fb_t.jpeg)
-#### 一個掌聲就好我們要繼續囉，接者按開始安裝(Begin installion)
-![12](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/12.jpg)
-#### 電腦就會開始安裝了，在等待的同時你可以創建一個使用者帳密或是替root設密碼
-#### 若是已經有了這裡可以不用管，安裝完會要叫你Reboot(重開機)
-#### 注意:這只是虛擬機器要重開機，並不是電腦要重開喔。
-![13](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/13.jpg)
-#### 當你進到這個畫面的時候，就代表一件事
-![14](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/14.jpg)
-##	☆★☆恭喜你完成了☆★☆
+
+
+◆請刪除系統中的 examuser3 這個帳號，同時將這個帳號的家目錄與郵件檔案同步刪除。
+注意若要將家目錄、郵件檔案刪除的話要記得用"-r"
+
+
+
+◆examuser1 不小心被管理員刪除了，但是這個帳號的家目錄與相關郵件都還存在。請參考這個帳號可能的家目錄
+所保留的 UID 與 GID， 並嘗試以該帳號原有的 UID/GID 資訊來重建該帳號。
+而這個帳號的密碼請給予ItIsExam的樣式。(相關建置帳號的指令，請參考 man useradd 等線上文件的說明)
+
+
+2.
+◆建立examuser4使用者帳號，密碼任意。
+
+◆使用 root 將 /etc/securetty 複製給 examuser4，且這個帳號要能夠完整使用該檔案才行，(即有所有的權限)。
+
+
+◆建立一個名為 /examdata/change.txt 的空檔案，這個檔案的擁有者為 sshd，擁有群組為 users，sshd 可讀可寫，
+users 群組成員可讀， 其他人沒權限。且這個檔案的修改日期請調整成 2012 年 12 月 21 日 (日期正確即可，時間隨便)
+
+只改日期時間變為00:00 	touch -d 20150101 (filename)
+改日期&時間		touch -t 201501150821.32 (filename)
+
+
+
+3.
+◆請使用 root 的身份建立底下的檔案與權限：
+drwxrwxr-x  root root /dev/shm/unit05/
+drwxr-xr--  root root /dev/shm/unit05/dir1/
+-rw-r--r--  root root /dev/shm/unit05/dir1/file1 (複製來自 /etc/hosts)
+drwxr-x--x  root root /dev/shm/unit05/dir2/
+-rw-r--r--  root root /dev/shm/unit05/dir2/file2 (複製來自 /etc/hosts)
+drwxr-xr-x  root root /dev/shm/unit05/dir3/
+-rw-rw-rw-  root root /dev/shm/unit05/dir3/file3 (複製來自 /etc/hosts)
+drwxrwxrwx  root root /dev/shm/unit05/dir4/
+-rw-------  root root /dev/shm/unit05/dir4/file4 (複製來自 /etc/hosts)
+
+複製用cp (欲複製的檔案) (覆寫的檔案)
+
+
+◆使用一般使用者 的身份進行各項工作：
+
+◆請使用 ls -l /dev/shm/unit05/dir[1-4] 依據輸出的結果說明為何會產生這些問題？
+
+◆請使用 ls -l /dev/shm/unit05/dir1/file1 ，依序將上述的檔名由 dir1/file1 ~ dir4/file4 執行
+，依據產生的結果說明為何會如此？
+
+◆請使用 vim(or vi) /dev/shm/unit05/dir1/file1 ~ vim /dev/shm/unit05/dir4/file4
+，嘗試儲存 (或強制儲存)，說明為何可以/不可以儲存？
+file1(Permission Denied) 不可讀不可編輯
+file2 無法用tab鍵按出來(唯讀檔不可更改)
+file3 可被編輯
+file4 (Permission Denied) 不可讀不可編輯
+
+![1](https://github.com/0905053883/107-1-ntcu-linux/blob/master/ACS107134/1.jpg)
