@@ -39,16 +39,15 @@
         **<touch -t 201212211234 change.txt>(再使用"ll"查看更改後的權限和時間，就會發現已經修改OK了。)**
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img2-4.png)
 * (3-1)使用root進入/>dev>shm，建立資料夾unit05(mkdir unit05)，並修改權限(chmod u=rwx,g=rwx,o=rx unit05)，再使用"ll"查看，權限已修改完成。
-![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img3-1.png)
 * (3-2)進入unit05，分別新增dir1、dir2、dir3、dir4(EX:mkdir dir1)，再修改各個權限(EX:chmod u=rwx,g=rx,o=r dir1)，再使用"ll"查看，權限就修改完成了。
  > <dir1、dir2、dir3、dir4皆是一樣的步驟>
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img3-1.png)
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img3-2.png)
 * (3-3)複製/etc/hosts到/dev/shm/unit05/dir1/file1(其他類推)。
  > <EX:cp /etc/hosts /dev/shm/unit05/dir1/file1>
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img3-3.png)
 * (3-4)切換進入dir1，先利用"ll"查看初始權限，再利用"ls"查看file1是否存在，再修改其權限，最後再用"ll"檢查權限是否更改成功。(其他類推，但要記得回unit05進入各個資料夾修改及檢查)
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img3-4.PNG)
-![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img3-4-1.PNG)
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-3/ACS107109/img3-4-2.PNG)
 * (3-5)切換帳號，使用一般使用者登入(我使用的一般使用者為examuser2登入)。
 * (3-6)使用 ls -l /dev/shm/unit05/dir[1-4] 輸入，產生結果為examuser2(身分為Other)對於dir1(o=r--)和dir2(o=--x)"Permission denied"(沒有權限)，dir3(o=r-x)和dir4(o=rwx)有權限能夠任意使用。
