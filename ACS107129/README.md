@@ -1,93 +1,199 @@
-# Linux Centos-7 安裝心得
+# Linux HW-3
 
-==========================
+# 第一題
 
-### 圖片來自本人
 
-### 首先要確認安裝後希望達成的效果
 
->因為我這次的安裝只是在個人電腦的一個練習，而非要用到更為複雜的功能來做更複雜的事情，所以我的基本硬體配備一定夠我使用Linux CentOS-7 minimal系統。這次主要的練習是區塊分割，因此其他更複雜的設定部分沒動到。
+### 第一小節
 
-## 確認檢查清單
 
->根據鳥哥提供的[檢查清單](http://linux.vbird.org/linux_basic/0157installcentos7.php#design)來確認事前準備的完成度
 
-*	是，ISO檔
+![1.1](https://images2.imgbox.com/c3/ac/lFYS3RYd_o.png)
 
-*	CentOS 7-x86_64-Minimal-1804
 
-*	x86_64
 
-*	是
+>首先要建立三個帳號，利用**useradd**的指令建立。
 
-*	已決定硬碟分割方法
+>建立密碼以**echo password | passws --stdin username**的指令進行，因為顯示出密碼是這次的要求，這指令可以大量設定密碼，但顯示密碼同時也是這個指令的風險/壞處所在。
 
-*	沒
 
-*	X
 
-*	自動設定，應該也在MBR
+### 第二小節
 
-*	使用DHCP
 
-*	Virtualbox
 
-### 開始進入安裝環節
+![1.2](https://images2.imgbox.com/59/0b/gPPOC77D_o.png)
 
-![1](https://images2.imgbox.com/d0/70/IHTM2kui_o.png)
 
->先開啟Virtualbox並利用左上角新增圖示建立一個新的虛擬機器，名稱就設定CentOS_7，*類型*選擇Linux、*版本*選擇Other Linux(64-bit)、設定讓記憶體有基本大小以免突然用完，接著建立。
 
-![2](https://images2.imgbox.com/69/37/BIHobIwv_o.png)
+>接著利用**ls / ls -l / ll**等等的指令確認家目錄的建立，再用**userdel -r**的指令刪除**examuser3**，然後再利用指令確認/home和/var/spool/mail的內容。
 
->建立完成後再次選擇並點選右上方**設定**值進行設定。點選設定中的**存放裝置**，點選控制器旁的新增圖示，點擊選擇磁碟並在瀏覽中選擇已經下載完成的CentOS-7-x86_64-Minimal-1804映像檔(ISO檔)。完成後再根據老師的建議點選**設定**的**網路**進行設定，點擊介面卡2並勾選啟用網路卡，在**附加到**中選擇「僅限主機」介面卡，下方名稱則自動設定好Virtualbox了。
->接著回Virtualbox首頁啟動建立好的虛擬機器。
-===========================
-### 進入啟動畫面
 
-![3](https://images2.imgbox.com/31/b5/dttXZAMc_o.png)
 
-![4](https://images2.imgbox.com/5c/f6/7QojaZ6C_o.png)
+### 第三小節
 
->因為是在模擬器上練習、檔案也是官網抓的，所以就直接選擇Install CentOS 7，接著經過一段等待時間後進入語言安裝的選擇介面，選擇中文 **繁體中文(台灣)**，接著進入安裝摘要，等待系統的自動設定結束後再手動調整設定。
 
-![5](https://images2.imgbox.com/84/e6/8I34pMX9_o.png)
 
->確認時間、支援語言、鍵盤配置正確後記得設定鍵盤配置中的配置切換來協助輸入語言切換。
+![1.3](https://images2.imgbox.com/d3/33/rYUYHIq9_o.png)
 
-![6](https://images2.imgbox.com/f0/f1/7PdK2fkj_o.png)
 
->安裝來源會自動設定，軟體選擇可自行選擇安裝但Minimal只有最小型安裝。
 
-### 磁碟分割
+>利用**userdel**的指令刪除**examuser1**並且重新確認/home和/var/spool/mail的內容。
 
-![7](https://images2.imgbox.com/12/34/SJJvDnwx_o.png)
 
->點選進入安裝目的地後，在本機標準磁碟中選擇Virtualbox預設的CentOS_7磁碟，下方的其他儲存選項中的**分割硬碟**點選**我將配置分頁**，然後點擊左上方完成。
 
-![8](https://images2.imgbox.com/12/97/isdAHkJR_o.png)
+![1.4](https://images2.imgbox.com/1e/a1/odL1kzQQ_o.png)
 
->進入分割頁面後，選擇**標準分割區**再點選左下角的加號，掛在點選擇 **biosboot** 、輸入2M容量後按新增，再依相同步驟建立 **/boot** 的掛載點、輸入1G容量。
 
-![9](https://images2.imgbox.com/3a/f0/PwnFV3eb_o.png)
 
->同樣步驟新增 **/** 和 **/home** 的掛載點，只是根據鳥哥的建議，將前兩者的裝置類型由標準分割區更改為 **LVM** 。
+>為了用相同的UID重建被刪除的帳號，使用**useradd -u**的參數來以指定UID的方式創建帳號，並加入 **-U** 的參數來建立和帳戶相同的群組。
+>在確認帳號UID相同之後，再以上述**echo password | passwd --stdin username**的指令設定密碼即可。
 
-![10](https://images2.imgbox.com/59/b2/MpVCFHP3_o.png)
 
->確認以上步驟完成後確認biosboot下方的**vda1**、/boot下方的**vda2**、/下方的**centos-root**和/home下方的**centos-home**。結束後點擊左上方完成，會跳出變更摘要的視窗，看過之後選擇左下方接受變更即完成手動分割硬碟。
 
-## 回到安裝摘要
+# 第二題
 
->最後的KDUMP和網路(DHCP)系統都已經自動設定好了，所以選擇左下方開始安裝
 
-### 用戶設定
 
-![11](https://images2.imgbox.com/38/e7/RUeait4A_o.png)
+### 第一小節
 
->設定**root密碼**並記好
->建立用戶，並根據鳥哥的建議將用戶升級成管理員，萬一真的忘記root密碼才有救。
 
-![12](https://images2.imgbox.com/da/87/H2nuMrFe_o.png)
 
->完成設定後選擇左下方重新開機，重啟後即完成安裝，但是Minimal沒有圖形介面。
+![2.1](https://images2.imgbox.com/95/28/R2jWhLiR_o.png)
+
+
+
+>這次嘗試使用**useradd -p**的指令以直接設定密碼為123的方式建立使用者。
+
+>接著使用**cp  檔案來源  複製目的地**的指令複製一份檔案到/home/examuser4裡，並注意此時examuser4對於這份複製的檔案屬於other的分類且沒有任何權限。
+
+
+![2.2](https://images2.imgbox.com/3a/37/qEVvsHsu_o.png)
+
+
+
+>先利用**chown**的指令將examuser4改成這份複製檔案的擁有者，再利用**chmod**的指令配合數字法將擁有者的權限由 **6(rw-)** 提升至 **7(rwx)** 。
+
+
+
+###第二小節
+
+
+
+![2.2](https://images2.imgbox.com/59/35/4EVL0h7R_o.png)
+
+>利用**mkdir**的指令建立名為exmadata的目錄，接著再examdata內利用**touch**的指令建立一份空的change.txt檔案。
+
+
+
+![2.3](https://images2.imgbox.com/81/08/lWRbuKwf_o.png)
+
+
+
+>利用**chown**的指令更改檔案擁有者為**sshd**，接著利用**grep users /etc/group**的指令確認users的群組是否存在。
+
+>接著利用**chgrp**的指令變更檔案的群組，用**chmod**的指令將權限改為640的狀態，再利用指令確認檔案的屬性。
+
+
+
+![2.4](https://images2.imgbox.com/9f/b4/frVrUmuy_o.png)
+
+
+
+>最後利用**touch -t**的指令修改時間，由前到後分別為**西元年 月 日 小時 分 秒**。
+
+
+# 第三題
+
+
+
+### 第一小節
+
+
+
+![3.1](https://images2.imgbox.com/03/8b/KdoBLXj9_o.png)
+
+
+
+>首先將表格的檔案和目錄建立起來，重複利用**chmod / mkdir / cp **三種指令。
+
+
+
+![3.2](https://images2.imgbox.com/60/cc/ubFL5Tit_o.png)
+
+
+
+>接著確認各項屬性和表格上一致。
+
+### 第二小節
+
+
+
+![3.3](https://images2.imgbox.com/6e/2c/AYG2K7zP_o.png)
+
+
+
+>先利用**su**的指令將身分由**root**切換回**一般使用者(shimakaze)**，接著輸入 **ls -l /dev/shm/unit05/dir[1-4]** 的指令並觀察現象。
+
+首先我們發現**檔案1**和**目錄2**無法成功顯示出來，接著比較各個目錄之間還有檔案之間的權限，再配合錯誤發生時所提供的英文提示，我們可以推測**檔案1**之所以無法顯示是因為**dir1**對於**shimakaze**而言為不可執行的，導致我們只可停留在能讀取**dir1**的情形；而第二號甚至連**檔案2**都沒出現是因為**dir2**對於**shimakaze**而言是不可讀取的目錄，既然不可讀取就不用提更深入的事情了。
+
+
+
+### 第三小節
+
+
+
+![3.4](https://images2.imgbox.com/97/aa/AgvFm4pK_o.png)
+
+
+
+>利用指令依序執行四個項目。
+
+在四個目錄當中只有**dir1**對於**shimakaze**而言為不可執行的，因此沒有路徑可以抵達目錄內的檔案。而其他三個通過目錄後，內部的檔案對於**shimakaze**而言皆是可讀取的，其中**file4**是因為處於**dir4**的架構中，而非本身屬性。
+
+### 第四小節
+
+
+
+![3.5](https://images2.imgbox.com/14/35/eIR6YMYr_o.png)
+![3.6](https://images2.imgbox.com/57/02/LOByRp0Q_o.png)
+
+![3.7](https://images2.imgbox.com/89/57/2XFtE0AC_o.png)
+
+
+
+>利用指令進入文字編輯模式
+
+發現**file1**是唯讀檔案，並不能藉由強制儲存退出來更動內容。因為**file1**對於**shimakaze**而言為不可改寫的。
+
+
+
+![3.8](https://images2.imgbox.com/06/b0/HQtEak73_o.png)
+
+![3.9](https://images2.imgbox.com/74/b9/Z4yrCTYQ_o.png)
+
+
+
+發現**file2**也是跟**file1**有相同情形，強制也沒用。
+
+
+
+![3.10](https://images2.imgbox.com/08/81/Pe22pXod_o.png)
+
+![3.11](https://images2.imgbox.com/3c/a5/92Qqe3or_o.png)
+
+
+
+**file3**本身對**shimakaze**而言是可改寫的，因此可以正常的更動內容。
+
+
+
+![3.12](https://images2.imgbox.com/4f/33/n3T44PKE_o.png)
+
+![3.13](https://images2.imgbox.com/7b/63/ZlTcFMqD_o.png)
+
+![3.14](https://images2.imgbox.com/bb/a2/jsNpLJ8j_o.png)
+
+
+
+**file4**對於**shimakaze**而言是不可改寫的，因此正常儲存無法更動其內容。但是因為**file4**位於**dir4**架構中，而**dir4**對於**shimakaze**而言是可改寫的，因此我們可以用強制執行儲存離開來更動**file4**的內容。
