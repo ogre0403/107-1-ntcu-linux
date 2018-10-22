@@ -1,7 +1,7 @@
 #linux檔案權限與基礎帳號管理
 
 * (1-1)登入管理者root的帳號，使用"useradd 帳號名稱"建立用戶、"passwd 帳號名稱"給與該帳號自訂的密碼。
-       > <分別新增examuser1、examuser2、examuser3，password都是"ItIsExam">
+ > <分別新增examuser1、examuser2、examuser3，password都是"ItIsExam">
 * (1-2)可以利用"id 帳號名稱"觀察帳號的情況(UID、GID、groups)。
 * (1-3)利用"userdel -r 帳號名稱"刪除examuser3，且同步刪除家目錄和郵件檔案。(*"-r"的意思是同步刪除家目錄和郵件檔案。)
        > <再用id查看帳號就會發現"no such user"了>
