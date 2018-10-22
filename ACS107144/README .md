@@ -151,9 +151,9 @@
 # 用 ls -l /dev/shm/unit05/dir1/file1 ，依序將上述的檔名由 dir1/file1 ~ dir4/file4 執行，依據產生的結果說明為何會如此？
 * 因為examuser1是other 
 1. dir1/file1，dir1不可執行，所以無法開啟查看裡面的file1，雖然有file1讀的權限也無法執行。
-2. dir2/file2 dir2可執行，file2的結果只能讀。
-3. dir3/file3 dir3可執行，file3可讀可改。
-4. dir4/file4 dir4可執行，即使所有的權限都鎖起來了，仍可執行，只是file4無任何權限。
+2. dir2/file2，dir2可執行，file2的結果只能讀。
+3. dir3/file3，dir3可執行，file3可讀可改。
+4. dir4/file4，dir4可執行，即使所有的權限都鎖起來了，仍可執行，只是file4無任何權限。
  > 執行狀況如圖
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-3/ACS107144/3-3-08.png)
 
