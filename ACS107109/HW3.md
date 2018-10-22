@@ -20,12 +20,12 @@
 * (2-4)回到root，進入"/"，新增資料夾名為examdata("mkdir examdata")，再進入examdata(cd examdata)。
      1. 利用"touch"建立一個名為"change.txt"的空檔案("touch change.txt")，再使用"ls"察看就會再examdata裡看到"change.txt"。
         先使用"ll"查看修改前的權限，為"-rw-r--r--"。
-      > "touch"這個指令，我們可以輕易的修訂檔案的日期與時間，並且也可以建立一個空的檔案。
+        **"touch"這個指令，我們可以輕易的修訂檔案的日期與時間，並且也可以建立一個空的檔案。**
      2. 修改此檔案的用有者(user)為"sshd"<chown sshd change.txt>、擁有群組(group)為"users"<chgrp users change.txt>。
      3. 更改檔案的權限<chmod u=rw,g=r,o= change.txt>
-      > 再利用"ll"查看，權限已修改完成。
-     4. 修改檔案的日期為2012年12月21日(時間任意)。( *"-t"的意思是修改時間排序。)
-      > <touch -t 201212211234 change.txt>(再使用"ll"查看更改後的權限和時間，就會發現已經修改OK了。)
+        **再利用"ll"查看，權限已修改完成。**
+     4. 修改檔案的日期為2012年12月21日(時間任意)。( *"-t"的意思是修改時間排序。)**
+        **<touch -t 201212211234 change.txt>(再使用"ll"查看更改後的權限和時間，就會發現已經修改OK了。)
 * (3-1)使用root進入/>dev>shm，建立資料夾unit05(mkdir unit05)，並修改權限(chmod u=rwx,g=rwx,o=rx unit05)，再使用"ll"查看，權限已修改完成。
 * (3-2)進入unit05，分別新增dir1、dir2、dir3、dir4(EX:mkdir dir1)，再修改各個權限(EX:chmod u=rwx,g=rx,o=r dir1)，再使用"ll"查看，權限就修改完成了。
  > <dir1、dir2、dir3、dir4皆是一樣的步驟>
