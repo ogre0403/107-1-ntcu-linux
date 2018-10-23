@@ -1,4 +1,4 @@
-# 1-1：建立三個用戶，帳號名稱分別為： examuser1, examuser2, examuser3 ，同時三個用戶的密碼都是『 ItIsExam 』。    
+# 1-1： ## 建立三個用戶，帳號名稱分別為： examuser1, examuser2, examuser3 ，同時三個用戶的密碼都是『 ItIsExam 』。    
 登入使用者帳號後，用"su -"指令切換為管理者root    
 用"useradd (username)"建立新帳號、"passwd (username)"設定密碼    
 
