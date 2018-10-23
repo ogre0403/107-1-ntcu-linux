@@ -22,8 +22,8 @@
 <li>進入/home/examuser4，創立一個資料夾"examdata"，指令是"mkdir examdata"</li>
 <li>在examdata這個資料夾中，使用"touch change.txt"建立一個檔案</li>
 <li>然後使用"chown"更改擁有者為"sshd"，接著打"grep users /etc/group"確定users這個群組存在，然後將change.txt的群組更改為user，指令為"chgrp users change.txt"</li>
-# <li>用chmod更改這個檔案的權限，"chmod 640 change.txt"，代表sshd可讀可寫，群組成員可讀，其他人無權限。</li>
-# <li>然後更改這個檔案的修改日期，改為2012年12月21日，時間隨便，指令為"touch -t 201212211111.11 change.txt"</li>
+<li>用chmod更改這個檔案的權限，"chmod 640 change.txt"，代表sshd可讀可寫，群組成員可讀，其他人無權限。</li>
+<li>然後更改這個檔案的修改日期，改為2012年12月21日，時間隨便，指令為"touch -t 201212211111.11 change.txt"</li>
 </ol>
 
 ## 三
