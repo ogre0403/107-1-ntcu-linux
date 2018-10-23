@@ -1,73 +1,72 @@
-+ (I)  ![GITHUB](https://i.imgur.com/Is80iRv.jpg "git¹Ï¥Ü")
- 
-+ «Ø¥ß¤T­Ó¥Î¤á¡A±b¸¹¦WºÙ¤À§O¬°¡G examuser1, examuser2, examuser3
++ (I)  
++ å»ºç«‹ä¸‰å€‹ç”¨æˆ¶ï¼Œå¸³è™Ÿåç¨±åˆ†åˆ¥ç‚ºï¼š examuser1, examuser2, examuser3
 
-+ ±K½X³]©w¬°ItIsExam
++ å¯†ç¢¼è¨­å®šç‚ºItIsExam
 
-![GITHUB](https://i.imgur.com/96uHFZx.jpg "git¹Ï¥Ü")
+![GITHUB](https://i.imgur.com/96uHFZx.jpg "gitåœ–ç¤º")
 
-+ ¨Ï¥Î¡uuserdel -r examuser3¡v§R°£¨t²Î¤¤ªºexamuser3±b¸¹(¥]§t®a¥Ø¿ı.¶l¥óÀÉ®×)
++ ä½¿ç”¨ã€Œuserdel -r examuser3ã€åˆªé™¤ç³»çµ±ä¸­çš„examuser3å¸³è™Ÿ(åŒ…å«å®¶ç›®éŒ„.éƒµä»¶æª”æ¡ˆ)
 
-+ ¨Ï¥Î¡uuserdel examuser1¡v§R°£ examuser1 ,¦¹®Éµo²{®a¥Ø¿ı.¶l¥óÀÉ®×¤´µM¯d¦s
++ ä½¿ç”¨ã€Œuserdel examuser1ã€åˆªé™¤ examuser1 ,æ­¤æ™‚ç™¼ç¾å®¶ç›®éŒ„.éƒµä»¶æª”æ¡ˆä»ç„¶ç•™å­˜
 
-+ §Q¥ÎUID/GID­««Ø examuser1¬ÛÃö±b¸¹¸ê®Æ ±K½X³]©w¬°ItIsExam
++ åˆ©ç”¨UID/GIDé‡å»º examuser1ç›¸é—œå¸³è™Ÿè³‡æ–™ å¯†ç¢¼è¨­å®šç‚ºItIsExam
 
-![GITHUB](https://i.imgur.com/jtF8FtJ.jpg "git¹Ï¥Ü")
-![GITHUB](https://i.imgur.com/Is80iRv.jpg "git¹Ï¥Ü")
+![GITHUB](https://i.imgur.com/jtF8FtJ.jpg "gitåœ–ç¤º")
+![GITHUB](https://i.imgur.com/Is80iRv.jpg "gitåœ–ç¤º")
 
 + (II)
 
-+ «Ø¥ßexamuser4
++ å»ºç«‹examuser4
 
-![GITHUB](https://i.imgur.com/t0kKm5S.jpg "git¹Ï¥Ü")
+![GITHUB](https://i.imgur.com/t0kKm5S.jpg "gitåœ–ç¤º")
 
-+ ¨Ï¥Î root ±N /etc/securetty ½Æ»sµ¹ examuser4
++ ä½¿ç”¨ root å°‡ /etc/securetty è¤‡è£½çµ¦ examuser4
 
-![GITHUB](https://i.imgur.com/kFdrXbl.jpg "git¹Ï¥Ü")
+![GITHUB](https://i.imgur.com/kFdrXbl.jpg "gitåœ–ç¤º")
 
-+ §Q¥ÎROOTª¬ºA,­×§ï/etc/securetty¤§Åv­­
++ åˆ©ç”¨ROOTç‹€æ…‹,ä¿®æ”¹/etc/securettyä¹‹æ¬Šé™
 
-![GITHUB](https://i.imgur.com/96uHFZx.jpg "git¹Ï¥Ü")
+![GITHUB](https://i.imgur.com/96uHFZx.jpg "gitåœ–ç¤º")
 
-+ «Ø¥ß¤@­Ó¦W¬° /examdata/change.txt ªºªÅÀÉ®×¡A¾Ö¦³ªÌ:sshd¡A¸s²Õ:users¡Asshd¥iÅª¥i¼g¡Ausers ¸s²Õ¦¨­û¥iÅª¡A¨ä¥L¤H¨SÅv­­¡C
-+ ±N­×§ï¤é´Á½Ğ½Õ¾ã¦¨ 2012 ¦~ 12 ¤ë 21 ¤é 
++ å»ºç«‹ä¸€å€‹åç‚º /examdata/change.txt çš„ç©ºæª”æ¡ˆï¼Œæ“æœ‰è€…:sshdï¼Œç¾¤çµ„:usersï¼Œsshdå¯è®€å¯å¯«ï¼Œusers ç¾¤çµ„æˆå“¡å¯è®€ï¼Œå…¶ä»–äººæ²’æ¬Šé™ã€‚
++ å°‡ä¿®æ”¹æ—¥æœŸè«‹èª¿æ•´æˆ 2012 å¹´ 12 æœˆ 21 æ—¥ 
 
-[Imgur](https://i.imgur.com/dgM7LGH.jpg)
+![GITHUB](https://i.imgur.com/dgM7LGH.jpg "gitåœ–ç¤º")
 
-[Imgur](https://i.imgur.com/QgixQej.jpg)
+![GITHUB](https://i.imgur.com/QgixQej.jpg "gitåœ–ç¤º")
 
 + (III)
 
-+ ¨Ï¥Îroot¶i¤J/>/dev/shm¡A«Ø¥ß¸ê®Æ§¨unit05,¨Ã­×§ï¨äÅv­­
++ ä½¿ç”¨rooté€²å…¥/>/dev/shmï¼Œå»ºç«‹è³‡æ–™å¤¾unit05,ä¸¦ä¿®æ”¹å…¶æ¬Šé™
 
-+ ¶i¥hunit05·s¼Wdir1.dir2.dir3.dir4.dir5,¨Ã­×§ï¨äÅv­­
++ é€²å»unit05æ–°å¢dir1.dir2.dir3.dir4.dir5,ä¸¦ä¿®æ”¹å…¶æ¬Šé™
 
-+ ±N/etc/hosts½Æ»s¦Ü/dev/shm/unit05/dir1/file1 (¦P²z°µ¨ìfile4)
++ å°‡/etc/hostsè¤‡è£½è‡³/dev/shm/unit05/dir1/file1 (åŒç†åšåˆ°file4)
 
-[Imgur](https://i.imgur.com/VO7HBy4.jpg)
+![GITHUB](https://i.imgur.com/VO7HBy4.jpg "gitåœ–ç¤º")
 
-+ ¶i¤Jdir1¡A¥ı§Q¥Î"ll"¬d¬İªì©lÅv­­¡A¦A§Q¥Î"ls"¬d¬İfile1¬O§_¦s¦b¡A¨Ã­×§ï­ì¥ıªºÅv­­¡C (¦P²z¶i¤J¨ä¥L¸ê®Æ§¨°µ­×§ï) 
++ é€²å…¥dir1ï¼Œå…ˆåˆ©ç”¨"ll"æŸ¥çœ‹åˆå§‹æ¬Šé™ï¼Œå†åˆ©ç”¨"ls"æŸ¥çœ‹file1æ˜¯å¦å­˜åœ¨ï¼Œä¸¦ä¿®æ”¹åŸå…ˆçš„æ¬Šé™ã€‚ (åŒç†é€²å…¥å…¶ä»–è³‡æ–™å¤¾åšä¿®æ”¹) 
 
-[Imgur](https://i.imgur.com/xzwa9V3.jpg)
+![GITHUB](https://i.imgur.com/xzwa9V3.jpg "gitåœ–ç¤º")
 
-+ §Ú±N±b¸¹¤Á´«¬°examuser1
++ æˆ‘å°‡å¸³è™Ÿåˆ‡æ›ç‚ºexamuser1
 
-+ ¨Ï¥Î«ü¥O ls -l /dev/shm/unit05/dir[1-4] 
-+ examuser1¹ï©ódir1©Mdir2¨S¦³Åv­­¡Adir3(o=r-x)©Mdir4(o=rwx)¦³Åv­­¯à°÷¥ô·N¨Ï¥Î¡C 
++ ä½¿ç”¨æŒ‡ä»¤ ls -l /dev/shm/unit05/dir[1-4] 
++ examuser1å°æ–¼dir1å’Œdir2æ²’æœ‰æ¬Šé™ï¼Œdir3(o=r-x)å’Œdir4(o=rwx)æœ‰æ¬Šé™èƒ½å¤ ä»»æ„ä½¿ç”¨ã€‚ 
 
 [Imgur](https://i.imgur.com/S6XQhv0.jpg)
 
-+ ¨Ï¥Î«ü¥O ls -l /dev/shm/unit05/dir1/file1 ¡A
-¨Ì§Ç±N¤W­zªºÀÉ¦W¥Ñ dir1/file1 ~ dir4/file4 °õ¦æ¡A
-µ²ªG¬°examuser1¹ï©ófile1(¨S¦³Åv­­)¡Bfile2(o=r--)¡Bfile3(o=rw-)¦³Åv­­¯à°÷¥ô·N¨Ï¥Î¡Bfile4(o=---)
++ ä½¿ç”¨æŒ‡ä»¤ ls -l /dev/shm/unit05/dir1/file1 ï¼Œ
+ä¾åºå°‡ä¸Šè¿°çš„æª”åç”± dir1/file1 ~ dir4/file4 åŸ·è¡Œï¼Œ
+çµæœç‚ºexamuser1å°æ–¼file1(æ²’æœ‰æ¬Šé™)ã€file2(o=r--)ã€file3(o=rw-)æœ‰æ¬Šé™èƒ½å¤ ä»»æ„ä½¿ç”¨ã€file4(o=---)
 
-[Imgur](https://i.imgur.com/wKns2PE.jpg)
+![GITHUB](https://i.imgur.com/wKns2PE.jpg "gitåœ–ç¤º")
 
-+ ¨Ï¥Î vim /dev/shm/unit05/dir1/file1 ~ file4
-+ ¹Á¸ÕÀx¦sµ²ªG¥X²{"command not found"
-+ ªí¥Üexamuser1¤£¨ã¦³°õ¦æ"vim"«ü¥OªºÅv­­¡A©Ò¥H¤£¯àÀx¦s
++ ä½¿ç”¨ vim /dev/shm/unit05/dir1/file1 ~ file4
++ å˜—è©¦å„²å­˜çµæœå‡ºç¾"command not found"
++ è¡¨ç¤ºexamuser1ä¸å…·æœ‰åŸ·è¡Œ"vim"æŒ‡ä»¤çš„æ¬Šé™ï¼Œæ‰€ä»¥ä¸èƒ½å„²å­˜
+![GITHUB](https://i.imgur.com/VEw9sSy.jpg "gitåœ–ç¤º")
 
-[Imgur](https://i.imgur.com/VEw9sSy.jpg)
 
 
 
