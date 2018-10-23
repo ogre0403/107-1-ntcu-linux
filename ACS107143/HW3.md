@@ -29,13 +29,13 @@
 ## 三
 
 # <ol>
-<il>進入/dev/shm，建立一個資料夾unit05，然後更改unit05的權限，輸入指令"chmod 775 unit05/"</li>
-<il>在unit05中創立一個資料夾"dir1"，然後更改它的權限，指令為"chmod 754 dir1/"</li>
-<il>再創立3個資料夾，分別為dir2,dir3,dir4，他們的權限分別為751,755,777</li>
-<il>進入/etc找到hosts這個檔案，分別將它複製到/dev/shm/uni05/dir1,dir2,dir3,dir4，檔名分別為file1,file2,file3,file4</li>
-<il>更改file3,file4的權限，輸入"chmod 666 file3"、"chmod 600 file4"</li>
-<il>切換為一般使用者，指令為"su 帳號"</li>
-<il>接著輸入"ls -l /dev/shm/unit05/dir[1-4]"，會發現dir1和dir2都不會正常顯示，dir2更是沒出現多少東西，可以推測出dir1沒辦法讓一般使用者執行，但是可以讀取，而dir2是讀取與執行都沒辦法</li>
-<il>接著依序輸入"ls -l /dev/shm/unit05/dir1/file1",dir2/file2,dir3/file3,dir4/file4，會發現file1沒辦法顯示，可以推測這個檔案沒辦法讀取，而其他三個檔案都可以讀取</li>
-<il>輸入"vi dev/shm/uni05/dir1/file1"~"vi dev/shm/uni05/dir4/file4"，試著去強制儲存檔案，在file1,file2中我隨便輸入一段文字後，打上":wq!"，它顯示這個檔案無法被書寫，表示對一般使用者來說權限不足，而file3和file4都可以修改，表示對於一般使用者來說是有修改的權限的</li>
+<li>進入/dev/shm，建立一個資料夾unit05，然後更改unit05的權限，輸入指令"chmod 775 unit05/"</li>
+<li>在unit05中創立一個資料夾"dir1"，然後更改它的權限，指令為"chmod 754 dir1/"</li>
+<li>再創立3個資料夾，分別為dir2,dir3,dir4，他們的權限分別為751,755,777</li>
+<li>進入/etc找到hosts這個檔案，分別將它複製到/dev/shm/uni05/dir1,dir2,dir3,dir4，檔名分別為file1,file2,file3,file4</li>
+<li>更改file3,file4的權限，輸入"chmod 666 file3"、"chmod 600 file4"</li>
+<li>切換為一般使用者，指令為"su 帳號"</li>
+<li>接著輸入"ls -l /dev/shm/unit05/dir[1-4]"，會發現dir1和dir2都不會正常顯示，dir2更是沒出現多少東西，可以推測出dir1沒辦法讓一般使用者執行，但是可以讀取，而dir2是讀取與執行都沒辦法</li>
+<li>接著依序輸入"ls -l /dev/shm/unit05/dir1/file1",dir2/file2,dir3/file3,dir4/file4，會發現file1沒辦法顯示，可以推測這個檔案沒辦法讀取，而其他三個檔案都可以讀取</li>
+<li>輸入"vi dev/shm/uni05/dir1/file1"~"vi dev/shm/uni05/dir4/file4"，試著去強制儲存檔案，在file1,file2中我隨便輸入一段文字後，打上":wq!"，它顯示這個檔案無法被書寫，表示對一般使用者來說權限不足，而file3和file4都可以修改，表示對於一般使用者來說是有修改的權限的</li>
 </ol>
