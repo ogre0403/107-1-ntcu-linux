@@ -1,89 +1,87 @@
-# ¦w¸ËLinux¬yµ{
+# å®‰è£Linuxæµç¨‹
 
-![GITHUB]( https://imgur.com/boLcaoY.jpg"git¹Ï¥Ü")
-+ µn¤JCentOS«á«Ø¥ß±b¸¹
+![GITHUB]( https://imgur.com/boLcaoY.jpg"gitåœ–ç¤º")
++ ç™»å…¥CentOSå¾Œå»ºç«‹å¸³è™Ÿ
 
-![GITHUB](https://imgur.com/rz8sfGL.jpg"git¹Ï¥Ü")
-+ ³]©w±K½X
+![GITHUB](https://imgur.com/rz8sfGL.jpg"gitåœ–ç¤º")
++ è¨­å®šå¯†ç¢¼
 
-![GITHUB](https://imgur.com/fCLTmNi.jpg"git¹Ï¥Ü")
-+ §¹¦¨«á­«½Æ¬Û¦P°Ê§@³]¸mexamuser2©Mexamuser3
+![GITHUB](https://imgur.com/fCLTmNi.jpg"gitåœ–ç¤º")
++ å®Œæˆå¾Œé‡è¤‡ç›¸åŒå‹•ä½œè¨­ç½®examuser2å’Œexamuser3
 
-![GITHUB](https://imgur.com/dAJM8GL.jpg"git¹Ï¥Ü")
-+ §¹¦¨¹Ï
+![GITHUB](https://imgur.com/dAJM8GL.jpg"gitåœ–ç¤º")
++ å®Œæˆåœ–
 
-![GITHUB](https://imgur.com/wAkZn9s.jpg"git¹Ï¥Ü")
-+ ¿é¤J«ü¥O§R°£examuser3
+![GITHUB](https://imgur.com/wAkZn9s.jpg"gitåœ–ç¤º")
++ è¼¸å…¥æŒ‡ä»¤åˆªé™¤examuser3
 
-![GITHUB](https://imgur.com/faiXmxp.jpg"git¹Ï¥Ü")
-+ ½T»{¬O§_¦¨¥\§R°£
+![GITHUB](https://imgur.com/faiXmxp.jpg"gitåœ–ç¤º")
++ ç¢ºèªæ˜¯å¦æˆåŠŸåˆªé™¤
 
 
-![GITHUB](https://imgur.com/7CC5tO1.jpg"git¹Ï¥Ü")
-+ §R°£examuser1¦ı¤£¥[-r¡A½T»{«áexamuser1ÁÙ¨S§¹¥ş§R°£
+![GITHUB](https://imgur.com/7CC5tO1.jpg"gitåœ–ç¤º")
++ åˆªé™¤examuser1ä½†ä¸åŠ -rï¼Œç¢ºèªå¾Œexamuser1é‚„æ²’å®Œå…¨åˆªé™¤
 
-![GITHUB](https://imgur.com/OUJPF0n.jpg"git¹Ï¥Ü")
-+ ½T»{id
+![GITHUB](https://imgur.com/OUJPF0n.jpg"gitåœ–ç¤º")
++ ç¢ºèªid
 
-![GITHUB](https://imgur.com/PyIdF6h.jpg"git¹Ï¥Ü")
-+ ¨Ï¥Îuseradd examuser1-d ­×´_±b¸¹
+![GITHUB](https://imgur.com/PyIdF6h.jpg"gitåœ–ç¤º")
++ ä½¿ç”¨useradd examuser1-d ä¿®å¾©å¸³è™Ÿ
 
-![GITHUB](https://imgur.com/kEcCnsz.jpg"git¹Ï¥Ü")
-+ ­«·s³]¸m±K½X
+![GITHUB](https://imgur.com/kEcCnsz.jpg"gitåœ–ç¤º")
++ é‡æ–°è¨­ç½®å¯†ç¢¼
 
-+³o¼Ë²Ä¤@ÃD´Nµ²§ô¤F
++é€™æ¨£ç¬¬ä¸€é¡Œå°±çµæŸäº†
 
-![GITHUB](https://imgur.com/PIhSd6z.jpg"git¹Ï¥Ü")
-+ «Ø¥ßexamuser4
-![GITHUB](https://imgur.com/GKCmH5f.jpg"git¹Ï¥Ü")
-+ ¨Ï¥Îchgrp±N¸s²Õ§ï¬°examuser4
-![GITHUB](https://imgur.com/5V6VFUi.jpg"git¹Ï¥Ü")
-+ ¨Ï¥Îchmod§ó§ï¸s²ÕÅv­­
-![GITHUB](https://imgur.com/dQnPLY7.jpg"git¹Ï¥Ü")
-+ «Ø¥ßexamdataªº¸ê®Æ§¨
-![GITHUB](https://imgur.com/LZR2DGC.jpg"git¹Ï¥Ü")
-+ §ïÅÜ¥Ø¿ı¦Üexandata
-![GITHUB]("git¹Ï¥Ü")
-+ ³]©wROOT±K½X
-![GITHUB](https://imgur.com/hFt2sCW.jpg"git¹Ï¥Ü")
-+ ¨Ï¥Î«ü¥Ovi «Ø¥ßchange.txtªºÀÉ®×
-![GITHUB](https://imgur.com/3u9GS6A.jpg"git¹Ï¥Ü")
-+ ¥Îwq!Àx¦s«áÂ÷¶}
-![GITHUB](https://imgur.com/0Tqhjc8.jpg"git¹Ï¥Ü")
-+ ¥Îchown§ï¾Ö¦³ªÌ¬°sshd¡A¥Îchgrp§ï¸s²Õ¬°users
-![GITHUB](https://imgur.com/za4hXGN.jpg"git¹Ï¥Ü")
-+ ¨Ï¥Îtouch -t§ïÅÜ­×§ï®É¶¡
+![GITHUB](https://imgur.com/PIhSd6z.jpg"gitåœ–ç¤º")
++ å»ºç«‹examuser4
+![GITHUB](https://imgur.com/GKCmH5f.jpg"gitåœ–ç¤º")
++ ä½¿ç”¨chgrpå°‡ç¾¤çµ„æ”¹ç‚ºexamuser4
+![GITHUB](https://imgur.com/5V6VFUi.jpg"gitåœ–ç¤º")
++ ä½¿ç”¨chmodæ›´æ”¹ç¾¤çµ„æ¬Šé™
+![GITHUB](https://imgur.com/dQnPLY7.jpg"gitåœ–ç¤º")
++ å»ºç«‹examdataçš„è³‡æ–™å¤¾
+![GITHUB](https://imgur.com/LZR2DGC.jpg"gitåœ–ç¤º")
++ æ”¹è®Šç›®éŒ„è‡³exandata
+![GITHUB](https://imgur.com/hFt2sCW.jpg"gitåœ–ç¤º")
++ ä½¿ç”¨æŒ‡ä»¤vi å»ºç«‹change.txtçš„æª”æ¡ˆ
+![GITHUB](https://imgur.com/3u9GS6A.jpg"gitåœ–ç¤º")
++ ç”¨wq!å„²å­˜å¾Œé›¢é–‹
+![GITHUB](https://imgur.com/0Tqhjc8.jpg"gitåœ–ç¤º")
++ ç”¨chownæ”¹æ“æœ‰è€…ç‚ºsshdï¼Œç”¨chgrpæ”¹ç¾¤çµ„ç‚ºusers
+![GITHUB](https://imgur.com/za4hXGN.jpg"gitåœ–ç¤º")
++ ä½¿ç”¨touch -tæ”¹è®Šä¿®æ”¹æ™‚é–“
 
- +³o¼Ë²Ä¤GÃD´Nµ²§ô¤F
+ +é€™æ¨£ç¬¬äºŒé¡Œå°±çµæŸäº†
 
-![GITHUB](https://imgur.com/uQwmqIO.jpg"git¹Ï¥Ü")
-+ ±N¥Ø¿ı§ï¨î/dev/shm/
-![GITHUB](https://imgur.com/HMypuxR.jpg"git¹Ï¥Ü")
-+ «Ø¥ßunit05ªº¸ê®Æ§¨«á´«¦¹¸ê®Æ§¨¬°¥Ø¿ı
-![GITHUB](https://imgur.com/aAu9OWy.jpg"git¹Ï¥Ü")
-+ «Ø¥ßdir1ªº¸ê®Æ§¨
-![GITHUB](https://imgur.com/t2s1H6p.jpg"git¹Ï¥Ü")
-+ ¥H¦P¼Ë¤èªk«Ø¥ßdir2¡Bdir3¡Bdir4
-![GITHUB](https://imgur.com/1oSssuz.jpg"git¹Ï¥Ü")
-+ ±NhostsªºÀÉ®×¥Îcp½Æ»s¨ìdir1-4ªº¸ê®Æ§¨¤¤
-![GITHUB](https://imgur.com/AZGlvzu.jpg"git¹Ï¥Ü")
-+ ±N¨C­ÓhostsÀÉ®×¦W§ï¦¨file1-4
-![GITHUB](https://imgur.com/XT2xnj9.jpg"git¹Ï¥Ü")
-+ ¥Îchmod¸ò§ïÅv­­
-![GITHUB](https://imgur.com/l2fBCGM.jpg"git¹Ï¥Ü")
-+ ¤Á´«¬°¤@¯ë±b¸¹
-![GITHUB](https://imgur.com/SpF4uaB.jpg"git¹Ï¥Ü")
-+ ¨Ì·Ó²Ä¤@ÃDªº«ü¥O«áªºµ²ªG¡A¥u¦³dir3©Mdir4¦]¬°Åv­­°÷©Ò¥H¯à¬İ¨ì¤º®e
-![GITHUB](https://imgur.com/yGN3xwA.jpg"git¹Ï¥Ü")
-+ ¨Ì·Ó²Ä¤GÃDªº«ü¥O«áªºµ²ªG¡A¥u¦³file1¦]¬°Åv­­¤£¨¬©Ò¥HµLªkÆ[¬İ
-![GITHUB](https://imgur.com/A3Jqt79.jpg"git¹Ï¥Ü")
-+ ¨Ì·Ó²Ä¤TÃDªº«ü¥O«á¡A¥Î:wÀx¦sªºµ²ªG¡A¦]¬°Åv­­¤£¨¬©Ò¥HµLªkÀx¦s
-![GITHUB](https://imgur.com/Ufv4pLZ.jpg"git¹Ï¥Ü")
-+ ¨Ì·Ó²Ä¤TÃDªº«ü¥O«á¡A¥Î:wÀx¦sªºµ²ªG¡A¦]¬°Åv­­¤£¨¬©Ò¥HµLªkÀx¦s
-![GITHUB](https://imgur.com/JKMwxky.jpg"git¹Ï¥Ü")
-+ ¨Ì·Ó²Ä¤TÃDªº«ü¥O«á¡A¥Î:wÀx¦sªºµ²ªG¡A¦]¬°Åv­­¨¬°÷©Ò¥H¥i¥HÀx¦s
-![GITHUB](https://imgur.com/kYoNDer.jpg"git¹Ï¥Ü")
-+ ¨Ì·Ó²Ä¤TÃDªº«ü¥O«á¡A¥Î:wÀx¦sªºµ²ªG¡A¦]¬°Åv­­¤£¨¬©Ò¥HµLªkÀx¦s
+![GITHUB](https://imgur.com/uQwmqIO.jpg"gitåœ–ç¤º")
++ å°‡ç›®éŒ„æ”¹åˆ¶/dev/shm/
+![GITHUB](https://imgur.com/HMypuxR.jpg"gitåœ–ç¤º")
++ å»ºç«‹unit05çš„è³‡æ–™å¤¾å¾Œæ›æ­¤è³‡æ–™å¤¾ç‚ºç›®éŒ„
+![GITHUB](https://imgur.com/aAu9OWy.jpg"gitåœ–ç¤º")
++ å»ºç«‹dir1çš„è³‡æ–™å¤¾
+![GITHUB](https://imgur.com/t2s1H6p.jpg"gitåœ–ç¤º")
++ ä»¥åŒæ¨£æ–¹æ³•å»ºç«‹dir2ã€dir3ã€dir4
+![GITHUB](https://imgur.com/1oSssuz.jpg"gitåœ–ç¤º")
++ å°‡hostsçš„æª”æ¡ˆç”¨cpè¤‡è£½åˆ°dir1-4çš„è³‡æ–™å¤¾ä¸­
+![GITHUB](https://imgur.com/AZGlvzu.jpg"gitåœ–ç¤º")
++ å°‡æ¯å€‹hostsæª”æ¡ˆåæ”¹æˆfile1-4
+![GITHUB](https://imgur.com/XT2xnj9.jpg"gitåœ–ç¤º")
++ ç”¨chmodè·Ÿæ”¹æ¬Šé™
+![GITHUB](https://imgur.com/l2fBCGM.jpg"gitåœ–ç¤º")
++ åˆ‡æ›ç‚ºä¸€èˆ¬å¸³è™Ÿ
+![GITHUB](https://imgur.com/SpF4uaB.jpg"gitåœ–ç¤º")
++ ä¾ç…§ç¬¬ä¸€é¡Œçš„æŒ‡ä»¤å¾Œçš„çµæœï¼Œåªæœ‰dir3å’Œdir4å› ç‚ºæ¬Šé™å¤ æ‰€ä»¥èƒ½çœ‹åˆ°å…§å®¹
+![GITHUB](https://imgur.com/yGN3xwA.jpg"gitåœ–ç¤º")
++ ä¾ç…§ç¬¬äºŒé¡Œçš„æŒ‡ä»¤å¾Œçš„çµæœï¼Œåªæœ‰file1å› ç‚ºæ¬Šé™ä¸è¶³æ‰€ä»¥ç„¡æ³•è§€çœ‹
+![GITHUB](https://imgur.com/A3Jqt79.jpg"gitåœ–ç¤º")
++ ä¾ç…§ç¬¬ä¸‰é¡Œçš„æŒ‡ä»¤å¾Œï¼Œç”¨:wå„²å­˜çš„çµæœï¼Œå› ç‚ºæ¬Šé™ä¸è¶³æ‰€ä»¥ç„¡æ³•å„²å­˜
+![GITHUB](https://imgur.com/Ufv4pLZ.jpg"gitåœ–ç¤º")
++ ä¾ç…§ç¬¬ä¸‰é¡Œçš„æŒ‡ä»¤å¾Œï¼Œç”¨:wå„²å­˜çš„çµæœï¼Œå› ç‚ºæ¬Šé™ä¸è¶³æ‰€ä»¥ç„¡æ³•å„²å­˜
+![GITHUB](https://imgur.com/JKMwxky.jpg"gitåœ–ç¤º")
++ ä¾ç…§ç¬¬ä¸‰é¡Œçš„æŒ‡ä»¤å¾Œï¼Œç”¨:wå„²å­˜çš„çµæœï¼Œå› ç‚ºæ¬Šé™è¶³å¤ æ‰€ä»¥å¯ä»¥å„²å­˜
+![GITHUB](https://imgur.com/kYoNDer.jpg"gitåœ–ç¤º")
++ ä¾ç…§ç¬¬ä¸‰é¡Œçš„æŒ‡ä»¤å¾Œï¼Œç”¨:wå„²å­˜çš„çµæœï¼Œå› ç‚ºæ¬Šé™ä¸è¶³æ‰€ä»¥ç„¡æ³•å„²å­˜
 
 
 
