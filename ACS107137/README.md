@@ -33,15 +33,17 @@
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/2-3.1.PNG?raw=true)    
 # 3-1：    
 ## 請使用 root 的身份建立底下的檔案與權限：    
-## drwxrwxr-x  root root /dev/shm/unit05/    
-## drwxr-xr--  root root /dev/shm/unit05/dir1/    
-## -rw-r--r--  root root /dev/shm/unit05/dir1/file1 (複製來自 /etc/hosts)    
-## drwxr-x--x  root root /dev/shm/unit05/dir2/    
-## -rw-r--r--  root root /dev/shm/unit05/dir2/file2 (複製來自 /etc/hosts)    
-## drwxr-xr-x  root root /dev/shm/unit05/dir3/    
-## -rw-rw-rw-  root root /dev/shm/unit05/dir3/file3 (複製來自 /etc/hosts)    
-## drwxrwxrwx  root root /dev/shm/unit05/dir4/    
-## -rw-------  root root /dev/shm/unit05/dir4/file4 (複製來自 /etc/hosts)    
+drwxrwxr-x  root root /dev/shm/unit05/    
+drwxr-xr--  root root /dev/shm/unit05/dir1/    
+-rw-r--r--  root root /dev/shm/unit05/dir1/file1 (複製來自 /etc/hosts)    
+drwxr-x--x  root root /dev/shm/unit05/dir2/    
+-rw-r--r--  root root /dev/shm/unit05/dir2/file2 (複製來自 /etc/hosts)    
+drwxr-xr-x  root root /dev/shm/unit05/dir3/    
+-rw-rw-rw-  root root /dev/shm/unit05/dir3/file3 (複製來自 /etc/hosts)    
+drwxrwxrwx  root root /dev/shm/unit05/dir4/    
+-rw-------  root root /dev/shm/unit05/dir4/file4 (複製來自 /etc/hosts)    
+    
+    
 用"mkdir"建立資料夾，"touch"建立檔案，"cp"複製，"chmod"修改權限    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-1.1.PNG?raw=true)    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-1.2.PNG?raw=true)    
