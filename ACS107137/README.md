@@ -49,7 +49,7 @@
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-1.4.PNG?raw=true)    
 ## 使用一般使用者 的身份進行各項工作：    
 用"su (username)"換回使用者    
-![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3.2.PNG?raw=true)    
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-2.PNG)    
 # 3-2：    
 ## 請使用 ls -l /dev/shm/unit05/dir[1-4] 依據輸出的結果說明為何會產生這些問題？    
 dir1的其他人使用權限為 r--，雖然可以閱讀，但缺乏x權限，故不能執行    
@@ -63,18 +63,19 @@ file2-4有x權限，因此可以正常執行
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-3.1.PNG?raw=true)    
 # 3-4：    
 ## 請使用 vim /dev/shm/unit05/dir1/file1 ~ vim /dev/shm/unit05/dir4/file4，嘗試儲存 (或強制儲存)，說明為何可以/不可以儲存？   
-dir1  r--    
-file1 r-- 因dir1缺乏x權限，故無法執行    
+dir1   r--    
+file1  r--  因dir1缺乏x權限，故無法執行    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-1.1.PNG?raw=true)    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-1.2.PNG?raw=true)    
-dir2  --x    
-file2 r-- 雖然dir2有執行權限，但file2只有讀取的權限，因此不能開啟和修改    
+dir2   --x    
+file2  r--  雖然dir2有執行權限，但file2只有讀取的權限，因此不能開啟和修改    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-2.1.PNG?raw=true)    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-2.2.PNG?raw=true)    
-dir3  r-x    
-file3 rw- 因dir3有閱讀、執行權限，而file3有r及w權限，故能正常讀取和修改        
+dir3   r-x    
+file3  rw-  因dir3有閱讀、執行權限，而file3有r及w權限，故能正常讀取和修改        
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-3.1.PNG?raw=true)    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-3.2.PNG?raw=true)    
-dir4  rwx    
-file4 --- 雖然dir4有全權限，但file4沒有任何權限，因此不能做任何事    
+dir4   rwx    
+file4  ---  雖然dir4有全權限，但file4沒有任何權限，因此不能做任何事    
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-4.1.PNG?raw=true)    
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-3/ACS107137/img/3-4-4.2.PNG?raw=true)    
