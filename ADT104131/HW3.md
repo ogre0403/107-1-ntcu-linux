@@ -32,7 +32,7 @@
 ![08](HW3/08.png)<br/>
 用grep判別有沒有這個group，再用程式碼<br/>
 <pre><code># chgrp group名稱 資料夾名稱</code></pre>
-去修改檔案擁有者的群組帳號
+去修改檔案擁有者的群組帳號<br/>
 ![09](HW3/09.png)<br/>
 最後用程式碼<br/>
 <pre><code># chmod 777 資料夾名稱</code></pre>
