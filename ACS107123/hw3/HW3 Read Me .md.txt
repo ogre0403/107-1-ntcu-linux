@@ -1,0 +1,113 @@
+Q1  
+1. 登入CentOS  
+2. 建立帳戶  
+3. 輸入useradd examuser1  
+4. 輸入passwd examuser1  
+5. 當顯示"New Password"時，輸入ItIsExam，確認密碼後再輸一次  
+6. 再設定兩個user，"examuser2"及"examuser3"，密碼:  ItIsExam  
+7. 完成後"輸入ll /home/檢查"  
+*顯示  
+	
+                  drwx------. 2 examuser1		examuser1	日期	時間	examuser1   
+	drwx------. 2 examuser2		examuser2	日期	時間	examuser2  
+	drwx------. 2 examuser3		examuser3	日期	時間	examuser3  
+
+8. 刪除examuser3  
+(1) 輸入"userdel -r examuser3"  
+(2) 輸入"$ll /home/檢查"  
+*顯示  
+	
+                  drwx------. 2 examuser1    examuser1   日期   時間	   examuser1   
+	drwx------. 2 examuser2    examuser2   日期   時間   examuser2   
+
+9. 恢復examuser1  
+(1) 輸入"userdel examuser1模擬情形"  
+(2) 輸入"ll /home/檢查"  
+*顯示  
+	
+                  drwx------. 2 1001	           1001             日期     時間                    examuser1  
+	drwx------. 2 examuser2    examuser2   日期     時間	   examuser2  
+
+10. 輸入"sudo useradd -u 1001 -m examuser1"  
+11. 輸入"sudo passwd examuser1"  
+12. 當顯示"New Password"時，輸入"ItIsExam"  
+13. 輸入"id examuser1"  
+*顯示  
+	 
+            uid=1001(examuser1) gid=1001(examuser1) groups=1001(examuser1)  
+
+
+ Q2  建立examuser4   
+1. 輸入"useradd examuser4"  
+2. 輸入"passwd examuser4"  
+3. "New Password"，設定密碼。複製檔案&更改權限  
+4. 輸入"cp /etc/securetty /home/examuser4"  
+5. 輸入"ls /home/examuser4"檢查是否有securetty  
+6. 輸入"chmod u=rwx,g=rwx,o=rwx /home/examuser4/securetty"  
+7. 輸入"su - examuser4"切換使用者，輸入"ll"檢查更改權限  
+8. 新建檔案，輸入"cd /home/examuser4/"進入目錄  
+9. 輸入"mkdir examdata"建立資料夾  
+10. 輸入"ls"  
+顯示  
+	
+             "examdata securetty" : 成功  
+
+11. 輸入"cd examdata"進入  
+12. 輸入"touch change.txt"建立檔案  
+13. 輸入"ll"檢查  
+顯示  
+
+	-rw-rw-r--. 1        examuser4 examuser4 0    日期	時間	change.txt  
+
+14. 改權限，切回ROOT  
+15. 輸入"cd /home/examuser4/examdata/"  
+16. 輸入"chown sshd change.txt"，更改擁有者"sshd"  
+17. 輸入"chgrp users change.txt"，更改群組"users"  
+18. 輸入"chmod u=rw,g=r,o= change.txt"更改權限"-rw-r-----"  
+19. 輸入ll檢查  
+顯示  
+
+	-rw-r-----. 1           sshd users 0	     日期	時間     change.txt  
+
+20. 改時間  
+21. 輸入"touch -t 201212210807 change.txt"  
+
+ Q3   root身分建立檔案與權限  
+1. 輸入"cd /dev/shm/"進入資料夾  
+2. 輸入"mkdir unit05"建立檔案  
+3. 輸入"chmod u=rwx,g=rwx,o=rx unit05"  
+4. 輸入"cd unit05"進入  
+5. 輸入"mkdir" 分別加上建立四個資料夾  
+6. 修改dir1,dir2,dir3,dir4的權限  
+dir1→chmod u=rwx,g=rx,o=r dir1  
+dir2→chmod u=rwx,g=rx,o=x dir2   
+dir3→chmod u=rwx,g=rx,o=rx dir3  
+dir4→chmod u=rwx,g=rwx,o=rwx dir4  
+7. 複製"/etc/hosts至 dir1,dir2,dir3,dir4"，將檔名改" file1,file2,file3,file4"  
+dir1→cp /etc/hosts /dev/shm/unit05/dir1/file1  
+dir2→cp /etc/hosts /dev/shm/unit05/dir2/file2  
+dir3→cp /etc/hosts /dev/shm/unit05/dir3/file3  
+dir4→cp /etc/hosts /dev/shm/unit05/dir4/file4  
+8. 修改file1權限  
+(1)輸入"cd unit05/dir1/"  
+(2)輸入"chmod u=rw,g=r,o=r file1"  
+9. 修改file2權限  
+(1)輸入"cd unit05/dir2/"  
+(2)輸入"chmod u=rw,g=r,o=r file2"  
+10. 修改file3權限  
+(1)輸入"cd unit05/dir3/"  
+(2)輸入"chmod u=rw,g=rw,o=rw file3"  
+11. 修改file4權限  
+(1)輸入"cd unit05/dir4/"  
+(2)輸入"chmod u=rwx,g=rwx,o=rwx file4"  
+12. 請使用 "ls -l /dev/shm/unit05/dir[1-4] "依據輸出的結果說明為何會產生這些問題？  
+(1)dir1唯讀  
+(2)dir2是只執行，無法讀  
+(3)dir3無法改  
+(4)dir4可以執行  
+13. 用 "ls -l /dev/shm/unit05/dir1/file1"，依序將上述的檔名由 dir1/file1 ~ dir4/file4 執行，why？  
+(1)dir1,dir2唯讀  
+(2)dir3可讀可改  
+(3)dir4無法使用  
+14. 用 "vim /dev/shm/unit05/dir1/file1 ~ vim /dev/shm/unit05/dir4/file4"，儲存，why or why not?  
+other未更改4個資料夾的修改權限  
