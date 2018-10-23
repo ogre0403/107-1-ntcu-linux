@@ -1,5 +1,7 @@
 ### HW3
+
 ## 一
+
 # <ol>
 <li>用"useradd"建立三個帳號，名稱分別為： examuser1, examuser2, examuser3 ，用"passwd"建立密碼，三個用戶都是"itisexam"</li>
 <li>用"userdel -r"刪除"examuser3"，"-r"可將帳號連同家目錄與相關郵件都刪掉</li>
@@ -9,7 +11,9 @@
 <li>這時使用UID創立帳號，輸入"useradd -u 1001 -U examuser1"，因為我原本被刪除的examuser1的UID是1001。"-u"可指定UID，"-U"可建立和帳號相同的群組。</li>
 <li>然後再用"passwd"建立密碼"itisexam"，就完成了</li>
 </ol>
+
 ## 二
+
 # <ol>
 <li>使用"useradd"建立一個帳號"examuser4"，密碼我設定為"itisexam"</li>
 <li>先使用root使用者，進入/etc然後將securetty複製給examuser4，指令是"cp securetty /home/examuer4/"</li>
@@ -21,7 +25,9 @@
 # <li>用chmod更改這個檔案的權限，"chmod 640 change.txt"，代表sshd可讀可寫，群組成員可讀，其他人無權限。</li>
 # <li>然後更改這個檔案的修改日期，改為2012年12月21日，時間隨便，指令為"touch -t 201212211111.11 change.txt"</li>
 </ol>
+
 ## 三
+
 # <ol>
 <il>進入/dev/shm，建立一個資料夾unit05，然後更改unit05的權限，輸入指令"chmod 775 unit05/"</il>
 <il>在unit05中創立一個資料夾"dir1"，然後更改它的權限，指令為"chmod 754 dir1/"</il>
