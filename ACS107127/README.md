@@ -1,0 +1,67 @@
+##  1.</br>
+###  建立三個用戶，帳號名稱分別為： examuser1, examuser2, examuser3 ，同時三個用戶</br>
+###  的密碼都是『 ItIsExam 』。(請參考書上passwd --stdin的說明)</br></br>
+
+####  注意"useradd"要用root來執行</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/1.jpg)</br>
+###  請刪除系統中的 examuser3 這個帳號，同時將這個帳號的家目錄與郵件檔案同步刪除</br></br>
+
+####  用"-r"的參數將家目錄、郵件檔案一併刪除。</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/2.jpg)</br>
+###  examuser1 不小心被管理員刪除了，但是這個帳號的家目錄與相關郵件都還存在。請參考</br>
+###  這個帳號可能的家目錄所保留的 UID 與 GID， 並嘗試以該帳號原有的UID/GID資訊來重建</br>
+###  該帳號。而這個帳號的密碼請給予 ItIsExam 的樣式。</br></br>
+
+####  使用"useradd -u (uid) 帳號名 "可以將新帳號與舊有的uid做連結。</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/4.jpg)</br>
+##  2.</br>
+###  建立examuser4使用者帳號，密碼任意。</br>
+###  使用 root 將 /etc/securetty 複製給 examuser4，且這個帳號要能夠完整使用該檔案</br>
+###  才行，(即有所有的權限)。</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/6.jpg)</br>
+
+###  建立一個名為 /examdata/change.txt 的空檔案，這個檔案的擁有者為 sshd，擁有群組</br>
+###  為 users，sshd 可讀可寫，users 群組成員可讀， 其他人沒權限。且這個檔案的修改日期請</br>
+###  調整成2012年12月21日(日期正確即可，時間隨便)</br></br>
+
+####  使用touch新增一個文件。用chmod來更改檔案權限。修改日期時間為00:00 touch -d 20150101 (filename)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/7.jpg)</br>
+##  3.</br>
+###  請使用 root 的身份建立底下的檔案與權限：</br>
+####  drwxrwxr-x  root root /dev/shm/unit05/</br>
+####  drwxr-xr--  root root /dev/shm/unit05/dir1/</br>
+####  -rw-r--r--  root root /dev/shm/unit05/dir1/file1 (複製來自 /etc/hosts)</br>
+####  drwxr-x--x  root root /dev/shm/unit05/dir2/</br>
+####  -rw-r--r--  root root /dev/shm/unit05/dir2/file2 (複製來自 /etc/hosts)</br>
+####  drwxr-xr-x  root root /dev/shm/unit05/dir3/</br>
+####  -rw-rw-rw-  root root /dev/shm/unit05/dir3/file3 (複製來自 /etc/hosts)</br>
+####  drwxrwxrwx  root root /dev/shm/unit05/dir4/</br>
+####  -rw-------  root root /dev/shm/unit05/dir4/file4 (複製來自 /etc/hosts)</br></br>
+
+#####  建立目錄用"mkdir"。建立檔案用"touch"。更改權限用"chmod"。複製用"cp"。
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/8.jpg)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/9.jpg)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/10.jpg)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/11.jpg)</br>
+
+###  使用一般使用者 的身份進行各項工作：</br>
+##### 用"su (username)"切回自身帳號</br>
+###  Q:請使用 ls -l /dev/shm/unit05/dir[1-4] 依據輸出的結果說明為何會產生這些問題？</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/12.jpg)</br>
+###  Q:請使用 ls -l /dev/shm/unit05/dir1/file1 ，依序將上述的檔名由</br>
+###  dir1/file1 ~ dir4/file4 執行，依據產生的結果說明為何會如此？</br>
+###  A:因為一開始給的權限不同，才會造成結果不同。</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/14.jpg)</br>
+###  Q:請使用 vim /dev/shm/unit05/dir1/file1 ~ vim /dev/shm/unit05/dir4/file4，</br>
+嘗試儲存 (或強制儲存)，說明為何可以/不可以儲存？</br></br>
+##  file1 => 不可讀不可編輯</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/15.jpg)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/16.jpg)</br></br>
+##  file2 => 不可讀不可編輯</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/17.jpg)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/18.jpg)</br></br>
+##  file3 => 可讀可被編輯</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/19.jpg)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/20.jpg)</br></br>
+##  file4 => 不可讀不可編輯 </br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/123/21.jpg)</br>
