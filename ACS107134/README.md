@@ -31,8 +31,6 @@
 
 用"su username"
 
-  "cd path"
-
   "touch filename"
 
   "exit"
@@ -49,8 +47,7 @@
 
   "su nouser1"
   
-   接下來不會QQ
-
+   接下來不知道要如何進行，直接"myls 路徑"，會顯示permission denied。
 
 ---------------------------------------分隔線-----------------------------------------
 
@@ -63,6 +60,7 @@
 
 ### 3.使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中。(自行查詢find指令用法，以及使透過重導向符號>輸出檔案)
 用"find /usr/bin -perm /u=s -exec ls -l {} \; > /root/findsuidsgid.txt"
+
   "find /usr/sbin -perm /u=s -exec ls -l {} \; >> /root/findsuidsgid.txt"
 
 ![8](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-4/ACS107134/8.JPG)
