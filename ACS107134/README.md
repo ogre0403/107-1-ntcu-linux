@@ -4,20 +4,25 @@
 groupadd groupname
 ### ˙ 建立帳號名稱為： myuser1, myuser2, myuser3 ，通通加入 mygroup，且密碼為 MyPassWord 
 useradd -G groupname username
+
 passwd username
 
 ![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-4/ACS107134/1.JPG)
 
 ### ˙ 建立帳號名稱為： nouser1, nouser2, nouser3 ，通通加入 nogroup，且密碼為 MyPassWord 
 useradd -G groupname username
+
 passwd username
 
 ![2](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-4/ACS107134/2.JPG)
 
 ### ˙ 建立一個名為 /srv/myproject 的目錄，這個目錄可以讓 mygroup 群組內的使用者完整使用，且【新建的檔案擁有群組】為 mygroup 。不過其他人不能有任何權限 
 mkdir directoryname
+
 chmod 770 directoryname
+
 chgrp groupname directoryname
+
 ll /srv查看確認一下
 
 ![3](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-4/ACS107134/3.JPG)
