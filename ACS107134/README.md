@@ -1,11 +1,10 @@
 ### 1.管理群組共用資料的權限設計： 
 
 ### ˙ 建立群組名稱為： mygroup, nogroup 
-groupadd groupname
+用"groupadd groupname"
 ### ˙ 建立帳號名稱為： myuser1, myuser2, myuser3 ，通通加入 mygroup，且密碼為 MyPassWord 
-useradd -G groupname username
-
-passwd username
+用"useradd -G groupname username" 
+  "passwd username"
 
 ![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-4/ACS107134/1.JPG)
 
