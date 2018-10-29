@@ -1,53 +1,72 @@
-# Linux HW-3
+# HW-4
+
+
 
 # 第一題
 
 
 
-### 第一小節
+### 第一步
 
 
 
-![1.1](https://images2.imgbox.com/c3/ac/lFYS3RYd_o.png)
+![1.1](https://images2.imgbox.com/70/49/jiKEyPxN_o.png)
 
 
 
->首先要建立三個帳號，利用**useradd**的指令建立。
-
->建立密碼以**echo password | passws --stdin username**的指令進行，因為顯示出密碼是這次的要求，這指令可以大量設定密碼，但顯示密碼同時也是這個指令的風險/壞處所在。
+>首先要建立兩個群組，利用**groupadd**的指令建立，並使用**grep group /etc/group**來查看是否成功建立。
 
 
 
-### 第二小節
+![1.2](https://images2.imgbox.com/08/b0/yV817Reb_o.png)
 
 
 
-![1.2](https://images2.imgbox.com/59/0b/gPPOC77D_o.png)
+>使用指令**useradd**來建立六個使用者，並加上 **-g** 的參數來指定各個使用者的initial group。
 
 
 
->接著利用**ls / ls -l / ll**等等的指令確認家目錄的建立，再用**userdel -r**的指令刪除**examuser3**，然後再利用指令確認/home和/var/spool/mail的內容。
+![1.3](https://images2.imgbox.com/3f/12/Uxzo7sO7_o.png)
 
 
 
-### 第三小節
+>和**HW-3**的時候一樣，使用**echo password | passwd --stdin username**的指令設置密碼，關於其指令詳細在**HW-3**已經稍微提過，所以不再敘述一次了。
 
 
 
-![1.3](https://images2.imgbox.com/d3/33/rYUYHIq9_o.png)
+![1.4](https://images2.imgbox.com/55/7d/62QhEUBI_o.png)
 
 
 
->利用**userdel**的指令刪除**examuser1**並且重新確認/home和/var/spool/mail的內容。
+>使用指令**mkdir**建立目錄並搭配 **-m** 的參數設定各種權限，再使用**chgrp**的指令變更擁有群組，最後使用**ll**指令檢查檔案屬性。
 
 
 
-![1.4](https://images2.imgbox.com/1e/a1/odL1kzQQ_o.png)
+### 第二步
 
 
 
->為了用相同的UID重建被刪除的帳號，使用**useradd -u**的參數來以指定UID的方式創建帳號，並加入 **-U** 的參數來建立和帳戶相同的群組。
->在確認帳號UID相同之後，再以上述**echo password | passwd --stdin username**的指令設定密碼即可。
+![1.5](https://images2.imgbox.com/6d/dc/eTKbWiov_o.png)
+
+
+
+>使用**su**指令切換為myuser1的使用者，利用**cd**進入目錄/srv/myproject並使用**touch**指令建立myuser1.data檔案，再切換回root，然後使用**cp**將/usr/bin/ls的內容複製一份成/usr/local/bin/myls。
+
+
+
+![1.6](https://images2.imgbox.com/0c/7d/79rRwQYu_o.png)
+
+
+
+>切換回root，先使用**ll**檢查檔案屬性，再用**chmod**更改檔案屬性。其中，根據**HW-3**所學到的，我們知道**後三碼**為擁有者、擁有群組、其他人的rwx權限，而**三碼前面**再加**一碼**可以指定檔案的屬性成**SUID、SGID、SBIT**的屬性，**SUID=4**、**SGID=2**、**SBIT=1**，最後用**ll**檢查使用者的**x**是否變成**s**。
+
+
+
+![1.7](https://images2.imgbox.com/69/1d/ZnFPgb41_o.png)
+
+
+
+>切換使用者為nouser1，執行/srv/myproject，並且確認為可執行的。
 
 
 
@@ -55,145 +74,53 @@
 
 
 
-### 第一小節
+![2.1](https://images2.imgbox.com/7f/e5/XC5r0NUV_o.png)
 
 
 
-![2.1](https://images2.imgbox.com/95/28/R2jWhLiR_o.png)
+>使用指令**ps aux**列出所有的程序，再搭配 **|** 和 **grep**將有**rsyslog**關鍵字的程序找出來。
 
 
+>確認後，將原本的指令加上 **>** 的指令以重新導向後方資料 **(此指令為建立新的或覆蓋)** ，最後利用**cat**指令確認檔案內容。
 
->這次嘗試使用**useradd -p**的指令以直接設定密碼為123的方式建立使用者。
-
->接著使用**cp  檔案來源  複製目的地**的指令複製一份檔案到/home/examuser4裡，並注意此時examuser4對於這份複製的檔案屬於other的分類且沒有任何權限。
-
-
-![2.2](https://images2.imgbox.com/3a/37/qEVvsHsu_o.png)
-
-
-
->先利用**chown**的指令將examuser4改成這份複製檔案的擁有者，再利用**chmod**的指令配合數字法將擁有者的權限由 **6(rw-)** 提升至 **7(rwx)** 。
-
-
-
-###第二小節
-
-
-
-![2.2](https://images2.imgbox.com/59/35/4EVL0h7R_o.png)
-
->利用**mkdir**的指令建立名為exmadata的目錄，接著再examdata內利用**touch**的指令建立一份空的change.txt檔案。
-
-
-
-![2.3](https://images2.imgbox.com/81/08/lWRbuKwf_o.png)
-
-
-
->利用**chown**的指令更改檔案擁有者為**sshd**，接著利用**grep users /etc/group**的指令確認users的群組是否存在。
-
->接著利用**chgrp**的指令變更檔案的群組，用**chmod**的指令將權限改為640的狀態，再利用指令確認檔案的屬性。
-
-
-
-![2.4](https://images2.imgbox.com/9f/b4/frVrUmuy_o.png)
-
-
-
->最後利用**touch -t**的指令修改時間，由前到後分別為**西元年 月 日 小時 分 秒**。
 
 
 # 第三題
 
 
 
-### 第一小節
+![3.1](https://images2.imgbox.com/54/be/r0jD4T0j_o.png)
 
 
 
-![3.1](https://images2.imgbox.com/03/8b/KdoBLXj9_o.png)
+>利用**find**指令搜尋資料並搭配 **-prem** 的參數來藉由指定檔案權限的方式搜尋，因為要搜尋的是**所有擁有SUID屬性的檔案**，因此搭配 **-prem /u=s** 的指令來搜尋兩個目錄。
 
 
 
->首先將表格的檔案和目錄建立起來，重複利用**chmod / mkdir / cp **三種指令。
+![3.2](https://images2.imgbox.com/c8/fb/BSMRCXwg_o.png)
 
 
 
-![3.2](https://images2.imgbox.com/60/cc/ubFL5Tit_o.png)
+>指令型式為: **find  檔案  尋找方式的參數  提供尋找的資料  -exec/-ok  欲執行指令  {} \\;**
 
 
 
->接著確認各項屬性和表格上一致。
-
-### 第二小節
+>接下來使用**find**的參數 **-exec** 和 **-ok** ，讓使用者可以對找到的檔案或目錄執行特定的指令，而 **{ }** 包著所找到的資料，**\\;** 用來完結動作。其中 **-exec** 和 **-ok** 的差別為: **-ok** 會要求使用者一項一項確認，而 **-exec** 則否。而我們希望執行**ls -l**的指令並且重新導向特定檔案。
 
 
 
-![3.3](https://images2.imgbox.com/6e/2c/AYG2K7zP_o.png)
+>綜合起來，第一次使用 **find /usr/bin -perm /u=s -ok ls -l > findsuidsgid.txt {} \\;** 的指令，一項一項確認後接著第二次。第二次使用 **find /usr/bin -perm /u=s -ok ls -l 1>> findsuidsgid.txt {} \\;**的指令，差異在於將 **>** 更改為 **1>>** 的重新導向方式。
 
 
 
->先利用**su**的指令將身分由**root**切換回**一般使用者(shimakaze)**，接著輸入 **ls -l /dev/shm/unit05/dir[1-4]** 的指令並觀察現象。
-
-首先我們發現**檔案1**和**目錄2**無法成功顯示出來，接著比較各個目錄之間還有檔案之間的權限，再配合錯誤發生時所提供的英文提示，我們可以推測**檔案1**之所以無法顯示是因為**dir1**對於**shimakaze**而言為不可執行的，導致我們只可停留在能讀取**dir1**的情形；而第二號甚至連**檔案2**都沒出現是因為**dir2**對於**shimakaze**而言是不可讀取的目錄，既然不可讀取就不用提更深入的事情了。
+> **>** 和 **1>>** 的差別為: **>** 為建立或覆蓋，而 **1>>** 為覆蓋或累加，我們希望兩個都存在，所以使用累加。
 
 
 
-### 第三小節
+![3.3](https://images2.imgbox.com/04/21/aQzVjcJw_o.png)
 
 
 
-![3.4](https://images2.imgbox.com/97/aa/AgvFm4pK_o.png)
+>最後使用**cat**指令檢查檔案內容。
 
 
-
->利用指令依序執行四個項目。
-
-在四個目錄當中只有**dir1**對於**shimakaze**而言為不可執行的，因此沒有路徑可以抵達目錄內的檔案。而其他三個通過目錄後，內部的檔案對於**shimakaze**而言皆是可讀取的，其中**file4**是因為處於**dir4**的架構中，而非本身屬性。
-
-### 第四小節
-
-
-
-![3.5](https://images2.imgbox.com/14/35/eIR6YMYr_o.png)
-![3.6](https://images2.imgbox.com/57/02/LOByRp0Q_o.png)
-
-![3.7](https://images2.imgbox.com/89/57/2XFtE0AC_o.png)
-
-
-
->利用指令進入文字編輯模式
-
-發現**file1**是唯讀檔案，並不能藉由強制儲存退出來更動內容。因為**file1**對於**shimakaze**而言為不可改寫的。
-
-
-
-![3.8](https://images2.imgbox.com/06/b0/HQtEak73_o.png)
-
-![3.9](https://images2.imgbox.com/74/b9/Z4yrCTYQ_o.png)
-
-
-
-發現**file2**也是跟**file1**有相同情形，強制也沒用。
-
-
-
-![3.10](https://images2.imgbox.com/08/81/Pe22pXod_o.png)
-
-![3.11](https://images2.imgbox.com/3c/a5/92Qqe3or_o.png)
-
-
-
-**file3**本身對**shimakaze**而言是可改寫的，因此可以正常的更動內容。
-
-
-
-![3.12](https://images2.imgbox.com/4f/33/n3T44PKE_o.png)
-
-![3.13](https://images2.imgbox.com/7b/63/ZlTcFMqD_o.png)
-
-![3.14](https://images2.imgbox.com/bb/a2/jsNpLJ8j_o.png)
-
-
-
-**file4**對於**shimakaze**而言是不可改寫的，因此正常儲存無法更動其內容。但是因為**file4**位於**dir4**架構中，而**dir4**對於**shimakaze**而言是可改寫的，因此我們可以用強制執行儲存離開來更動**file4**的內容。
