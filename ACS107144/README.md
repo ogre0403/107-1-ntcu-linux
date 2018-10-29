@@ -124,6 +124,7 @@
 > 輸入`top`
 >    > 查看PID, PR, NI, COMMAND
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-2-2.png) 
+
 > PID：930
 
 > PR：20
@@ -168,10 +169,15 @@
 >    > unix_chkpwd
 >
 >    > usernetct1
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-3-1.png) 
+
 > 2.  輸入 `find /usr/bin /usr/sbin -perm /4000 -exec ls -l {} \; > /root/findsuidsgid.txt`  
 >    > 將螢幕資料轉存到/root/findsuidsgid.txt中   
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-3-2.png) 
+
 > 3.  輸入 `vi findsuidsgid.txt`
 >    > 確認資料成功存入
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-3-3.png) 
