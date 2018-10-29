@@ -74,7 +74,7 @@
   * 先利用**ll**查看權限資訊，就會發現權限已修改成功囉，為-rw**s**r-xr-x。
   * 最後切換帳號至**nouser1**，查詢`` myls /srv/myproject ``，就可以查詢到裡面的檔案資訊(myuser1.data)了。
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-602.png)
-=================================
+-----------------------------------------
 ## 2.使用程序觀察的指令，搭配**grep**的關鍵字查詢功能，將找到的**rsyslog**相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到`` /root/process_syslog.txt ``檔案中。(搭配`` > ``重導向輸出)
 
 
@@ -95,7 +95,7 @@
   * NI為0。
   * COMMAND為rsyslogd。
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/2-101.png)
-=================================
+------------------------------------
 ## 3.使用**find**找出`` /usr/bin ``及`` /usr/sbin ``兩個目錄中，含有**SUID**的特殊檔案檔名，並使用**ls -l**去列出找到的檔案的相關權限後，將螢幕資料轉存到`` /root/findsuidsgid.txt ``檔案中。(自行查詢**find**指令用法，以及使透過重導向符號`` > ``輸出檔案)
 
 
