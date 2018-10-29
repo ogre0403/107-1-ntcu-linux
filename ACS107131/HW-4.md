@@ -32,7 +32,7 @@
    
 ## 1-6 復制/usr/bin/ls至/usr/local/bin/myls後，完成下列操作   
    
-## 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執## 行/usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查## 詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行到## 【myls/srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。      
+## 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行/usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行到【myls/srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。      
      
 #### * 複製 cp /usr/bin/ls /usr/local/bin/myls   
 #### * 更改權限 chmod u+s /usr/local/bin/myls  
@@ -50,7 +50,7 @@
 ####   cat process_syslog.txt 顯示內容    
 ![02](https://github.com/edmundabc/107-1-ntcu-linux/blob/HW-4/ACS107131/02.PNG?raw=true)   
    
-## 3 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l 去## 列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中。(自行查詢find指令## 用法，以及使透過重導向符號>輸出檔案)    
+## 3 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l 去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中。(自行查詢find指令 用法，以及使透過重導向符號>輸出檔案)    
     
 #### * find /usr/bin -perm /u=s -exec ls -l {} \; > /root/findsuidsgid.txt   
 #### * find /usr/sbin -perm /u=s -exec ls -l {} \; >> /root/findsuidsgid.txt(>>是繼續文件內容)   
