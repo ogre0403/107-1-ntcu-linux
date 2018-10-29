@@ -1,113 +1,113 @@
 # HW4
 ==================================
-## 1.ºŞ²z¸s²Õ¦@¥Î¸ê®ÆªºÅv­­³]­p:
+## 1.ç®¡ç†ç¾¤çµ„å…±ç”¨è³‡æ–™çš„æ¬Šé™è¨­è¨ˆ:
 
 
-* (1)«Ø¥ß¸s²Õ¦WºÙ:
-  * §Q¥Î**groupadd**«Ø¥ß¸s²Õ:mygroup¡Bnogroup¡C
-> **grep**:¤F¸Ñ¨t²Î¤¤¬O§_¦s¦b·Q­n¬d¸ßªº¸s²Õ¡C
+* (1)å»ºç«‹ç¾¤çµ„åç¨±:
+  * åˆ©ç”¨**groupadd**å»ºç«‹ç¾¤çµ„:mygroupã€nogroupã€‚
+> **grep**:äº†è§£ç³»çµ±ä¸­æ˜¯å¦å­˜åœ¨æƒ³è¦æŸ¥è©¢çš„ç¾¤çµ„ã€‚
 
-> ¨t²Îªº¸s²Õ³£°O¿ı¦b`` /etc/group ``ÀÉ®×¸Ì¡A©Ò¥H¬d¸ßªº®É­Ô­n°O±o¥[¤W`` /etc/group ``ªºµ´¹ï¸ô®|³á!
+> ç³»çµ±çš„ç¾¤çµ„éƒ½è¨˜éŒ„åœ¨`` /etc/group ``æª”æ¡ˆè£¡ï¼Œæ‰€ä»¥æŸ¥è©¢çš„æ™‚å€™è¦è¨˜å¾—åŠ ä¸Š`` /etc/group ``çš„çµ•å°è·¯å¾‘å–”!
 
 
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-1.png)
 ----------------------------------
-* (2)«Ø¥ß±b¸¹¦WºÙ:
-  * myuser1¡Bmyuser2¡Bmyuser3(**¬Ò¥[¤Jmygroup¡A¥B±K½X¬Ò¬°MyPassWord**)
-> **useradd -G mygroup ±b¸¹¦WºÙ**
-> > **-G**:«á­±·|±µµÛ¸s²Õ¦WºÙ¡A³Ì«á¦A±µµÛ­n¥[¤J¸s²Õªº±b¸¹¡C¦¹¥~¡A¥¦¤]·|­×§ï`` etc/group ``¤ºªº¬ÛÃö¸ê®Æ¡C
+* (2)å»ºç«‹å¸³è™Ÿåç¨±:
+  * myuser1ã€myuser2ã€myuser3(**çš†åŠ å…¥mygroupï¼Œä¸”å¯†ç¢¼çš†ç‚ºMyPassWord**)
+> **useradd -G mygroup å¸³è™Ÿåç¨±**
+> > **-G**:å¾Œé¢æœƒæ¥è‘—ç¾¤çµ„åç¨±ï¼Œæœ€å¾Œå†æ¥è‘—è¦åŠ å…¥ç¾¤çµ„çš„å¸³è™Ÿã€‚æ­¤å¤–ï¼Œå®ƒä¹Ÿæœƒä¿®æ”¹`` etc/group ``å…§çš„ç›¸é—œè³‡æ–™ã€‚
 
->§Q¥Î**passwd ±b¸¹¦WºÙ**À°±b¸¹³]¥ß±K½X¡C
+>åˆ©ç”¨**passwd å¸³è™Ÿåç¨±**å¹«å¸³è™Ÿè¨­ç«‹å¯†ç¢¼ã€‚
 
->§Q¥Î**id ±b¸¹¦WºÙ**¬d¬İ±b¸¹³Ì«á¬O§_¦³¥[¤J**mygroup**ªº¸s²Õ¤¤¡C
+>åˆ©ç”¨**id å¸³è™Ÿåç¨±**æŸ¥çœ‹å¸³è™Ÿæœ€å¾Œæ˜¯å¦æœ‰åŠ å…¥**mygroup**çš„ç¾¤çµ„ä¸­ã€‚
 
 
-![image]()
-![image]()
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-200.png)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-201.png)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-202.png)
 ----------------------------------
-* (3)«Ø¥ß±b¸¹¦WºÙ:
-  * nouser1¡Bnouser2¡Bnouser3(**¬Ò¥[¤Jnogroup¡A¥B±K½X¬Ò¬°MyPassWord**)
-> **useradd -G nogroup ±b¸¹¦WºÙ**
-> > **-G**:«á­±·|±µµÛ¸s²Õ¦WºÙ¡A³Ì«á¦A±µµÛ­n¥[¤J¸s²Õªº±b¸¹¡C¦¹¥~¡A¥¦¤]·|­×§ï`` etc/group ``¤ºªº¬ÛÃö¸ê®Æ¡C
+* (3)å»ºç«‹å¸³è™Ÿåç¨±:
+  * nouser1ã€nouser2ã€nouser3(**çš†åŠ å…¥nogroupï¼Œä¸”å¯†ç¢¼çš†ç‚ºMyPassWord**)
+> **useradd -G nogroup å¸³è™Ÿåç¨±**
+> > **-G**:å¾Œé¢æœƒæ¥è‘—ç¾¤çµ„åç¨±ï¼Œæœ€å¾Œå†æ¥è‘—è¦åŠ å…¥ç¾¤çµ„çš„å¸³è™Ÿã€‚æ­¤å¤–ï¼Œå®ƒä¹Ÿæœƒä¿®æ”¹`` etc/group ``å…§çš„ç›¸é—œè³‡æ–™ã€‚
 
-> §Q¥Î**passwd ±b¸¹¦WºÙ**À°±b¸¹³]¥ß±K½X¡C
+> åˆ©ç”¨**passwd å¸³è™Ÿåç¨±**å¹«å¸³è™Ÿè¨­ç«‹å¯†ç¢¼ã€‚
 
-> §Q¥Î**id ±b¸¹¦WºÙ**¬d¬İ±b¸¹³Ì«á¬O§_¦³¥[¤J**nogroup**ªº¸s²Õ¤¤¡C
+> åˆ©ç”¨**id å¸³è™Ÿåç¨±**æŸ¥çœ‹å¸³è™Ÿæœ€å¾Œæ˜¯å¦æœ‰åŠ å…¥**nogroup**çš„ç¾¤çµ„ä¸­ã€‚
 
 
-![image]()
-![image]()
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-300.png)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-301.png)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-302.png)
 ----------------------------------
-* (4)«Ø¥ß¤@­Ó¥Ø¿ı`` /srv/myproject ``¡A¦¹¥Ø¿ı¥i¥HÅı**mygroup**¸s²Õ¤ºªº¨Ï¥ÎªÌ§¹¾ã¨Ï¥Î¡A¥B`` ·s«ØªºÀÉ®×¾Ö¦³¸s²Õ ``¬°**mygroup**¡A*¨ä¥L¤H¨S¦³¥ô¦óÅv­­*¡C
-  * ¤Á´«¥Ø¿ı¶i¤Jsrv¡A¨Ã¦b¨ä¤¤«Ø¥ß**myproject**¸ê®Æ§¨¡C
-> **mkdir ¸ê®Æ§¨¦WºÙ**:«Ø¥ß¸ê®Æ§¨¡C
+* (4)å»ºç«‹ä¸€å€‹ç›®éŒ„`` /srv/myproject ``ï¼Œæ­¤ç›®éŒ„å¯ä»¥è®“**mygroup**ç¾¤çµ„å…§çš„ä½¿ç”¨è€…å®Œæ•´ä½¿ç”¨ï¼Œä¸”`` æ–°å»ºçš„æª”æ¡ˆæ“æœ‰ç¾¤çµ„ ``ç‚º**mygroup**ï¼Œ*å…¶ä»–äººæ²’æœ‰ä»»ä½•æ¬Šé™*ã€‚
+  * åˆ‡æ›ç›®éŒ„é€²å…¥srvï¼Œä¸¦åœ¨å…¶ä¸­å»ºç«‹**myproject**è³‡æ–™å¤¾ã€‚
+> **mkdir è³‡æ–™å¤¾åç¨±**:å»ºç«‹è³‡æ–™å¤¾ã€‚
 
 
-  * ¥ı¥Î**ll**¬d¬İ­ì©lÅv­­¡A¬°"drwxr-xr-x"¡C
-  * §Q¥Î**chmod**­×§ïÅv­­¡A°O±o³Ì«á­n¥[¤W¸ê®Æ§¨¦WºÙ³á¡C
-  * ¦A§Q¥Î**ll**¬d¬İ·|µo²{Åv­­­×§ï¦¨¥\Åo¡A¬°"drwxrwx---"¡C
-  * §Q¥Î**chgrp mygroup myproject**­×§ï©ÒÄİªº¸s²Õ¡A¦A§Q¥Î**ll**¬d¬İ´N·|µo²{©ÒÄİ¸s²Õ¤wÅÜ¦¨mygroupÅo¡C
-![image]()
+  * å…ˆç”¨**ll**æŸ¥çœ‹åŸå§‹æ¬Šé™ï¼Œç‚º"drwxr-xr-x"ã€‚
+  * åˆ©ç”¨**chmod**ä¿®æ”¹æ¬Šé™ï¼Œè¨˜å¾—æœ€å¾Œè¦åŠ ä¸Šè³‡æ–™å¤¾åç¨±å–”ã€‚
+  * å†åˆ©ç”¨**ll**æŸ¥çœ‹æœƒç™¼ç¾æ¬Šé™ä¿®æ”¹æˆåŠŸå›‰ï¼Œç‚º"drwxrwx---"ã€‚
+  * åˆ©ç”¨**chgrp mygroup myproject**ä¿®æ”¹æ‰€å±¬çš„ç¾¤çµ„ï¼Œå†åˆ©ç”¨**ll**æŸ¥çœ‹å°±æœƒç™¼ç¾æ‰€å±¬ç¾¤çµ„å·²è®Šæˆmygroupå›‰ã€‚
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-400.png)
 ----------------------------------
-* (5)¼È®É¤Á´«¦¨¬°**myuser1**ªº¨­¤À¡A¨Ã«e©¹`` /srv/myproject ``¥Ø¿ı¡A¹Á¸Õ«Ø¥ß¤@­Ó¦W¬°`` myuser1.data ``ªºÀÉ®×¡A¤§«áµn¥X**myuser1**¡C
-  * ¤Á´«±b¸¹¦Ü**myuser1**¡C
-  * ¤Á´«¦Ü`` /srv/myproject ``¥Ø¿ı¡C
-  * §Q¥Î**touch myuser1.data**¦b¨ä¤¤«Ø¥ß·sÀÉ®×¡C
-> **touch**:­×­qÀÉ®×ªº¤é´Á»P®É¶¡¡A¨Ã¥B¤]¥i¥H«Ø¥ß¤@­ÓªÅªºÀÉ®×¡C
+* (5)æš«æ™‚åˆ‡æ›æˆç‚º**myuser1**çš„èº«åˆ†ï¼Œä¸¦å‰å¾€`` /srv/myproject ``ç›®éŒ„ï¼Œå˜—è©¦å»ºç«‹ä¸€å€‹åç‚º`` myuser1.data ``çš„æª”æ¡ˆï¼Œä¹‹å¾Œç™»å‡º**myuser1**ã€‚
+  * åˆ‡æ›å¸³è™Ÿè‡³**myuser1**ã€‚
+  * åˆ‡æ›è‡³`` /srv/myproject ``ç›®éŒ„ã€‚
+  * åˆ©ç”¨**touch myuser1.data**åœ¨å…¶ä¸­å»ºç«‹æ–°æª”æ¡ˆã€‚
+> **touch**:ä¿®è¨‚æª”æ¡ˆçš„æ—¥æœŸèˆ‡æ™‚é–“ï¼Œä¸¦ä¸”ä¹Ÿå¯ä»¥å»ºç«‹ä¸€å€‹ç©ºçš„æª”æ¡ˆã€‚
 
-  * ³Ì«áµn¥X**myuser1**¡C
-![image]()
+  * æœ€å¾Œç™»å‡º**myuser1**ã€‚
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-500.png)
 ----------------------------------
-* (6)½Æ»s`` /usr/bin/ls ``¦Ü`` /usr/local/bin/myls ``«á¡A§¹¦¨¾Ş§@:
-  * §Q¥Î**cp**±N`` /usr/bin/ls ``½Æ»s¨ì`` /usr/local/bin/myls ``¡C
-![image]()
-  * µn¤J**nogroup**¤¤ªº¨ä¤¤¤@­û(nouser1)¡A¥ı§Q¥Î**ll**¬d¬İ`` /usr/bin/ls ``©M`` /usr/local/bin/myls ``ªº¸ê°T¡A·|µo²{±o¨ì¨â­Ó¤@¼Ëªº¸ê°T¡C
-  * ¦ı¤@¶}©lÁÙ¨S¿ìªk¬d¸ß¨ì`` myls /srv/myproject ``(Permission denied)¡C
-![image]()
-  * ¤Á´«¦^**root**­×§ïÅv­­(**chmod u+s ÀÉ®×¦WºÙ**)¡C
-> **chmod u+s ÀÉ®×¦WºÙ**:²Å¸¹ªk¤Á´«ÀÉ®×°õ¦æÅv­­(SUID)¡C
-> > SUIDªºÅv­­ºX¼Ğ¬°Linux¶Ç²Î¤T­Ó¨­¤ÀªºÅv­­¥~ªº²Ä¥|­ÓÅv­­¡C
-> > > °õ¦æªÌ¹ï©ó¸Óµ{¦¡»İ­n¨ã¦³ x ªº¥i°õ¦æÅv­­®É¡A¥i¨Ï¥Î¦¹¤èªkÅı°õ¦æªÌ¼È®É¾Ö¦³¸Óµ{¦¡mygroup¸s²ÕªºÅv­­¡C
+* (6)è¤‡è£½`` /usr/bin/ls ``è‡³`` /usr/local/bin/myls ``å¾Œï¼Œå®Œæˆæ“ä½œ:
+  * åˆ©ç”¨**cp**å°‡`` /usr/bin/ls ``è¤‡è£½åˆ°`` /usr/local/bin/myls ``ã€‚
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-600.png)
+  * ç™»å…¥**nogroup**ä¸­çš„å…¶ä¸­ä¸€å“¡(nouser1)ï¼Œå…ˆåˆ©ç”¨**ll**æŸ¥çœ‹`` /usr/bin/ls ``å’Œ`` /usr/local/bin/myls ``çš„è³‡è¨Šï¼Œæœƒç™¼ç¾å¾—åˆ°å…©å€‹ä¸€æ¨£çš„è³‡è¨Šã€‚
+  * ä½†ä¸€é–‹å§‹é‚„æ²’è¾¦æ³•æŸ¥è©¢åˆ°`` myls /srv/myproject ``(Permission denied)ã€‚
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-601.png)
+  * åˆ‡æ›å›**root**ä¿®æ”¹æ¬Šé™(**chmod u+s æª”æ¡ˆåç¨±**)ã€‚
+> **chmod u+s æª”æ¡ˆåç¨±**:ç¬¦è™Ÿæ³•åˆ‡æ›æª”æ¡ˆåŸ·è¡Œæ¬Šé™(SUID)ã€‚
+> > SUIDçš„æ¬Šé™æ——æ¨™ç‚ºLinuxå‚³çµ±ä¸‰å€‹èº«åˆ†çš„æ¬Šé™å¤–çš„ç¬¬å››å€‹æ¬Šé™ã€‚
+> > > åŸ·è¡Œè€…å°æ–¼è©²ç¨‹å¼éœ€è¦å…·æœ‰ x çš„å¯åŸ·è¡Œæ¬Šé™æ™‚ï¼Œå¯ä½¿ç”¨æ­¤æ–¹æ³•è®“åŸ·è¡Œè€…æš«æ™‚æ“æœ‰è©²ç¨‹å¼mygroupç¾¤çµ„çš„æ¬Šé™ã€‚
 
-  * ¥ı§Q¥Î**ll**¬d¬İÅv­­¸ê°T¡A´N·|µo²{Åv­­¤w­×§ï¦¨¥\Åo¡A¬°-rw**s**r-xr-x¡C
-  * ³Ì«á¤Á´«±b¸¹¦Ü**nouser1**¡A¬d¸ß`` myls /srv/myproject ``¡A´N¥i¥H¬d¸ß¨ì¸Ì­±ªºÀÉ®×¸ê°T(myuser1.data)¤F¡C
-![image]()
+  * å…ˆåˆ©ç”¨**ll**æŸ¥çœ‹æ¬Šé™è³‡è¨Šï¼Œå°±æœƒç™¼ç¾æ¬Šé™å·²ä¿®æ”¹æˆåŠŸå›‰ï¼Œç‚º-rw**s**r-xr-xã€‚
+  * æœ€å¾Œåˆ‡æ›å¸³è™Ÿè‡³**nouser1**ï¼ŒæŸ¥è©¢`` myls /srv/myproject ``ï¼Œå°±å¯ä»¥æŸ¥è©¢åˆ°è£¡é¢çš„æª”æ¡ˆè³‡è¨Š(myuser1.data)äº†ã€‚
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-602.png)
 =================================
-## 2.¨Ï¥Îµ{§ÇÆ[¹îªº«ü¥O¡A·f°t**grep**ªºÃöÁä¦r¬d¸ß¥\¯à¡A±N§ä¨ìªº**rsyslog**¬ÛÃöªºµ{§Çªº PID, PRI, NI, COMMAND µ¥¸ê°TÂà¦s¨ì`` /root/process_syslog.txt ``ÀÉ®×¤¤¡C(·f°t`` > ``­«¾É¦V¿é¥X)
+## 2.ä½¿ç”¨ç¨‹åºè§€å¯Ÿçš„æŒ‡ä»¤ï¼Œæ­é…**grep**çš„é—œéµå­—æŸ¥è©¢åŠŸèƒ½ï¼Œå°‡æ‰¾åˆ°çš„**rsyslog**ç›¸é—œçš„ç¨‹åºçš„ PID, PRI, NI, COMMAND ç­‰è³‡è¨Šè½‰å­˜åˆ°`` /root/process_syslog.txt ``æª”æ¡ˆä¸­ã€‚(æ­é…`` > ``é‡å°å‘è¼¸å‡º)
 
 
-* §Q¥ÎÃöÁä¦r¬d¸ß¥\¯à`` ps aux | grep rsyslog``°µµ{§ÇÆ[¹î¡C
-> **ps aux**:ÀËµø¥ş³¡ªºprocessª¬ªp¡C
-> **grep ÀÉ®×¦WºÙ**:§ä´M¨Ã¦L¥XÀÉ®×¤¤§t¦³¦r¦ê©Ò¦b¦æ¤º®e¡C
+* åˆ©ç”¨é—œéµå­—æŸ¥è©¢åŠŸèƒ½`` ps aux | grep rsyslog``åšç¨‹åºè§€å¯Ÿã€‚
+> **ps aux**:æª¢è¦–å…¨éƒ¨çš„processç‹€æ³ã€‚
+> **grep æª”æ¡ˆåç¨±**:æ‰¾å°‹ä¸¦å°å‡ºæª”æ¡ˆä¸­å«æœ‰å­—ä¸²æ‰€åœ¨è¡Œå…§å®¹ã€‚
 
-* ¨Ï¥Î`` ps aux | grep rsyslog > /root/process_syslog.txt ``±N**rsyslog**¬ÛÃöµ{§Çªº¸ê°TÂà¦s¦Ü**/root/process_syslog.txt**¡C
-* ¦A§Q¥Î`` cat /root/process syslog.txt ``¨ÏÀÉ®×ªº¤º®e¦C¥X¨ì¿Ã¹õ¤W¡C
-> **cat**:¦C¥XÀÉ®×¤º®e¦Ü¿Ã¹õ¤W(¼Ğ·Ç¿é¥X)©Î¦X¨Ö¦h­ÓÀÉ®×¡C
+* ä½¿ç”¨`` ps aux | grep rsyslog > /root/process_syslog.txt ``å°‡**rsyslog**ç›¸é—œç¨‹åºçš„è³‡è¨Šè½‰å­˜è‡³**/root/process_syslog.txt**ã€‚
+* å†åˆ©ç”¨`` cat /root/process syslog.txt ``ä½¿æª”æ¡ˆçš„å…§å®¹åˆ—å‡ºåˆ°è¢å¹•ä¸Šã€‚
+> **cat**:åˆ—å‡ºæª”æ¡ˆå…§å®¹è‡³è¢å¹•ä¸Š(æ¨™æº–è¼¸å‡º)æˆ–åˆä½µå¤šå€‹æª”æ¡ˆã€‚
 
-![image]()
-* ¿é¤J**top**§ä´M**rsyslog**ªºPID¡BPRI¡BNI¡BCOMMANDµ¥¸ê°T¡C
-> **top**:«ü¥Ü¥Ø«e¨t²ÎªA°È¶µ¥Øªº°ÊºA¸ê®Æ¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/2-100.png)
+* è¼¸å…¥**top**æ‰¾å°‹**rsyslog**çš„PIDã€PRIã€NIã€COMMANDç­‰è³‡è¨Šã€‚
+> **top**:æŒ‡ç¤ºç›®å‰ç³»çµ±æœå‹™é …ç›®çš„å‹•æ…‹è³‡æ–™ã€‚
 
-  * PID¬°932¡C
-  * PRI¬°20¡C
-  * NI¬°0¡C
-  * COMMAND¬°rsyslogd¡C
-![image]()
+  * PIDç‚º932ã€‚
+  * PRIç‚º20ã€‚
+  * NIç‚º0ã€‚
+  * COMMANDç‚ºrsyslogdã€‚
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/2-101.png)
 =================================
-## 3.¨Ï¥Î**find**§ä¥X`` /usr/bin ``¤Î`` /usr/sbin ``¨â­Ó¥Ø¿ı¤¤¡A§t¦³**SUID**ªº¯S®íÀÉ®×ÀÉ¦W¡A¨Ã¨Ï¥Î**ls -l**¥h¦C¥X§ä¨ìªºÀÉ®×ªº¬ÛÃöÅv­­«á¡A±N¿Ã¹õ¸ê®ÆÂà¦s¨ì`` /root/findsuidsgid.txt ``ÀÉ®×¤¤¡C(¦Û¦æ¬d¸ß**find**«ü¥O¥Îªk¡A¥H¤Î¨Ï³z¹L­«¾É¦V²Å¸¹`` > ``¿é¥XÀÉ®×)
+## 3.ä½¿ç”¨**find**æ‰¾å‡º`` /usr/bin ``åŠ`` /usr/sbin ``å…©å€‹ç›®éŒ„ä¸­ï¼Œå«æœ‰**SUID**çš„ç‰¹æ®Šæª”æ¡ˆæª”åï¼Œä¸¦ä½¿ç”¨**ls -l**å»åˆ—å‡ºæ‰¾åˆ°çš„æª”æ¡ˆçš„ç›¸é—œæ¬Šé™å¾Œï¼Œå°‡è¢å¹•è³‡æ–™è½‰å­˜åˆ°`` /root/findsuidsgid.txt ``æª”æ¡ˆä¸­ã€‚(è‡ªè¡ŒæŸ¥è©¢**find**æŒ‡ä»¤ç”¨æ³•ï¼Œä»¥åŠä½¿é€éé‡å°å‘ç¬¦è™Ÿ`` > ``è¼¸å‡ºæª”æ¡ˆ)
 
 
-* ¨Ï¥Î`` find /usr/bin /usr/sbin -perm /4000 ``§ä¥X¨º¨â­Ó¥Ø¿ı¤¤§t¦³SUIDªº¯S®íÀÉ®×ÀÉ¦W(¦p¹Ï)¡C
-> `` find ÀÉ®× -perm /u=s ``:¦C¦L¥X¨t²Î¤¤©Ò¦³SUIDªºÀÉ®×¡C
-> > **find**:±N·Q­n´M§äªºÀÉ®×§ä¥X¨Ó¡C
-> > **-perm**:¥i¥H«ü©wÀÉ®×ªºÅv­­¡C
+* ä½¿ç”¨`` find /usr/bin /usr/sbin -perm /4000 ``æ‰¾å‡ºé‚£å…©å€‹ç›®éŒ„ä¸­å«æœ‰SUIDçš„ç‰¹æ®Šæª”æ¡ˆæª”å(å¦‚åœ–)ã€‚
+> `` find æª”æ¡ˆ -perm /u=s ``:åˆ—å°å‡ºç³»çµ±ä¸­æ‰€æœ‰SUIDçš„æª”æ¡ˆã€‚
+> > **find**:å°‡æƒ³è¦å°‹æ‰¾çš„æª”æ¡ˆæ‰¾å‡ºä¾†ã€‚
+> > **-perm**:å¯ä»¥æŒ‡å®šæª”æ¡ˆçš„æ¬Šé™ã€‚
 
-![image]()
-* `` find /usr/bin /usr/sbin -perm /4000 -exec ls -l {} \; > /root/findsuidsgid.txt ``¡A¦C¥XÀÉ®×ªº¬ÛÃöÅv­­¡C
-> **-exec «ü¥O {} \**:¥i¥HÅı§Ú­Ì±N·j´M¥X¨Óªºµ²ªG¡A¨Ï¥Î¨ä¥Lªº«ü¥O¶i¦æ«áÄòªº³B²z°Ê§@¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/3-100.png)
+* `` find /usr/bin /usr/sbin -perm /4000 -exec ls -l {} \; > /root/findsuidsgid.txt ``ï¼Œåˆ—å‡ºæª”æ¡ˆçš„ç›¸é—œæ¬Šé™ã€‚
+> **-exec æŒ‡ä»¤ {} \**:å¯ä»¥è®“æˆ‘å€‘å°‡æœå°‹å‡ºä¾†çš„çµæœï¼Œä½¿ç”¨å…¶ä»–çš„æŒ‡ä»¤é€²è¡Œå¾ŒçºŒçš„è™•ç†å‹•ä½œã€‚
 
-![image]()
-![image]()
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/3-101.png)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/3-102.PNG)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/3-103.PNG)
