@@ -1,6 +1,6 @@
 # 1.管理群組共用資料的權限設計：
  * 使用root登入
-![image]()
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-1.jpeg)
 
 > ## 建立群組名稱為： mygroup, nogroup
 > * 輸入`groupadd mygroup`
@@ -12,7 +12,7 @@
 > * 輸入`grep nogroup /etc/group` 
 >    > 確定有 nogroup 在設定檔中
 
-![image]()
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-2.jpeg)
 
 > ## 建立帳號名稱為： myuser1, myuser2, myuser3 ，通通加入 mygroup，且密碼為 MyPassWord
 >
@@ -26,9 +26,9 @@
 >    > 若成功加入，最後面會出現 mygroup 字樣（黃線部分）
 >  
 >      myuser2、myuser3 的建置步驟和 myuser1 相同，只需將帳號名稱修改即可。
-![image]()
-![image]()
-![image]()
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-3.png)
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-4.jpeg)
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-5.png)
 
 
 > ## 建立帳號名稱為： nouser1, nouser2, nouser3 ，通通加入 nogroup，且密碼為 MyPassWord
@@ -43,9 +43,9 @@
 >    > 若成功加入，最後面會出現 nogroup 字樣（黃線部分）
 >  
 >      nouser2、nouser3 的建置步驟和 nouser1 相同，只需將帳號名稱修改即可。
-![image]()
-![image]()
-![image]()
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-6.png)
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-7.png)
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-8.png)
 
 > ## 建立一個名為 /srv/myproject 的目錄，這個目錄可以讓 mygroup 群組內的使用者完整使用，且【新建的檔案擁有群組】為 mygroup 。不過其他人不能有任何權限
 >
@@ -65,7 +65,7 @@
 >    > 更改 myproject 的擁有群組為 mygroup
 > 8.  輸入 `ll`
 >    > 查看 myproject 的權限和擁有者 
-![image]()
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-9.png)
 
 > ## 暫時切換成為 myuser1 的身分，並前往 /srv/myproject 目錄，嘗試建立一個名為 myuser1.data 的檔案，之後登出 myuser1。
 >
@@ -83,7 +83,7 @@
 >    > 查看 myuser1.data 是否成功加入，若成功會出現黃色底線之字樣。
 > 7.  輸入 `su - root`
 >    > 登出 myuser1，回到root
-![image]()
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-10.png)
 
 > ## 復制/usr/bin/ls至/usr/local/bin/myls後，完成下列操作
 >
@@ -91,13 +91,13 @@
 >    > 複製 /usr/bin/ls 至 /usr/local/bin/myls
 > 2.  輸入 `ll /usr/local/bin/myls`  
 >    > 查看 /usr/local/bin/myls 的權限
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-11.png) 
 > * 切換成 nouser1 
 > 1.  輸入 `ll /usr/local/bin/myls`  
 >    > 查看權限
 > 2.  輸入 `myls /srv/myproject`
 >    > 執行後出現Permission denied
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-12.png) 
 
 > * 切換成 root
 > 1.  輸入 `chmod u+s /usr/local/bin/myls`
@@ -108,7 +108,7 @@
 >    > 執行後出現 myuser.data，可成功執行
 >
 >    > s : 即為SUID的權限旗標，只要任何有 x 執行權的人，執行 myls /srv/myproject 時，就會透過SUID轉換身份為 owner
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-13.png) 
 
 
 
@@ -120,10 +120,10 @@
 >    > 將 rsyslog 的相關資訊轉存到 /root/process_syslog.txt 檔案中
 > 3.  輸入 `cat /root/process_syslog.txt`
 >    > 確認存檔完成
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-2-1.png) 
 > 輸入`top`
 >    > 查看PID, PR, NI, COMMAND
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-2-2.png) 
 > PID：930
 
 > PR：20
@@ -168,10 +168,10 @@
 >    > unix_chkpwd
 >
 >    > usernetct1
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-3-1.png) 
 > 2.  輸入 `find /usr/bin /usr/sbin -perm /4000 -exec ls -l {} \; > /root/findsuidsgid.txt`  
 >    > 將螢幕資料轉存到/root/findsuidsgid.txt中   
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-3-2.png) 
 > 3.  輸入 `vi findsuidsgid.txt`
 >    > 確認資料成功存入
-![image]() 
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-3-3.png) 
