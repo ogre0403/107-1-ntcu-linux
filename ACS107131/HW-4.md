@@ -14,7 +14,7 @@
 ## 1-4 建立一個名為 /srv/myproject 的目錄，這個目錄可以讓 mygroup 群組內的使用者完整使用，且【新## 建的檔案擁有群組】為 mygroup 。不過其他人不能有任何權限   
    
 #### * cd /srv   
-#### * mkdir myproject   
+#### * 建立目錄 mkdir myproject   
 #### * ll   
 #### * 更改擁有檔案的群組 chgrp mygroup myproject   
 #### * 更改權限 chmod u=rwx,g=rwx,o= myproject   
@@ -25,16 +25,14 @@
    
 #### * su - myuser1   
 #### * cd /srv/myproject   
-#### * touch myuser1.data   
+#### * 建立檔案 touch myuser1.data   
 #### * 檢查 ls   
 #### * 登出 exit  
 ![5](https://github.com/edmundabc/107-1-ntcu-linux/blob/HW-4/ACS107131/5.PNG?raw=true)   
    
 ## 1-6 復制/usr/bin/ls至/usr/local/bin/myls後，完成下列操作   
    
-## 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行 
-## /usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢## 到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行
-## 到【myls /srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。      
+## 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執## 行/usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查## 詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行到## 【myls/srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。      
      
 #### * 複製 cp /usr/bin/ls /usr/local/bin/myls   
 #### * 更改權限 chmod u+s /usr/local/bin/myls  
