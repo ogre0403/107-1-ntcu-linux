@@ -19,7 +19,7 @@ cd切換目錄，接著touch新建檔案，然後exit登出帳號。<br>
 ![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-4/ACS107135/photo/5.PNG)<br>
 -------------------------------<br>
 ### 復制/usr/bin/ls至/usr/local/bin/myls後，完成下列操作<br>
-###* 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行 /usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行【myls /srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。<br>
+### 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行 /usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行【myls /srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。<br>
 如題，但是最後在用nouser1執行【myls /srv/myproject】時，卻無法通過權限。<br>
 ![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-4/ACS107135/photo/6.PNG)<br>
 嘗試使用chmod u+s給予使用者SUID的權限。(只要任何人有x的權限，執行時自動透過SUID轉換身分為owner)<br>
