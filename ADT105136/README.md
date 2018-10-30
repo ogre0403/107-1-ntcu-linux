@@ -19,3 +19,30 @@ SBIT：當使用者對目錄擁有寫入權限，建立的檔案或目錄只有�
 
 新建立的檔案群組會直接變成和目錄同一個群組！
 
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-4/ADT105136/005.PNG)
+
+複製一個新的執行檔
+
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-4/ADT105136/006.PNG)
+
+原本的執行檔因為權限而無法看到檔案
+
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-4/ADT105136/007.PNG)
+
+修改過後就可以讓原本的使用者看到檔案
+
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-4/ADT105136/008.PNG)
+
+grep可以將輸出結果過濾，然後用>將輸出結果存到檔案
+
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-4/ADT105136/009.PNG)
+
+使用find將擁有SUID的檔案找出來
+
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-4/ADT105136/010.PNG)
+
+並用ls -l 加上grep過濾出擁有SUID的檔案
+
+![image](https://github.com/boolenboom/107-1-ntcu-linux/blob/HW-4/ADT105136/011.PNG)
+
+最後輸出到檔案中
