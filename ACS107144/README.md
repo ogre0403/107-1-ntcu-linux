@@ -96,8 +96,18 @@
 > 1.  輸入 `ll /usr/local/bin/myls`  
 >    > 查看權限
 > 2.  輸入 `myls /srv/myproject`
->    > 執行後出現Permission denied
+>    > 執行後出現Permission denied   
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-12.png) 
+
+> 1.  切換成 root
+> 2.  輸入 `chgrp mygroup /usr/local/bin/myls`
+>    > 修改 /usr/local/bin/myls 的擁有群組  
+> 3.  輸入 `ll /usr/local/bin/myls`  
+>    > 查看權限，發現擁有群組從 root 變成 mygroup
+> 4.  切換回 nouser1
+> 5.  輸入 `myls /srv/myproject`
+>    > 執行後出現Permission denied，因為 nouser1 不是 mygroup 的一員   
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-13.png)
 
 > * 切換成 root
 > 1.  輸入 `chmod g+s /usr/local/bin/myls`
@@ -108,8 +118,8 @@
 > 3.  輸入 `myls /srv/myproject`
 >    > 執行後出現 myuser.data，可成功執行
 >
->    > s : 即為SUID的權限旗標，只要任何有 x 執行權的人，執行 myls /srv/myproject 時，就會透過SUID轉換身份為 owner
-![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-13.png) 
+>    > s : 即為SUID的權限旗標，只要任何有 x 執行權的人，執行 myls /srv/myproject 時，就會透過SUID轉換身份為 owner   
+![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-14.png) 
 
 
 
