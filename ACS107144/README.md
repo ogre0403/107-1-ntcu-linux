@@ -100,10 +100,11 @@
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-1-12.png) 
 
 > * 切換成 root
-> 1.  輸入 `chmod u+s /usr/local/bin/myls`
->    > 修改 u 的權限
+> 1.  輸入 `chmod g+s /usr/local/bin/myls`
+>    > 修改 g 的權限  
 > 2.  輸入 `ll /usr/local/bin/myls`  
->    > 查看權限，發現 x 的地方變成 s
+>    > 查看權限，發現 x 的地方變成 s，檔案變成橘色
+> * 切換回 nouser1
 > 3.  輸入 `myls /srv/myproject`
 >    > 執行後出現 myuser.data，可成功執行
 >
@@ -117,7 +118,8 @@
 > 1.  輸入 `ps aux | grep rsyslog ` 
 >    > 找到的 rsyslog 相關的程序
 > 2.  輸入 `ps aux | grep rsyslog > /root/process_syslog.txt `
->    > 將 rsyslog 的相關資訊轉存到 /root/process_syslog.txt 檔案中
+>    
+> 將 rsyslog 的相關資訊轉存到 /root/process_syslog.txt 檔案中
 > 3.  輸入 `cat /root/process_syslog.txt`
 >    > 確認存檔完成
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-4/ACS107144/4-2-1.png) 
