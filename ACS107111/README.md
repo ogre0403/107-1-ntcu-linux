@@ -1,61 +1,61 @@
-![GITHUB](https://imgur.com/6LZPM77.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/6LZPM77.jpg"gitåœ–ç¤º")
 
-+ Œš—§ŒQ‘gmygroupAnogroup
++ å»ºç«‹ç¾¤çµ„mygroupã€nogroup
 
-![GITHUB](https://imgur.com/ytnEHfJ.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/ytnEHfJ.jpg"gitåœ–ç¤º")
 
-+ Žg—puseradd -G mygroup myuser1-3
++ ä½¿ç”¨useradd -G mygroup myuser1-3
 
-![GITHUB](https://imgur.com/xiInYE7.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/xiInYE7.jpg"gitåœ–ç¤º")
 
-+ Ý’è–§áù
++ è¨­å®šå¯†ç¢¼
 
-![GITHUB](https://imgur.com/Tp1s0lX.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/Tp1s0lX.jpg"gitåœ–ç¤º")
 
-+ “¯žé•û–@Ý’è’ åjnouser1-3
++ åŒæ¨£æ–¹æ³•è¨­å®šå¸³è™Ÿnouser1-3
 
-![GITHUB](https://imgur.com/FWIIDZR"gitš¤Ž¦")
+![GITHUB](https://imgur.com/FWIIDZR.jpg"gitåœ–ç¤º")
 
-+ Œš—§Ž‘—¿šñsrvŒãi“üŒãÄŒš—§myprojectŒã—pchgrp‰üÌŒQ‘gchmod‰üÌžÜŒÀ
++ å»ºç«‹è³‡æ–™å¤¾srvå¾Œé€²å…¥å¾Œå†å»ºç«‹myprojectå¾Œç”¨chgrpæ”¹è®Šç¾¤çµ„chmodæ”¹è®Šæ¬Šé™
 
-![GITHUB](https://imgur.com/ePzh7y9.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/ePzh7y9.jpg"gitåœ–ç¤º")
 
-+ ØŠ·Žg—pŽÒˆ×myuser1Œã—ptouchÝmyprojectŒš—§myuser1.data
++ åˆ‡æ›ä½¿ç”¨è€…ç‚ºmyuser1å¾Œç”¨touchåœ¨myprojectå»ºç«‹myuser1.data
  
 
-![GITHUB](https://imgur.com/MD4WcRA.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/MD4WcRA.jpg"gitåœ–ç¤º")
 
-+ •œ§/usr/bin/lsŽŠ/usr/local/bin/myls
++ å¾©åˆ¶/usr/bin/lsè‡³/usr/local/bin/myls
 
-![GITHUB](https://imgur.com/ArhpxEr.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/ArhpxEr.jpg"gitåœ–ç¤º")
 
-+ ØŠ·Žg—pŽÒˆ×nouser1Œã—pmylsŠÅmyproject
++ åˆ‡æ›ä½¿ç”¨è€…ç‚ºnouser1å¾Œç”¨mylsçœ‹myproject
 
-+ ‘æˆê‘èŒ‹‘©
++ ç¬¬ä¸€é¡ŒçµæŸ
 
-![GITHUB](https://imgur.com/4Z3oZeJ.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/4Z3oZeJ.jpg"gitåœ–ç¤º")
 
-+ Žg—pps aux | grep rsyslogŠÅ‘´UIDˆ×851‹y‘´‘¼Ž‘—¿
++ ä½¿ç”¨ps aux | grep rsyslogçœ‹å…¶UIDç‚º851åŠå…¶ä»–è³‡æ–™
 
-![GITHUB](https://imgur.com/hIc7I8E.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/hIc7I8E.jpg"gitåœ–ç¤º")
 
-+ Žg—ptopŠÅUID“IÚ×Ž‘—¿
++ ä½¿ç”¨topçœ‹UIDçš„è©³ç´°è³‡æ–™
 
-+‘æ“ñ‘èŒ‹‘©
++ç¬¬äºŒé¡ŒçµæŸ
 
-![GITHUB](https://imgur.com/VxL3Wy6.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/VxL3Wy6.jpg"gitåœ–ç¤º")
 
-+ —pfind /usr/bin /usr/sbin -perm /4000ŠÅ‘è–Ú—v‹“IŽ‘—¿
++ ç”¨find /usr/bin /usr/sbin -perm /4000çœ‹é¡Œç›®è¦æ±‚çš„è³‡æ–™
 
-![GITHUB](https://imgur.com/SYxxMa6.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/SYxxMa6.jpg"gitåœ–ç¤º")
 
-+ —pfind /usr/bin /usr/sbin -perm /4000 -exec ls -s {}\;ŠÅžÜŒÀ
++ ç”¨find /usr/bin /usr/sbin -perm /4000 -exec ls -s {}\;çœ‹æ¬Šé™
 
-![GITHUB](https://imgur.com/Pys7Qrp.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/Pys7Qrp.jpg"gitåœ–ç¤º")
 
-+ —pfind /usr/bin /usr/sbin -perm /4000 -exec ls -s {}\; > /root/findsuidsgid.txt
++ ç”¨find /usr/bin /usr/sbin -perm /4000 -exec ls -s {}\; > /root/findsuidsgid.txt
 
-![GITHUB](https://imgur.com/MASPX2V.jpg"gitš¤Ž¦")
+![GITHUB](https://imgur.com/MASPX2V.jpg"gitåœ–ç¤º")
 
-+ —pviŠÅfindsuidsgid.txt
++ ç”¨viçœ‹findsuidsgid.txt
 
