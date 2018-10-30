@@ -1,79 +1,79 @@
 ##1 
-#«Ø¥ß¸s²Õ
+#å»ºç«‹ç¾¤çµ„
 	<ol>
-	<li>¿é¤Jgroupadd mygroup</li>
-	<li>¿é¤Jgroupadd nogroup</li>
-	<li>¿é¤Jgrep group /etc/group½T»{¦³¨S¦³¦¨¥\¥[¤J</li>
-	<li><p>¿é¤Juseradd -g mygroup myuser1</p>
-		<p>¿é¤Juseradd -g mygroup myuser2</p>
-		<p>¿é¤Juseradd -g mygroup myuser3</p>
-		<p>¿é¤Juseradd -g nogroup nouser1</p>
-		<p>¿é¤Juseradd -g nogroup nouser1</p>
-		<p>¿é¤Juseradd -g nogroup nouser1</p></li>
+	<li>è¼¸å…¥groupadd mygroup</li>
+	<li>è¼¸å…¥groupadd nogroup</li>
+	<li>è¼¸å…¥grep group /etc/groupç¢ºèªæœ‰æ²’æœ‰æˆåŠŸåŠ å…¥</li>
+	<li><p>è¼¸å…¥useradd -g mygroup myuser1</p>
+		<p>è¼¸å…¥useradd -g mygroup myuser2</p>
+		<p>è¼¸å…¥useradd -g mygroup myuser3</p>
+		<p>è¼¸å…¥useradd -g nogroup nouser1</p>
+		<p>è¼¸å…¥useradd -g nogroup nouser1</p>
+		<p>è¼¸å…¥useradd -g nogroup nouser1</p></li>
 	</ol>	
-#³]©w±K½X(¬Ò¬°MyPassWord)	
+#è¨­å®šå¯†ç¢¼(çš†ç‚ºMyPassWord)	
 	<ol>
-	<li><p>¿é¤Jpasswd myuser1</p>
-		<p>¿é¤Jpasswd myuser2</p>
-		<p>¿é¤Jpasswd myuser3</p>
-		<p>¿é¤Jpasswd nouser1</p>
-		<p>¿é¤Jpasswd nouser1</p>
-		<p>¿é¤Jpasswd nouser1</p></li>
+	<li><p>è¼¸å…¥passwd myuser1</p>
+		<p>è¼¸å…¥passwd myuser2</p>
+		<p>è¼¸å…¥passwd myuser3</p>
+		<p>è¼¸å…¥passwd nouser1</p>
+		<p>è¼¸å…¥passwd nouser1</p>
+		<p>è¼¸å…¥passwd nouser1</p></li>
 	</ol>	
-#ÀË¬d¨Ï¥ÎªÌ¬O§_¦b¥¿½Tªº¸s²Õ¤º 
+#æª¢æŸ¥ä½¿ç”¨è€…æ˜¯å¦åœ¨æ­£ç¢ºçš„ç¾¤çµ„å…§ 
 	<ol>
-	<li><p>¿é¤Jll /home/</p>
-		<p>À³Åã¥Ü</p>
-		<p>drwx------. 2	myuser1	mygroup	62 ¤é´Á	®É¶¡	myuser1</p> 
-		<p>drwx------. 2	myuser2	mygroup	62 ¤é´Á	®É¶¡	myuser2</p>
-		<p>drwx------. 2	myuser3	mygroup	62 ¤é´Á	®É¶¡	myuser3</p> 
-		<p>drwx------. 2	nouser1	nogroup	62 ¤é´Á	®É¶¡	nouser1</p> 
-		<p>drwx------. 2	nouser2	nogroup	62 ¤é´Á	®É¶¡	nouser2</p> 
-		<p>drwx------. 2	nouser3	nogroup	62 ¤é´Á	®É¶¡	nouser3</p></li>
+	<li><p>è¼¸å…¥ll /home/</p>
+		<p>æ‡‰é¡¯ç¤º</p>
+		<p>drwx------. 2	myuser1	mygroup	62 æ—¥æœŸ	æ™‚é–“	myuser1</p> 
+		<p>drwx------. 2	myuser2	mygroup	62 æ—¥æœŸ	æ™‚é–“	myuser2</p>
+		<p>drwx------. 2	myuser3	mygroup	62 æ—¥æœŸ	æ™‚é–“	myuser3</p> 
+		<p>drwx------. 2	nouser1	nogroup	62 æ—¥æœŸ	æ™‚é–“	nouser1</p> 
+		<p>drwx------. 2	nouser2	nogroup	62 æ—¥æœŸ	æ™‚é–“	nouser2</p> 
+		<p>drwx------. 2	nouser3	nogroup	62 æ—¥æœŸ	æ™‚é–“	nouser3</p></li>
 	</ol>	
-#«Ø¥ß¥Ø¿ı	 
+#å»ºç«‹ç›®éŒ„	 
 	<ol>
-	<li>¿é¤Jmkdir -m 070 /srv/myproject</li>
-	<li>¿é¤Jchgrp mygroup /srv/myproject</li>
-	<li><p>¿é¤Jll /srv</p>
-		<p>À³·|Åã¥Ü</p>
-		<p>d---rwx---. 2	root	mygroup 6	¤é´Á	®É¶¡	myproject</p></li>
+	<li>è¼¸å…¥mkdir -m 070 /srv/myproject</li>
+	<li>è¼¸å…¥chgrp mygroup /srv/myproject</li>
+	<li><p>è¼¸å…¥ll /srv</p>
+		<p>æ‡‰æœƒé¡¯ç¤º</p>
+		<p>d---rwx---. 2	root	mygroup 6	æ—¥æœŸ	æ™‚é–“	myproject</p></li>
 	</ol>
-#µn¤Jmyuser1¨Ã«ØÀÉ 
+#ç™»å…¥myuser1ä¸¦å»ºæª” 
 	<ol>
-	<li>¿é¤Jsu myuser1</li>
-	<li>¿é¤Jcd /srv/myproject</li>
-	<li>¿é¤Jtouch myuser1.data</li>
-	<li><p>¿é¤Jll /srv/myproject</p>
-		<p>À³Åã¥Ü</p>
-		<p>-rw-r--r--. 1	myuser1	mygroup	0	¤é´Á	®É¶¡	myuser1.data</li>
-	<li>¤Á¦^root¿é¤Jcp /usr/bin/ls /user/local/bin/myls½Æ»sÀÉ®×</li>
-	<li><p>¿é¤Jll /usr/local/bin</p>
-		<p>À³Åã¥Ü</p>
-		<p>-rwxr-xr-x. 1	root	root	117672	¤é´Á	®É¶¡	myls</v></li>
+	<li>è¼¸å…¥su myuser1</li>
+	<li>è¼¸å…¥cd /srv/myproject</li>
+	<li>è¼¸å…¥touch myuser1.data</li>
+	<li><p>è¼¸å…¥ll /srv/myproject</p>
+		<p>æ‡‰é¡¯ç¤º</p>
+		<p>-rw-r--r--. 1	myuser1	mygroup	0	æ—¥æœŸ	æ™‚é–“	myuser1.data</li>
+	<li>åˆ‡å›rootè¼¸å…¥cp /usr/bin/ls /user/local/bin/mylsè¤‡è£½æª”æ¡ˆ</li>
+	<li><p>è¼¸å…¥ll /usr/local/bin</p>
+		<p>æ‡‰é¡¯ç¤º</p>
+		<p>-rwxr-xr-x. 1	root	root	117672	æ—¥æœŸ	æ™‚é–“	myls</v></li>
 	</ol>	
-#­×§ïuÅv­­¥Onouser1¥i¨Ï¥Î/srv/myproject		
+#ä¿®æ”¹uæ¬Šé™ä»¤nouser1å¯ä½¿ç”¨/srv/myproject		
 	<ol>
-	<li>¿é¤Jchmod u+s /usr/local/bin/myls</li>
-	<li><p>¿é¤Jll /usr/local/bin/myls</p>
-		<p>À³Åã¥Ü</p>
-		<p>-rwsr-xr-x. 1	root	mygroup	117672	¤é´Á	®É¶¡	/usr/local/bin/myls</li>
+	<li>è¼¸å…¥chmod u+s /usr/local/bin/myls</li>
+	<li><p>è¼¸å…¥ll /usr/local/bin/myls</p>
+		<p>æ‡‰é¡¯ç¤º</p>
+		<p>-rwsr-xr-x. 1	root	mygroup	117672	æ—¥æœŸ	æ™‚é–“	/usr/local/bin/myls</li>
 	</ol>
-#¤Á´«¦¨nouser1´ú¸Õ		
+#åˆ‡æ›æˆnouser1æ¸¬è©¦		
 	<ol>
-	<li>¿é¤Jmyls /srv/myproject¥X²{myuser1.data§Y¦¨¥\</li>
+	<li>è¼¸å…¥myls /srv/myprojectå‡ºç¾myuser1.dataå³æˆåŠŸ</li>
 	</ol> 
 
 ##2
-#¨Ï¥Îµ{§ÇÆ[¹îªº«ü¥O¡A·f°t grep ªºÃöÁä¦r¬d¸ß¥\¯à¡A±N§ä¨ìªº rsyslog ¬ÛÃöªºµ{§Çªº PID, PRI, NI, COMMAND µ¥¸ê°TÂà¦s¨ì /root/process_syslog.txt ÀÉ®×¤¤¡C
+#ä½¿ç”¨ç¨‹åºè§€å¯Ÿçš„æŒ‡ä»¤ï¼Œæ­é… grep çš„é—œéµå­—æŸ¥è©¢åŠŸèƒ½ï¼Œå°‡æ‰¾åˆ°çš„ rsyslog ç›¸é—œçš„ç¨‹åºçš„ PID, PRI, NI, COMMAND ç­‰è³‡è¨Šè½‰å­˜åˆ° /root/process_syslog.txt æª”æ¡ˆä¸­ã€‚
 	<ol>
-	<li>¿é¤Jps aux |grep rsyslog</li>	
-	<li>¿é¤Jps aux |grep rsyslog > /root/process_syslog.txt</li>
-	<li>¿é¤Jcat/root/process_syslog.txt</li>
-	![2] (2.png)
+	<li>è¼¸å…¥ps aux |grep rsyslog</li>	
+	<li>è¼¸å…¥ps aux |grep rsyslog > /root/process_syslog.txt</li>
+	<li>è¼¸å…¥cat/root/process_syslog.txt</li>
+![2] (2.png)
 	</ol>
 	
 ##3	
 	<ol>
-	<li>¿é¤Jtop</li>
-	![3] (3.png)	
+	<li>è¼¸å…¥top</li>
+![3] (3.png)	
