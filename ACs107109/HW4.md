@@ -66,14 +66,17 @@
   * 登入**nogroup**中的其中一員(nouser1)，先利用**ll**查看`` /usr/bin/ls ``和`` /usr/local/bin/myls ``的資訊，會發現得到兩個一樣的資訊。
   * 但一開始還沒辦法查詢到`` myls /srv/myproject ``(Permission denied)。
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-601.png)
-  * 切換回**root**修改權限(**chmod u+s 檔案名稱**)。
-> **chmod u+s 檔案名稱**:符號法切換檔案執行權限(SUID)。
-> > SUID的權限旗標為Linux傳統三個身分的權限外的第四個權限。
+  * 切換回**root**修改擁有群組(因為目前還是**root**)。
+> **chgrp mygroup /usr/local/bin/myls**  
+  
+  * 再修改其權限(**chmod g+s 檔案名稱**)。
+> **chmod g+s 檔案名稱**:符號法切換檔案執行權限(SGID)。
+> > SGID的權限旗標為Linux傳統三個身分的權限外的第四個權限。
 > > > 執行者對於該程式需要具有 x 的可執行權限時，可使用此方法讓執行者暫時擁有該程式mygroup群組的權限。
 
-  * 先利用**ll**查看權限資訊，就會發現權限已修改成功囉，為-rw**s**r-xr-x。
+  * 先利用**ll**查看權限資訊，就會發現權限已修改成功囉，為-rwxr-**s**r-x。
   * 最後切換帳號至**nouser1**，查詢`` myls /srv/myproject ``，就可以查詢到裡面的檔案資訊(myuser1.data)了。
-![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-602.png)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-4/ACs107109/1-602--.png)
 -----------------------------------------
 ## 2.使用程序觀察的指令，搭配**grep**的關鍵字查詢功能，將找到的**rsyslog**相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到`` /root/process_syslog.txt ``檔案中。(搭配`` > ``重導向輸出)
 
