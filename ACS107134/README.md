@@ -52,10 +52,13 @@
 ---------------------------------------分隔線-----------------------------------------
 
 ### 2.使用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中。(搭配>重導向輸出) 
-用"ps aux | grep rsyslog > /root/process_syslog.txt"
+用"ps aux | grep rsyslog "   尋找rsyslog的PID，接著
 
+使用"top "來查詢該PID所對應到的其他資料
+
+這裡因為要將這些資料重定向到檔案裡，所以用"top -p (PID) > /root/process_syslog.txt"
+![6](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-4/ACS107134/6.JPG)
 ![7](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-4/ACS107134/7.JPG)
-
 ---------------------------------------分隔線-----------------------------------------
 
 ### 3.使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中。(自行查詢find指令用法，以及使透過重導向符號>輸出檔案)
