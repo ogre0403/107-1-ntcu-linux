@@ -70,10 +70,10 @@
 	<li>輸入ps aux |grep rsyslog</li>	
 	<li>輸入ps aux |grep rsyslog > /root/process_syslog.txt</li>
 	<li>輸入cat/root/process_syslog.txt</li>
-![2] (2.png)
+![](https://i.imgur.com/eJ0ngAA.png)
 	</ol>
 	
 ##3	
 	<ol>
 	<li>輸入top</li>
-![3] (3.png)	
+![](https://i.imgur.com/f9iqLnB.png)	
