@@ -4,6 +4,32 @@
 
 請同學至[作業成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的作業成績，若HW-1沒有成績(0分)，請至[HW-1 分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-1)確認是否有你的作業，若HW-2沒有成績，請至[HW-2分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-2)確認是否有你的作業，之後的作業依此類推。有些同學作業送到錯分支，一樣以0分記，請重新送一次。
 
+## HW5: Deadline: 2018/11/6 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-5的地方在作業4改用HW-5分支
+
+*注意:* 以Markdown 格式 **詳細整理記錄說明** 每一個步驟，若太精簡成績以50分 記。
+
+
+1. 關於連結檔案的建置行為: 
+    
+    * 在 /srv/examlink 檔案，請找出(1)該檔案的 inode 號碼為幾號？(2)這個 inode 共有幾個檔名在使用？
+    
+    * 我知道 /srv/examlink 的連結檔放置在 /etc 底下，請使用 man find 找關鍵字 inode ，查到可以使用的選項與參數後， 實際找出 /srv/examlink 的實體連結檔，並將檔名寫下來。
+    
+    * 建立實體連結，原始檔案為 /etc/services 而新的檔案檔名為 /srv/myservice
+    
+    * 建立符號連結，原始檔案為 /etc/vimrc 而新的檔案檔名為 /srv/myvimrc
+
+2. 請依據底下的說明，新增所需的硬碟與分割區後，建立好所需要的檔案系統(使用 UUID 來掛載。)，且都要能夠開機後自動的掛載。
+
+    容量      | 檔案系統  | 掛載點
+    ----------|----------|------
+    2GB|            XFS  |/data/xfs
+    1GB|            VFAT |/data/vfat
+    1GB|            EXT4 |/data/ext4
+    1GB|            swap |/data/swap
+
 ## HW4: Deadline: 2018/10/30 23:59 
 
 *注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業4改用HW-4分支
