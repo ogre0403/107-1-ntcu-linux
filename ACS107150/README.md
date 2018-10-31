@@ -39,6 +39,20 @@
 
 > ![GITHUB](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/HW-4/ACS107150/5.PNG?raw=true)
 
+## 復制/usr/bin/ls至/usr/local/bin/myls後，完成下列操作
+
+### 雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行 /usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行【myls /srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。
+
+-  用cp把/usr/bin/ls複製到/usr/local/bin/myls
+-  用ll確認myls的權限
+-  (註:之前我已經將myls增加SUID的權限,但為了完整呈現內容,會再把指令示範一次)
+-  用chmod 4755更改權限
+-  再用ll確認myls的權限
+-  用su切換使用者為nouser1
+-  執行myls /srv/myproject確認可不可以執行
+
+> ![GITHUB]()
+
 # 2.使用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中。(搭配>重導向輸出)
 
 -  用ps aux |grep rsyslog找尋與rsyslog相關的程序
