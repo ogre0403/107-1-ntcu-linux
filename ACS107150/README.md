@@ -51,7 +51,7 @@
 -  用su切換使用者為nouser1
 -  執行myls /srv/myproject確認可不可以執行
 
-> ![GITHUB]()
+> ![GITHUB](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/HW-4/ACS107150/a.PNG?raw=true)
 
 # 2.使用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中。(搭配>重導向輸出)
 
