@@ -1,20 +1,23 @@
-# Linuxå®‰è£éç¨‹
-***
-## ä¸‹è¼‰:
-### åˆ°ç¶²è·¯ä¸Šä¸‹è¼‰centoså’Œvurtualbox
-![](https://i.imgur.com/eKYBEPE.jpg)
-![](https://i.imgur.com/lV74OlR.png)
-é€™éƒ¨åˆ†åªæ˜¯ä¸‹è¼‰è€Œå·²,æ²’é‡åˆ°ç”šéº¼å•é¡Œ
-***
-## è¨­å®š:
-### æ‰“é–‹vurtualboxä¸¦ä¸”é€²è¡Œè¨­å®š!
-æŠŠä¸‹è¼‰å¥½çš„centosæ”¾å…¥vurtualboxåŸ·è¡Œ
-![](https://i.imgur.com/cJBeHzD.png)
-è¨­å®šç¡¬ç¢Ÿ(ä¹‹å‰å·²ç¶“åšå®Œä¾†ä¸åŠæˆªåœ–)
-ç¡¬ç¢Ÿçš„æ–¹é¢çœ‹åˆ°æ™‚ä¸æœƒåš,ä½†ä¸Šç¶²æŸ¥äº›è³‡æ–™å¾Œå°±æ²’å•é¡Œäº†
-è¨­å®šrootå’Œä½¿ç”¨è€…çš„å¸³å¯†
-***
-## æœ€å¾Œ:
-æ‰“é–‹è™›æ“¬æ©Ÿå™¨å°±èƒ½å¤ ä½¿ç”¨äº†
-![](https://i.imgur.com/EUgClOU.png)
-![](https://i.imgur.com/bJKcMnd.png)
+# 1.ºŞ²z¸s²Õ¦@¥Î¸ê®ÆªºÅv­­³]­p:
+* «Ø¥ß¸s²Õ¦WºÙ¬°¡G mygroup, nogroup
+![](https://i.imgur.com/WtiVbbh.png)
+* «Ø¥ß±b¸¹¦WºÙ¬°¡G myuser1, myuser2, myuser3 ¡A³q³q¥[¤J mygroup¡A¥B±K½X¬° MyPassWord
+* «Ø¥ß±b¸¹¦WºÙ¬°¡G nouser1, nouser2, nouser3 ¡A³q³q¥[¤J nogroup¡A¥B±K½X¬° MyPassWord
+![](https://i.imgur.com/krsLKWB.png)
+![](https://i.imgur.com/jNcXgYL.png)
+¦]¬°¤W­±«ü¥O¥´¿ù¾É­P¨S¦¨¥\¥[¤J¸s²Õ,©Ò¥H³o¸Ì¥Îusermod³B²z
+![](https://i.imgur.com/iMJnfiZ.png)
+* «Ø¥ß¤@­Ó¦W¬° /srv/myproject ªº¥Ø¿ı¡A³o­Ó¥Ø¿ı¥i¥HÅı mygroup ¸s²Õ¤ºªº¨Ï¥ÎªÌ§¹¾ã¨Ï¥Î¡A¥B¡i·s«ØªºÀÉ®×¾Ö¦³¸s²Õ¡j¬° mygroup ¡C¤£¹L¨ä¥L¤H¤£¯à¦³¥ô¦óÅv­­
+![](https://i.imgur.com/IIJLDLp.png)
+* ¼È®É¤Á´«¦¨¬° myuser1 ªº¨­¤À¡A¨Ã«e©¹ /srv/myproject ¥Ø¿ı¡A¹Á¸Õ«Ø¥ß¤@­Ó¦W¬° myuser1.data ªºÀÉ®×¡A¤§«áµn¥X myuser1¡C
+![](https://i.imgur.com/vKZiWRS.png)
+* ´_¨î/usr/bin/ls¦Ü/usr/local/bin/myls
+![](https://i.imgur.com/nx6gVMu.png)
+![](https://i.imgur.com/V5zIz41.png)
+# 2.¨Ï¥Îµ{§ÇÆ[¹îªº«ü¥O¡A·f°t grep ªºÃöÁä¦r¬d¸ß¥\¯à¡A±N§ä¨ìªº rsyslog ¬ÛÃöªºµ{§Çªº PID, PRI, NI, COMMAND µ¥¸ê°TÂà¦s¨ì /root/pr![](https://i.imgur.com/HgjDUTu.png)
+¹Ï¤¤¥i§ä¨ì rsyslogªºPID,PRI,NI,COMMAND
+# 3.¨Ï¥Î find §ä¥X /usr/bin ¤Î /usr/sbin ¨â­Ó¥Ø¿ı¤¤¡A§t¦³ SUID ªº¯S®íÀÉ®×ÀÉ¦W¡A¨Ã¨Ï¥Î ls -l ¥h¦C¥X§ä¨ìªºÀÉ®×ªº¬ÛÃöÅv­­«á¡A±N¿Ã¹õ¸ê®ÆÂà¦s¨ì /root/findsuidsgid.txt ÀÉ®×¤¤¡C(¦Û¦æ¬d¸ßfind«ü¥O¥Îªk¡A¥H¤Î¨Ï³z¹L­«¾É¦V²Å¸¹>¿é¥XÀÉ®×)
+* ¨Ï¥Î find §ä¥X /usr/bin ¤Î /usr/sbin ¨â­Ó¥Ø¿ı¤¤¡A§t¦³ SUID ªº¯S®íÀÉ®×ÀÉ¦W
+![](https://i.imgur.com/5nVsMjG.png)
+* ¨Ï¥Î ls -l ¥h¦C¥X§ä¨ìªºÀÉ®×ªº¬ÛÃöÅv­­«á¡A±N¿Ã¹õ¸ê®ÆÂà¦s¨ì /root/findsuidsgid.txt ÀÉ®×¤¤
+![](https://i.imgur.com/w417wYd.png)
