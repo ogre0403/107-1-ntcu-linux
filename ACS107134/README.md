@@ -1,29 +1,42 @@
 * 的使用
 > <>的使用
-![]()
+![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-5/ACS107134/1.JPG)
 
 ## ◎在 /etc/hosts 檔案，請找出
-### │
-### ├>該檔案的 inode 號碼為幾號？ 
-### │    > <想要看inode號碼的話要使用 ls 的子功能 "-i">
-### │
-### └>這個 inode 共有幾個檔名在使用？
+ │
+
+ ├>該檔案的 inode 號碼為幾號？ 
+
+ │    > <想要看inode號碼的話要使用 ls 的子功能 "-i">
+
+ └>這個 inode 共有幾個檔名在使用？
      > <需要"詳細"列出，所以要使用 ls 的子功能 "-l">
+![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-5/ACS107134/1.JPG)
 
 ## ◎建立實體連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard，請找出
-### │    因為/etc/hosts有權限上的問題，一般使用者不能建立，需要切換到root才能操作
-### ├>/srv/hosts.hard的 inode 號碼為幾號？
-### │    > <想要看inode號碼的話要使用 ls 的子功能 "-i">
-### │    
-### ├>這個 inode 共有幾個檔名在使用？
-### │    > <需要"詳細"列出，所以要使用 ls 的子功能 "-l">
-### │
-### └>說明原因。
+ │    因為/etc/hosts有權限上的問題，一般使用者不能建立，需要切換到root才能操作
+
+ ├>/srv/hosts.hard的 inode 號碼為幾號？
+
+ │    > <想要看inode號碼的話要使用 ls 的子功能 "-i">
+
+ ├>這個 inode 共有幾個檔名在使用？
+
+ │    > <需要"詳細"列出，所以要使用 ls 的子功能 "-l">
+
+ └>說明原因。
+![2](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-5/ACS107134/2.JPG)
       
 ## ◎建立符號連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.soft，請找出
-### │
-### ├>/srv/hosts.soft的 inode 號碼為幾號？
-### │
-### ├>這個 inode 共有幾個檔名在使用
-### │
-### └>說明原因
+ │
+
+ ├>/srv/hosts.soft的 inode 號碼為幾號？
+
+ │
+
+ ├>這個 inode 共有幾個檔名在使用
+
+ │
+
+ └>說明原因
+![3](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-5/ACS107134/3.jpg)
