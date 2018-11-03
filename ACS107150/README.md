@@ -8,7 +8,7 @@
 
 -   由檔案連結數可知只有1個在使用
 
-> ![github]()
+> ![github](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/HW-5/ACS107150/1.PNG?raw=true)
 
 # 建立實體連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard，請找出
 
@@ -25,7 +25,7 @@
 -   因為建立實體連結inode不會改變
 -   所以會多一個檔案使用來源檔的inode
 
-> ![github]()
+> ![github](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/HW-5/ACS107150/2.PNG?raw=true)
 
 # 建立符號連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.soft，請找出
 
@@ -42,5 +42,5 @@
 -   因為建立符號連結時會產生一個獨立的檔案
 -   所以inode和來源檔不同
 
-> ![github]()     
+> ![github](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/HW-5/ACS107150/3.PNG?raw=true)     
     
