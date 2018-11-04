@@ -4,8 +4,8 @@
 ###  <li>該檔案的 inode 號碼為幾號？ <br>
 ###  <li>這個 inode 共有幾個檔名在使用？<br>
 <br>
-在" ls -al "的後面加上參數" i "就可以查看檔名的inode號碼，以及該inode共有幾個檔名在使用。    
-![Alt text](https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-5/ACS107135/photo/1.PNG?raw=true)     
+在" ls -al "的後面加上參數" i "就可以查看檔名的inode號碼，以及該inode共有幾個檔名在使用。<br>
+![](https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-5/ACS107135/photo/1.PNG?raw=true)<br>
 
 *****
 
