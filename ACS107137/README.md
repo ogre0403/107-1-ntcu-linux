@@ -3,7 +3,7 @@
 #### Ans:2107882<br>
 ### 2.這個 inode 共有幾個檔名在使用？<br>
 #### Ans:1<br>
-![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-5/ACS107137/img/1-1.png?raw=true)<br>
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-5/ACS107137/img/1-1.png?raw=true)<br><br>
 ## 建立實體連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard，請找出<br>
 ### 1./srv/hosts.hard的 inode 號碼為幾號？<br>
 #### Ans:2107882<br>
@@ -11,8 +11,8 @@
 #### Ans:2<br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-5/ACS107137/img/1-2.png?raw=true)<br>
 ### 3.說明原因<br>
-#### 實體連結(hard link)只是在某個目錄下新增一個該檔案的關連資料而已，兩個檔案名連結到同一個inode碼，所以檔案連結數為2<br>
-#### 另外不論使用哪一個檔名來編輯，結果都是相同的<br>
+#### 實體連結(hard link)是在某個目錄下新增一個該檔案的關連資料而已，兩個檔名連結到同一個inode碼，所以檔案連結數為2<br>
+#### 另外，不論使用哪一個檔名來編輯，結果都是相同的喔!<br><br>
 ## 建立符號連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.soft，請找出<br>
 ### 1./srv/hosts.soft的 inode 號碼為幾號？<br>
 #### Ans:6709889<br>
