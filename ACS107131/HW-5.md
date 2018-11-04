@@ -4,17 +4,17 @@
   
 ### (2)這個 inode 共有幾個檔名在使用？ 1  
    
-#### 如何找尋inode:Is -ali 檔名   
+#### 如何找尋 inode : Is -ali 檔名   
       
 ## 2.建立實體連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard    
        
-#### 作法:ln 原檔名 新檔名    
+#### 作法 : ln 原檔名 新檔名    
       
 ### (1)/srv/hosts.hard的 inode 號碼為幾號？ 2129800   
       
 ### (2)這個 inode 共有幾個檔名在使用？ 2   
    
-#### 如何找尋inode:Is -ali 檔名
+#### 如何找尋 inode : Is -ali 檔名
      
 ### (3)說明原因 
        
@@ -22,13 +22,13 @@
     
 ## 3.建立符號連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.soft  
     
-#### 作法:ln -s 原檔名 新檔名    
+#### 作法 : ln -s 原檔名 新檔名    
      
 ### (1)/srv/hosts.soft的 inode 號碼為幾號？ 3148481      
          
 ### (2)這個 inode 共有幾個檔名在使用？ 1     
      
-#### 如何找尋inode:Is -ali 檔名    
+#### 如何找尋 inode : Is -ali 檔名    
           
 ### (3)說明原因 
        
