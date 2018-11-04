@@ -2,8 +2,7 @@
 ------------------------------------
 ### 在 /etc/hosts 檔案，請找出<br>
 ###  <li>該檔案的 inode 號碼為幾號？ <br>
-###  <li>這個 inode 共有幾個檔名在使用？<br>
-<br>
+###  <li>這個 inode 共有幾個檔名在使用？<br><br>
 在" ls -al "的後面加上參數" i "就可以查看檔名的inode號碼，以及該inode共有幾個檔名在使用。<br>
 ![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-5/ACS107135/photo/1.PNG?raw=true)<br>
 
@@ -25,12 +24,10 @@
 ###  <li>說明原因<br>
 <br>
 #### 用 ln -s 指令來建立符號連結(Symbolic Link)<br>
-"-s"為建立符號連結(Symbolic Link)的參數。
-<br>
+"-s"為建立符號連結(Symbolic Link)的參數。<br>
 可以得知:<br>
 1.inode 號碼為" 12944883 "<br>
-2.該inode只有1個檔名正在使用。<br>
-<br>
+2.該inode只有1個檔名正在使用。<br><br>
 說明: Symbolic Link 與 Hard Link 兩者不同。<br>
 " Hard Link "是把一個檔案新增出一個不同的檔名，但是這2個不同的檔名所開啟的是同一個檔案，所以他們的inode會是相同的(為同一檔案)。<br>
 " Symbolic Link "是建立一個新檔案做為另一個檔案開啟的捷徑，2者為不同的檔案，所以自然inode就不會相同(為不同檔案)。<br>
