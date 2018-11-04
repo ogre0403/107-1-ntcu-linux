@@ -1,127 +1,127 @@
 # HW5
 ---------------------------------
-## ����s���ɮת��ظm�欰:
+## 關於連結檔案的建置行為:
 
 
 ---------------------------------
-### �b /etc/hosts �ɮסA�Ч�X
+### 在 /etc/hosts 檔案，請找出
 
 
-> �Q��`` ls -ali �ɮצW��  ``��Minode���X�C
-> > **ls -ali**�̫e�����ƭȧY��inode���X�C
-> > > **-a**:�������ɮסA�s�P������( �}�Y�� . ���ɮ�) �@�_�C�X�ӡC
-> > > **-l**:����Ʀ�C�X�A�]�t�ɮת��ݩʻP�v��������ơC
-> > > **-i**:�C�X inode ���X�C
-> > > > **-ali**��**-a**�B**-l**�B**-i**���զX�C
+> 利用`` ls -ali 檔案名稱  ``找尋inode號碼。
+> > **ls -ali**最前面的數值即為inode號碼。
+> > > **-a**:全部的檔案，連同隱藏檔( 開頭為 . 的檔案) 一起列出來。
+> > > **-l**:長資料串列出，包含檔案的屬性與權限等等資料。
+> > > **-i**:列出 inode 號碼。
+> > > > **-ali**為**-a**、**-l**、**-i**的組合。
 
 
-* ���ɮת� inode ���X���X���H
+* 該檔案的 inode 號碼為幾號？
 
 
 **2129800**
 
 
-* �o�� inode �@���X���ɦW�b�ϥΡH
+* 這個 inode 共有幾個檔名在使用？
 
 
 **1**
 
 
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-5/ACS107109/HW5img/1-1.png)
 
 
 ---------------------------------
-### �إ߹���s���A��l�ɮ׬� /etc/hosts �ӷs���ɮ��ɦW�� /srv/hosts.hard�A�Ч�X
+### 建立實體連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard，請找出
 
 
-> �Q��`` ln /etc/hosts /srv/hosts.hard ``�إ߹���s���C
-> > **ln ����ؿ����ɮ� �s�����ؿ����ɮ�**:�s���ɮשΥؿ��C
-> > > �N`` /etc/hosts ``�s����`` /srv/hosts.hard ``�C
+> 利用`` ln /etc/hosts /srv/hosts.hard ``建立實體連結。
+> > **ln 實體目錄或檔案 連結的目錄或檔案**:連結檔案或目錄。
+> > > 將`` /etc/hosts ``連結至`` /srv/hosts.hard ``。
 
-> �A�Q��`` ll -i /etc/hosts /srv/hosts.hard ``�d���ɮ׬�����T�C
-> > **-i**:�C�X inode ���X�C
-> > > �|�o�{�����ɮצW�٨ϥΦP�@��inode���X(�s����:2)�C
+> 再利用`` ll -i /etc/hosts /srv/hosts.hard ``查找檔案相關資訊。
+> > **-i**:列出 inode 號碼。
+> > > 會發現其兩個檔案名稱使用同一個inode號碼(連結數:2)。
 
 
-* /srv/hosts.hard�� inode ���X���X���H
+* /srv/hosts.hard的 inode 號碼為幾號？
 
 
 **2129800**
 
 
-* �o�� inode �@���X���ɦW�b�ϥΡH
+* 這個 inode 共有幾個檔名在使用？
 
 
 **2**
 
 
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-5/ACS107109/HW5img/2-1.png)
 
 
-* ������]
+* 說明原因
 
 
-�]���C�ӥؿ����U����`` . ``���ɮצW�١A�åB`` . ``�S�N�����ؿ��ۤv�A�ҥH**�ؿ������|������ɮצW�ٸ��H�ۤv**�A�Ϥ��A**�|������ɮצW�ٳs���ܬۦP��inode���X**�C
-> �]���A��inode���X�|������ɮצW�٦b�ϥΡC
+因為每個目錄底下都有`` . ``的檔案名稱，並且`` . ``又代表為目錄自己，所以**目錄本身會有兩個檔案名稱跟隨自己**，反之，**會有兩個檔案名稱連結至相同的inode號碼**。
+> 因此，其inode號碼會有兩個檔案名稱在使用。
 
 > **hard link**
-> >�C���ɮ׳��|�ϥΤ@��inode�A�ɮת����e��inode���O���ӫ��V�C�]���A�Q�nŪ�����ɮ׮ɡA���g�ѥؿ��O�����ɮצW�٫��V���T��inode���X�~�i�HŪ���C
-> > > �h���ɮצW�٥i�H������P�@��inode���X�C
+> >每個檔案都會使用一個inode，檔案的內容由inode之記錄來指向。因此，想要讀取其檔案時，須經由目錄記錄的檔案名稱指向正確的inode號碼才可以讀取。
+> > > 多個檔案名稱可以對應到同一個inode號碼。
 
-> **inode �P block ���S�����ܡC**
+> **inode 與 block 都沒有改變。**
 
 
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-5/ACS107109/HW5img/2-2.png)
 
 
 ---------------------------------
-### �إ߲Ÿ��s���A��l�ɮ׬� /etc/hosts �ӷs���ɮ��ɦW�� /srv/hosts.soft�A�Ч�X
+### 建立符號連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.soft，請找出
 
 
-> �Q��`` ln -s /etc/hosts /srv/hosts.soft ``�إ�Symbolic link�C
-> > **ln -s �u��ؿ����ɮ� �s�����ؿ����ɮ� ``:�s���ɮשΥؿ��C
-> > > **-s**:���� symbolic line ���s���C
-> > > > �N`` /etc/hosts ``�s����`` /srv/hosts.soft ``�C
+> 利用`` ln -s /etc/hosts /srv/hosts.soft ``建立Symbolic link。
+> > **ln -s 真實目錄或檔案 連結的目錄或檔案 ``:連結檔案或目錄。
+> > > **-s**:提供 symbolic line 的連結。
+> > > > 將`` /etc/hosts ``連結至`` /srv/hosts.soft ``。
 
-> **�P�Ĥ@�D���B�J�d��inode���X�H�Φ@���X���ɦW�b�ϥ�**�C
-> > �Q��`` ls -ali �ɮצW��  ``��Minode���X�C
-> > > **ls -ali**�̫e�����ƭȧY��inode���X�C
-> > > > **-a**:�������ɮסA�s�P������( �}�Y�� . ���ɮ�) �@�_�C�X�ӡC
-> > > > **-l**:����Ʀ�C�X�A�]�t�ɮת��ݩʻP�v��������ơC
-> > > > **-i**:�C�X inode ���X�C
-> > > > > **-ali**��**-a**�B**-l**�B**-i**���զX�C
+> **同第一題的步驟查找inode號碼以及共有幾個檔名在使用**。
+> > 利用`` ls -ali 檔案名稱  ``找尋inode號碼。
+> > > **ls -ali**最前面的數值即為inode號碼。
+> > > > **-a**:全部的檔案，連同隱藏檔( 開頭為 . 的檔案) 一起列出來。
+> > > > **-l**:長資料串列出，包含檔案的屬性與權限等等資料。
+> > > > **-i**:列出 inode 號碼。
+> > > > > **-ali**為**-a**、**-l**、**-i**的組合。
 
 
-* /srv/hosts.soft�� inode ���X���X���H
+* /srv/hosts.soft的 inode 號碼為幾號？
 
 
 **309227**
 
 
-* �o�� inode �@���X���ɦW�b�ϥ�
+* 這個 inode 共有幾個檔名在使用
 
 
 **1**
 
 
-![image]()
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-5/ACS107109/HW5img/3-1.png)
 
 
-* ������]
+* 說明原因
 
 
-�]���䬰�إ�**��@���W�߷s�ɮ�**�A�B���ɮ׷|��**���Ū���ɪ������V��link�����ɮפ��e**�C
-> �]���A��inode���X�u�|���@���ɮצW�٦b�ϥΡC
+因為其為建立**單一的獨立新檔案**，且此檔案會使**資料讀取時直接指向其link中的檔案內容**。
+> 因此，其inode號碼只會有一個檔案名稱在使用。
 
 > **symbolic link**
 
-> **inode �P block �|���ܡC**
-> >�|���α� inode �P block�C
+> **inode 與 block 會改變。**
+> >會佔用掉 inode 與 block。
 
 
 -----------------------------------------
-####�ɥR:
+#### 補充:
 
 
-* �ѩ�C�@�x�q�������P�A�ҥH�C�ӤH��inode���X�|���Ӥ@�ˡC
-* �p�Gln���[����ѼơA��N�ݩ����s��(hard link)�C
+* 由於每一台電腦的不同，所以每個人的inode號碼會不太一樣。
+* 如果ln不加任何參數，其就屬於實體連結(hard link)。
