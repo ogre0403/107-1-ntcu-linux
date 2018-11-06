@@ -27,6 +27,6 @@
 
 穝郎 _/srv/hosts.soft_┮戈ず甧**弄郎 _/etc/hosts_**
 
- 局Τぃ戈ず甧珿縒ミㄢ郎ㄢ幫局Τぃinode腹絏
+ 局Τぃ戈ず甧珿縒ミㄢ郎局Τぃinode腹絏
 
 ![image]("https://github.com/freshdiefish/107-1-ntcu-linux/blob/HW-5/ACS107125/5_03.png")
