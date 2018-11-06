@@ -1,0 +1,19 @@
+## 一.
++ 1.用ls -ali /etc/hosts 可以發現inode 號碼為 728406
++ 2.目前有一個檔名共用此碼
++ 3.![](https://imgur.com/a/3LhBUuX)
+
+***
+## 二.
++ 1.用ln /etc/hosts /srv/hosts.hard 建立實體連結
++ 2.原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard
++ 3.再用ls -ali /srv/hosts.hard 找出 inode 號碼為 728406
++ 4.這次有兩個檔名共用此碼，因為建立的是實體連結，所以inode號碼是一樣的
++ 5.![](https://imgur.com/a/x7kmN9L)
+***
+## 三.
++ 1.用ln -s /etc/hosts /srv/hosts.soft 建立符號連結
++ 2.再用ls -ali /srv/hosts.soft 找出 inode 號碼為 838609 
++ 3.目前有一個檔名共用此碼，符號連結=>建立捷徑，建立一個獨立的檔案，而這個檔案會讓資料的讀取指向他link的那個檔案的檔名
++ 4.![](https://imgur.com/a/dzCPpCF)
+
