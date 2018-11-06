@@ -4,7 +4,7 @@
 + 用ls搭配-i參數列出檔案連帶inode號碼
 + 從圖中最左邊可以看出inode號碼為383105
 + 從圖中可看出只有1個檔名用這個inode
-![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-2/ACS107103/vm.png)
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-5/ACS107103/kali-2018-11-06-20-34-18.png)
 
 <em>2.<em>
 + 用ln指令建立實體連結
@@ -13,8 +13,8 @@
 + 從圖中可看出共有2個檔名用同個inode
 + 此時數量變為兩個，原因是因為用ln指令建立的是實體連結，實際上是在該目錄的block下在紀錄一個檔名與inode的對應
 + (換句話說就是inode數量與block數量都不會變)
-![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-2/ACS107103/vm.png)
-![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-2/ACS107103/vm.png)
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-5/ACS107103/kali-2018-11-06-20-37-00.png)
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-5/ACS107103/kali-2018-11-06-20-37-56.png)
 
 <em>3.<em>
 + 用ln -s創建一個符號連結
@@ -24,5 +24,5 @@
 + 從圖中可看出只有1個檔名用這個inode
 + 原因是因為新創建這個連結是symbolic link，實際上是再創建一個新的文件，這個文件指向一個目的檔案，當存取這個文件的時候，會指向目的檔案
 + (有點類似windows下的"捷徑")
-![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-2/ACS107103/path.png)
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-5/ACS107103/kali-2018-11-06-20-43-01.png)
 
