@@ -1,16 +1,16 @@
-1.Ãö©ó³sµ²ÀÉ®×ªº«Ø¸m¦æ¬°:
+1.é—œæ–¼é€£çµæª”æ¡ˆçš„å»ºç½®è¡Œç‚º:
     
-(1)¿é¤J ls -ali /etc/hosts*§ä¨ìincode¸¹½X¬°5848692  
-(2)¥u¦³¤@­ÓÀÉ¦W¦b¨Ï¥Î¸Óinode
+(1)è¼¸å…¥ ls -ali /etc/hosts*æ‰¾åˆ°inodeè™Ÿç¢¼ç‚º5848692  
+(2)åªæœ‰ä¸€å€‹æª”ååœ¨ä½¿ç”¨è©²inode
       
-2.«Ø¥ß¹êÅé³sµ²¡A­ì©lÀÉ®×¬° /etc/hosts ¦Ó·sªºÀÉ®×ÀÉ¦W¬° /srv/hosts.hard¡A½Ğ§ä¥X  
+2.å»ºç«‹å¯¦é«”é€£çµï¼ŒåŸå§‹æª”æ¡ˆç‚º /etc/hosts è€Œæ–°çš„æª”æ¡ˆæª”åç‚º /srv/hosts.hardï¼Œè«‹æ‰¾å‡º  
    
-(1)¿é¤Jln /etc/hosts /srv/hosts.hard¥h«Ø¥ß¹êÅé³sµ²¡AµM«á¦A¿é¤J cd /srv¶i¤Jsrv 
-µM«á¦A¿é¤Jls -ali hosts.hard´N¥i¥H§ä¨ìincode¸¹½X¬°12810757   
-(2)¦³¨â­ÓÀÉ¦W¦b¨Ï¥Î¸Óinode
-(3)¹êÅé³sµ²©M­ì¤å¥ó¦@¨É¬Û¦Pªºinode
+(1)è¼¸å…¥ln /etc/hosts /srv/hosts.hardå»å»ºç«‹å¯¦é«”é€£çµï¼Œç„¶å¾Œå†è¼¸å…¥ cd /srvé€²å…¥srv 
+ç„¶å¾Œå†è¼¸å…¥ls -ali hosts.hardå°±å¯ä»¥æ‰¾åˆ°incodeè™Ÿç¢¼ç‚º12810757   
+(2)æœ‰å…©å€‹æª”ååœ¨ä½¿ç”¨è©²inode
+(3)å¯¦é«”é€£çµå’ŒåŸæ–‡ä»¶å…±äº«ç›¸åŒçš„inode
   
-3.«Ø¥ß²Å¸¹³sµ²¡A­ì©lÀÉ®×¬° /etc/hosts ¦Ó·sªºÀÉ®×ÀÉ¦W¬° /srv/hosts.soft¡A½Ğ§ä¥X  
-(1)¿é¤J ln -s /etc/hosts /srv/ hosts.soft¨Ó«Ø¥ß²Å¸¹³sµ²¡AµM«á¦A¿é¤Jls -ali /srv/hosts.soft´N¥i¥H§ä¨ìincode¸¹½X¬°12625702¡C
-(2)¤@­Ó   
-(3)¦]¬°¸ò/etc/hostsªºinode¦WºÙ¤£¦P¡A©Ò¥H·|­«·s«Ø¥ß·sªºinclode   
+3.å»ºç«‹ç¬¦è™Ÿé€£çµï¼ŒåŸå§‹æª”æ¡ˆç‚º /etc/hosts è€Œæ–°çš„æª”æ¡ˆæª”åç‚º /srv/hosts.softï¼Œè«‹æ‰¾å‡º  
+(1)è¼¸å…¥ ln -s /etc/hosts /srv/ hosts.softä¾†å»ºç«‹ç¬¦è™Ÿé€£çµï¼Œç„¶å¾Œå†è¼¸å…¥ls -ali /srv/hosts.softå°±å¯ä»¥æ‰¾åˆ°inodeè™Ÿç¢¼ç‚º12625702ã€‚
+(2)ä¸€å€‹   
+(3)å› ç‚ºè·Ÿ/etc/hostsçš„inodeåç¨±ä¸åŒï¼Œæ‰€ä»¥æœƒé‡æ–°å»ºç«‹æ–°çš„inode   
