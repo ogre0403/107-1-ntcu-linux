@@ -1,0 +1,38 @@
+#  關於連結檔案的建置行為:</br></br>
+ 
+###  <li>在 /etc/hosts 檔案，請找出  </br>
+
+###     1.該檔案的 inode 號碼為幾號？</br>
+####    Ans:4430496</br>
+###     2.這個 inode 共有幾個檔名在使用？</br>
+####    Ans:1個</br>
+
+#####  用參數"i"來觀測 inode 號碼和連接數。</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-5/ACS107127/screen5/1.png)</br>
+
+*****
+
+###  <li>建立實體連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.hard，請找出/srv/hosts.hard的 inode 號碼為幾號？  </br>
+####     Ans:4430496</br>
+
+###     1.這個 inode 共有幾個檔名在使用？</br>
+####    Ans:2個</br>
+###     2.說明原因:</br>
+####    Ans:實體連結(Hard link)只是在某個目錄下新增一筆檔名連結到某 inode 號碼的關連記錄而已，兩個檔名連結到同一個 inode 所以連接數為"2"，且不僅 inode 號碼一樣連權限也是相同的。</br>
+
+#####  用"ln"建立實體連結。(記得先切換到root才能做這個動作)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-5/ACS107127/screen5/2.png)</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-5/ACS107127/screen5/3.png)</br>
+
+*****
+
+###  <li>建立符號連結，原始檔案為 /etc/hosts 而新的檔案檔名為 /srv/hosts.soft，請找出/srv/hosts.soft的 inode 號碼為幾號？  </br>
+####     Ans:187</br>
+
+###     1.這個 inode 共有幾個檔名在使用?</br>
+####    Ans:1個</br>
+###     2.說明原因:</br>
+####    Ans:符號連結是在建立一個獨立的檔案，而這個檔案會讓資料的讀取指向他link的那個檔案的檔名，所以會有一個不同的 inode ，當然也只會有"1"個連接數。</br>
+
+#####  "-s"為建立符號連結(Symbolic Link)的參數。</br>
+![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-5/ACS107127/screen5/4.png)</br>
