@@ -1,35 +1,35 @@
-+¨Ï¥Îecho ${ver}¡Becho ${kernel}«Ø¥ßÅÜ¼Æver¡Bkernel¡AµM«á³]©wkernel=$(uname -r)
- ³Ì«á³]©wver="my kernel version is $kernel"§Y¥i
++ ä½¿ç”¨echo ${ver}ã€echo ${kernel}å»ºç«‹è®Šæ•¸verã€kernelï¼Œç„¶å¾Œè¨­å®škernel=$(uname -r)
+ æœ€å¾Œè¨­å®šver="my kernel version is $kernel"å³å¯
 
-+¨Ï¥Îecho $PATH¥i¥H¬d¬İ¸ô®|¬ÛÃöªºÀô¹ÒÅÜ¼Æ
-![GITHUB](https://imgur.com/O8Sk2kq.jpg"git¹Ï¥Ü")
++ä½¿ç”¨echo $PATHå¯ä»¥æŸ¥çœ‹è·¯å¾‘ç›¸é—œçš„ç’°å¢ƒè®Šæ•¸
+![GITHUB](https://imgur.com/O8Sk2kq.jpg"gitåœ–ç¤º")
  
-+drwxrwsr-x 3 root mail 4096 2¤ë 16 2017 mail/
-+¨äÀÉ®×¯S©Ê¬°:Åv­­¬°¨Ï¥ÎªÌ¥i¼g¥iÅª¥i¨Ï¥Î¡A¨ã¦³SGIDªº¥\¯à¡A¨ä¥L¤H°õ¦æ®É¥iÀò±o¸s²ÕªºÅv­­
-+ÀÉ®×³sµ²¼Æ¬°3­Ó
-+¾Ö¦³ªÌ¬°root
-+ÀÉ®×©ÒÄİ¸s²Õ¬°mail
-+ÀÉ®×¤j¤p¬°4096
-+³Ì«á­×§ï¤é´Á¬°2017¦~2¤ë16¤é
-+ÀÉ®×¦W¬°mail/
++drwxrwsr-x 3 root mail 4096 2æœˆ 16 2017 mail/
++å…¶æª”æ¡ˆç‰¹æ€§ç‚º:æ¬Šé™ç‚ºä½¿ç”¨è€…å¯å¯«å¯è®€å¯ä½¿ç”¨ï¼Œå…·æœ‰SGIDçš„åŠŸèƒ½ï¼Œå…¶ä»–äººåŸ·è¡Œæ™‚å¯ç²å¾—ç¾¤çµ„çš„æ¬Šé™
++æª”æ¡ˆé€£çµæ•¸ç‚º3å€‹
++æ“æœ‰è€…ç‚ºroot
++æª”æ¡ˆæ‰€å±¬ç¾¤çµ„ç‚ºmail
++æª”æ¡ˆå¤§å°ç‚º4096
++æœ€å¾Œä¿®æ”¹æ—¥æœŸç‚º2017å¹´2æœˆ16æ—¥
++æª”æ¡ˆåç‚ºmail/
  
-+Åv­­¬°-rw-r--r--¦]¬°³£¨S¦³xªºÅv­­©Ò¥H¤£¯à¥u³æ¯Â³]SUID
-+¼Æ¦rªk:chmod 4755 script.sh
-+²Å¸¹ªk:chmod u=rwx g=rx o=rx script.sh«áchmod u+s script.sh
++æ¬Šé™ç‚º-rw-r--r--å› ç‚ºéƒ½æ²’æœ‰xçš„æ¬Šé™æ‰€ä»¥ä¸èƒ½åªå–®ç´”è¨­SUID
++æ•¸å­—æ³•:chmod 4755 script.sh
++ç¬¦è™Ÿæ³•:chmod u=rwx g=rx o=rx script.shå¾Œchmod u+s script.sh
 
-+hard linkªº¨C­ÓÀÉ®×³£·|¦û¥Î¤@­Óinode¦Ósoft link¤£·|
- hard linkªº»İ¥ş³sµ²§R°£¤~ºâ§R°£ÀÉ®×¡Asoft link¥ØªºÀÉ§R°£«á³sµ²´N¤£¯à¨Ï¥Î¤F
- hard link¤£¯à¸óFilesystem¦Ósoft link¥i
-+«Ø¥ß¹êÅé³sµ²hosts.real¦b®a¥Ø¿ı:ln /etc/hosts ~hosts.real
-+«Ø¥ß²Å¸¹³sµ²hosts.real¦b®a¥Ø¿ı:ln -s /etc/hosts ~hosts.real
++hard linkçš„æ¯å€‹æª”æ¡ˆéƒ½æœƒä½”ç”¨ä¸€å€‹inodeè€Œsoft linkä¸æœƒ
+ hard linkçš„éœ€å…¨é€£çµåˆªé™¤æ‰ç®—åˆªé™¤æª”æ¡ˆï¼Œsoft linkç›®çš„æª”åˆªé™¤å¾Œé€£çµå°±ä¸èƒ½ä½¿ç”¨äº†
+ hard linkä¸èƒ½è·¨Filesystemè€Œsoft linkå¯
++å»ºç«‹å¯¦é«”é€£çµhosts.realåœ¨å®¶ç›®éŒ„:ln /etc/hosts ~hosts.real
++å»ºç«‹ç¬¦è™Ÿé€£çµhosts.realåœ¨å®¶ç›®éŒ„:ln -s /etc/hosts ~hosts.real
 
-+¨Ï¥Îud -m¥iª¾¦³¤@­Ó¤j¤p¬°1014mbÀÉ®×¨t²Î¥¿±¾¸ü¨ì/srv/maildir
-![GITHUB](https://imgur.com/U5HZQD6.jpg"git¹Ï¥Ü")
-+¨Ï¥Îgrep "maildir" /etc/fstab¥iª¾¤w³]¬°¶}¾÷¦Û°Ê±¾¸ü
-![GITHUB](https://imgur.com/bovvHXr.jpg"git¹Ï¥Ü")
-+¨Ï¥Îls -al /srv/maildir¥iª¾¨ä¸s²Õ¬°mailgrpup
-![GITHUB](https://imgur.com/vlYIegs.jpg"git¹Ï¥Ü")
-+¨Ï¥Îid mailuser¥iª¾¨ä¦bmailgroup¤º
-![GITHUB](https://imgur.com/2YyDt9T.jpg"git¹Ï¥Ü")
-+¥Ñ¤U¹Ï¥iª¾¹Dmailuser¤£¯àµn¤J
-![GITHUB](https://imgur.com/jSeJPIH.jpg"git¹Ï¥Ü")
++ä½¿ç”¨ud -må¯çŸ¥æœ‰ä¸€å€‹å¤§å°ç‚º1014mbæª”æ¡ˆç³»çµ±æ­£æ›è¼‰åˆ°/srv/maildir
+![GITHUB](https://imgur.com/U5HZQD6.jpg"gitåœ–ç¤º")
++ä½¿ç”¨grep "maildir" /etc/fstabå¯çŸ¥å·²è¨­ç‚ºé–‹æ©Ÿè‡ªå‹•æ›è¼‰
+![GITHUB](https://imgur.com/bovvHXr.jpg"gitåœ–ç¤º")
++ä½¿ç”¨ls -al /srv/maildirå¯çŸ¥å…¶ç¾¤çµ„ç‚ºmailgrpup
+![GITHUB](https://imgur.com/vlYIegs.jpg"gitåœ–ç¤º")
++ä½¿ç”¨id mailuserå¯çŸ¥å…¶åœ¨mailgroupå…§
+![GITHUB](https://imgur.com/2YyDt9T.jpg"gitåœ–ç¤º")
++ç”±ä¸‹åœ–å¯çŸ¥é“mailuserä¸èƒ½ç™»å…¥
+![GITHUB](https://imgur.com/jSeJPIH.jpg"gitåœ–ç¤º")
