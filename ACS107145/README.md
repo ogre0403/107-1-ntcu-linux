@@ -11,7 +11,7 @@
 ### Ans:數字法:chmod 755 script.sh<br>  
 ### Ans:符號法:chmod a+x script.sh<br>
 ## 3-1.說明實體連結與符號連結的差異。<br>
-### Ans:一種是類似 Windows 的捷徑功能的檔案，可以讓你快速的連結到目標檔案(或目錄)(符號連結)； 另一種則是透過檔案系統的 inode 連結來產生新檔名，而不是產生新檔案(實體連結)<br>
+### Ans:符號連結:一種是類似 Windows 的捷徑功能的檔案，可以讓你快速的連結到目標檔案(或目錄)； 實體連結:是透過檔案系統的 inode 連結來產生新檔名，而不是產生新檔案<br>
 ## 3-2.在家目錄下建立一個檔名為 hosts.real 的實體連結指到 /etc/hosts？<br>
 ### Ans:cd ~percy -> touch hosts.real -> ln ~percy/hosts.real /etc/hosts -> ll -i ~percy/hosts.real /etc/hosts<br>
 ## 3-3.在家目錄下建立一個檔名為 hosts.symbo 的符號連結指到 /etc/hosts？<br>
