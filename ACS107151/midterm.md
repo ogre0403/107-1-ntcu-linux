@@ -1,6 +1,6 @@
 ### 一.
 + 1.輸入 **uname -r** 看版本資訊
-+ 2.輸入 **ver=my kernel version is 4.17.0
++ 2.輸入 **ver=my kernel version is 4.17.0-kali-amd64**
 + 3.輸入 **echo $PATH "可以看到PATH的值文為 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 + 4.PATH的功用:作業系統會依照PATH環境變數中所設定的路徑順序，喔續尋找個路徑下是否有要使用的指令，若找不到，就會顯示command not found 若多個目錄下都有指令，已優先找到的為主。
 ***
@@ -21,8 +21,9 @@
 ***
 ### 四.
 + 1.新增一個磁碟
-![image](https://imgur.com/a/KKhtXzR.png)
+![image](https://imgur.com/6piwOtW.png)
 + 2.用 **fdisk /dev/sdd** 分割出1G的磁碟
+![image](https://imgur.com/6APSHTL.png)
 + 3.再用 **mkfs.xfs /dev/sdd1** 建立一個容量為1GB的xfs檔案系統
 ![image](https://imgur.com/a/IVo9z6V.png)
 + 4.輸入 **mkdir /srv/maildir** 用 **mount /dev/sdd1 /srv/maildir**掛載
