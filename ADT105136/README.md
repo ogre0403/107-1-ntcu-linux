@@ -1,9 +1,10 @@
 1.
-●ver="my kernel version is $(uname -r)"
+    ver="my kernel version is $(uname -r)"
 
-echo $ver
+    echo $ver
 
-●echo $PATH的結果是/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+    echo $PATH
+   的結果是/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 而變數PATH的主要功能是會在這些路徑中依序(/usr/local/sbin開始)尋找使用者要執行的程式名稱，若全部都沒有找到則回傳command not found
 
