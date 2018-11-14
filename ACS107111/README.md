@@ -1,4 +1,5 @@
-+ 使用echo ${ver}、echo ${kernel}建立變數ver、kernel，然後設定kernel=$(uname -r)
++ 使用echo ${ver}、echo ${kernel}建立變數ver、kernel，然後設定kernel=$(uname -r)  
+
  最後設定ver="my kernel version is $kernel"即可
 
 
