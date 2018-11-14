@@ -6,11 +6,13 @@
 * 設定 ver 變數，內容為『 my kernel version is 3.xx 』，其中 3.xx 為 uname -r 輸出的資訊，並顯示出ver變數的值。(10%)
 
 
-  1/. ver="my kernel version is 3.xx"
-  2/. echo $ver顯示出ver變數的值
+  (1)ver="my kernel version is 3.xx"
+  
+  
+  (2)echo $ver顯示出ver變數的值
 > my kernel version is 3.xx
 
-  3. ver="my kernel version is 3.xx" uname -r
+  (3)ver="my kernel version is 3.xx" uname -r
 > 3.10.0-862.e17.x86_64
 
 
@@ -19,8 +21,8 @@
 
 * 請顯示目前PATH環境變數的值為何，並說明PATH的功用為何? (10%)
 
-  1. /usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
-  2. PATH的功用:
+  (1)/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
+  (2)PATH的功用:
     * 作業系統會依照PATH環境變數中所設定的路徑順序，依序尋找個路徑下是否有藥使用的指令。
     * 若找不到，就會顯示command not found。
     * 偌多個目錄下都有指令，以優先找的為主。  
@@ -54,13 +56,13 @@
 
 * 在家目錄下建立一個檔名為 hosts.real 的實體連結指到 /etc/hosts？ (請用相對路徑表示家目錄) (5%)
 
-  1. ` ln /home/hosts.real /etc/hosts `:建立實體連結。
-  2. 相對路徑:/home/hosts.real cd ../etc/hosts
+  (1)` ln /home/hosts.real /etc/hosts `:建立實體連結。
+  (2)相對路徑:/home/hosts.real cd ../etc/hosts
 
 * 在家目錄下建立一個檔名為 hosts.symbo 的符號連結指到 /etc/hosts？ (請用相對路徑表示家目錄 (5%)
 
-  1. ` ln -s /home/hosts.symbo /etc/hosts `:建立符號連結。(/etc/hosts -> /home/hosts.symbo)
-  2. 相對路徑:/home/etc/hosts cd ../home/hosts.symbo
+  (1)` ln -s /home/hosts.symbo /etc/hosts `:建立符號連結。(/etc/hosts -> /home/hosts.symbo)
+  (2)相對路徑:/home/etc/hosts cd ../home/hosts.symbo
 
 
 -----------------------------------------------------
