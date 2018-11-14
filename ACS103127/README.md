@@ -3,9 +3,11 @@
 非本人且沒有加入本群組之其他帳號的權限可讀可執行
 
 (2)-rw-r--r-- 應改成-rwx-r-xr-x
-   數字法為ls -al script.sh
-           chmod 755 script.sh
-   符號法為 chmod u=rwx,go=rx script.sh
+   數字法為
+   #ls -al script.sh
+   #chmod 755 script.sh
+   符號法為 
+   #chmod u=rwx,go=rx script.sh
 
 3.
 (1)hard link 限制較多
