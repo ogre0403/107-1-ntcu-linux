@@ -46,7 +46,11 @@ Ans:<br>
 指令:"　In -s /etc/hosts /home/hosts.symbo "<br><br>
 
 ## 4.<br>
-Ans:
+### (Q1):請用`df`指令配合`human-readable`選項，顯示有1GB的檔案系統正掛載到`/srv/maildir` (8%)<br>
+Ans:<br>
+human-readablevm選項:"-h"<br>
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/midterm/ACS107135/photo/1.PNG)<br>
+
 
 
 
