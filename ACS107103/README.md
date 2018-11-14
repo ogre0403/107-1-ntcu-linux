@@ -38,12 +38,20 @@
 
 <em>4-1<em>
 + 用df -h指令檢視
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/midterm/ACS107103/centos-2018-11-14-15-51-58.png)
 
 <em>4-2<em>
 + cat /etc/fstab | grep /srv/maildir
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/midterm/ACS107103/centos-2018-11-14-15-52-58.png)
 
 <em>4-3<em>
 + ls -al /srv
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/midterm/ACS107103/centos-2018-11-14-15-54-09.png)
 
 <em>4-4<em>
 +  id mailuser
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/midterm/ACS107103/centos-2018-11-14-15-54-36.png)
+
+<em>4-5<em>
++  cat /etc/passwd | grep mailuser
+![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/midterm/ACS107103/centos-2018-11-14-16-10-54.png)
