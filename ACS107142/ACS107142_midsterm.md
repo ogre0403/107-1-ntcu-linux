@@ -43,11 +43,14 @@ chmod u+s script.sh ┪ chmod 4000 script.sh
 * ミ才腹硈挡,τ才腹硈挡琌縒ミ郎,Τinode,┮/etc/hosts 郎计ぃ跑,τ~hosts.symbo局Τinode
 
 ## 4.
-* 
+* 本更/srv/maildir
+![](https://i.imgur.com/L7xD9sG.png)
 
+* 陪ボΤ本更/srv/maildir
+![](https://i.imgur.com/HIhhfUG.png)
 
-* 
-
+* 秨诀,妓Τ本更/srv/maildir
+![](https://i.imgur.com/3YCnDpy.png)
 
 * 
 
@@ -56,4 +59,6 @@ chmod u+s script.sh ┪ chmod 4000 script.sh
 ![](https://i.imgur.com/649OHCZ.png)
 
 * 
+
+
 
