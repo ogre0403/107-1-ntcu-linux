@@ -52,19 +52,19 @@
 
 #### 請用`df`指令配合`human-readable`選項，顯示有1GB的檔案系統正掛載到`/srv/maildir`
 
-> ![github]()
+> ![github](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/midterm/ACS107150/1.PNG?raw=true)
 
 #### 請用`grep`驗證有設定開機自動掛載。
 
-> ![github]()
+> ![github](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/midterm/ACS107150/2.PNG?raw=true)
 
 #### 請用`ls`查詢`/srv/maildir`屬性，確認可以讓`mailgroup`群組共用，而其他人不具任何權限。
 
-> ![github]()
+> ![github](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/midterm/ACS107150/3.PNG?raw=true)
 
 #### 請用`id`檢查`mailuser`使用者有在`mailgroup`.
 
-> ![github]()
+> ![github](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/midterm/ACS107150/4.PNG?raw=true)
 
 #### 請用`grep`驗證此帳號無法透過shell登入。
 
