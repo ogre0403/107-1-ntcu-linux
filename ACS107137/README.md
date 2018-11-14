@@ -51,7 +51,7 @@ ll -i ~bill0330/hosts.symbo /etc/hosts
 
 ## 4.
 ### 建立一個容量為1GB的xfs檔案系統，每次開機都能夠自動的掛載到 /srv/maildir，且該目錄是給 mailgroup 這個群組共用的，其他人不可具有任何權限。再建立一個名為mailuser的帳號，並加入 mailgroup 群組，且此帳號不可使用shell登入系統。
-![image]()<br>
-![image]()<br>
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/midterm/ACS107137/img/4-1.PNG?raw=true)<br>
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/midterm/ACS107137/img/4-2.PNG?raw=true)<br>
 
 
