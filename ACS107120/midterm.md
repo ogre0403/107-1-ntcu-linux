@@ -102,4 +102,4 @@
 	
 	ps aux |grep mailuser
 	
-	https://github.com/CHANGYUNEN/107-1-ntcu-linux/blob/midterm/picture.PNG
+![image](https://github.com/CHANGYUNEN/107-1-ntcu-linux/blob/midterm/picture.PNG)
