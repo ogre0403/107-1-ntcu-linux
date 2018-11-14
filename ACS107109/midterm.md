@@ -57,11 +57,15 @@
 * 在家目錄下建立一個檔名為 hosts.real 的實體連結指到 /etc/hosts？ (請用相對路徑表示家目錄) (5%)
 
   (1)` ln /home/hosts.real /etc/hosts `:建立實體連結。
+  
+  
   (2)相對路徑:/home/hosts.real cd ../etc/hosts
 
 * 在家目錄下建立一個檔名為 hosts.symbo 的符號連結指到 /etc/hosts？ (請用相對路徑表示家目錄 (5%)
 
   (1)` ln -s /home/hosts.symbo /etc/hosts `:建立符號連結。(/etc/hosts -> /home/hosts.symbo)
+  
+  
   (2)相對路徑:/home/etc/hosts cd ../home/hosts.symbo
 
 
