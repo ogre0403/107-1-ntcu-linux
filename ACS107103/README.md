@@ -2,6 +2,7 @@
 + 用uname -r查看核心的版本
 + 我的是3.10.0-862.e17.x86_64
 + 執行ver="my kernel version is 3.10"
++ 執行echo $ver以顯示其內容  
 
 <em>1-2<em>
 + 執行echo $PATH
