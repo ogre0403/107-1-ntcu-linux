@@ -4,41 +4,30 @@
 空四個有另一種用法
 
 1.
-![1]()
+![1](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/1.PNG)
+## 請顯示目前PATH環境變數的值為何，並說明PATH的功用為何?
+ans: 
 
+(1) 如上圖
 
-2.這是一個資料夾，擁有者為root能讀、寫、執行。
-群組為mail能讀、寫、執行。
+(2) 當輸入一個指令時，作業系統會依照PATH中存取的路徑順序，去依序尋找指令在哪裡
+
+2.這是一個資料夾，擁有者為root能讀、寫、執行。 群組為mail能讀、寫、執行。
+
 其他人只能讀跟執行，非mail群組的人因為s，權限可以暫時提升為mail群組的權限。
- 
+
+![2](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/2.PNG)
+
 3.
 實體連結不會占用inode以及空間，符號連結會。
+
 若將原檔案刪除，實體連結並不會無法使用，但符號連結會因此無法使用。
 
-在家目錄下建立一個檔名為 hosts.real 的實體連結指到 /etc/hosts？ (請用相對路徑表示家目錄) (5%)
-
-在家目錄下建立一個檔名為 hosts.symbo 的符號連結指到 /etc/hosts？ (請用相對路徑表示家目錄 (5%)
+![3](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/3.PNG)
 
 4.
-![7]()
-![8]()
-![4]()
-![5]()
-![6]()
-
-4.請依下述情境完成系統操作後再用相關指令進行驗證，請抓驗證指令的圖：
-
-
-建立一個容量為1GB的xfs檔案系統，每次開機都能夠自動的掛載到 /srv/maildir，且該目錄是給 mailgroup 這個群組共用的，其他人不可具有任何權限。再建立一個名為mailuser的帳號，並加入 mailgroup 群組，且此帳號不可使用shell登入系統。
-
-* 請用`df`指令配合`human-readable`選項，顯示有1GB的檔案系統正掛載到`/srv/maildir` (8%)
-
-* 請用`grep`驗證有設定開機自動掛載。(8%)
-
-* 請用`ls`查詢`/srv/maildir`屬性，確認可以讓`mailgroup`群組共用，而其他人不具任何權限。(8%)
-
-* 請用`id`檢查`mailuser`使用者有在`mailgroup`. (8%)
-
-* 請用`grep`驗證此帳號無法透過shell登入。(8%)
-
-/dev/sdb: UUID="6780cc53-cd22-4ed9-a71e-816f8285ad83" TYPE="xfs"
+![7](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/7.PNG)
+![8](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/8.PNG)
+![4](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/4.PNG)
+![5](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/5.PNG)
+![6](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/6.PNG)
