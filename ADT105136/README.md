@@ -1,5 +1,8 @@
-1.ver="my kernel version is $(uname -r)"
-  echo $ver
+1.
+
+ver="my kernel version is $(uname -r)"
+
+echo $ver
 
 echo $PATH的結果是/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
