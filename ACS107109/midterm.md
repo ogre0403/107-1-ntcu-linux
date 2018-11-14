@@ -25,7 +25,7 @@
   (2)PATH的功用:
     * 作業系統會依照PATH環境變數中所設定的路徑順序，依序尋找個路徑下是否有藥使用的指令。
     * 若找不到，就會顯示command not found。
-    * 偌多個目錄下都有指令，以優先找的為主。  
+    * 若多個目錄下都有指令，以優先找的為主。  
 
 
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/midterm/ACS107109/002.PNG)
