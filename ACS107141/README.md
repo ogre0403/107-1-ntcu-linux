@@ -1,25 +1,68 @@
-##HW-3
+##1
 
-<ol>
-<li>輸入"ls -ali /etc/hosts"</li>
-![](https://i.imgur.com/u03xGHq.png)
-<p>最前面的數字為inode</p>
-<p>1個檔名在使用</p>
-</ol>
+1. 
+```
+#ver=$(uname -r)
+``` 
+2.
+```
+#echo $ver
+``` 
+*顯示3.10.0-862.e17.x86_64
+3.
+```
+#ver="my kernel version is 3.10"
+```
+4.(檢查)
+```
+#echo $ver
+```
+*出現my kernel version is 3.10
 
-<ol>
-<li>輸入"ln /etc/hosts /srv/hosts.hard"建立實體連結</li>
-<li>輸入"ls -ali /srv/hosts.hard"</li>
-![](https://i.imgur.com/AAzOcjO.png)
-<p>最前面的數字為inode</p>
-<p>2個檔名在使用</p>
-*/etc/hosts和建立的實體連結/srv/hosts.hard都在使用，所以有兩個檔名
-</ol>
+*![](https://i.imgur.com/nfNcAVQ.png)
+*作業系統會依照PATH環境變數中所設定的路徑順序，依序尋找各路徑下是否有這個指令。
 
-<ol>
-<li>輸入"ln -s /etc/hosts /srv/hosts.soft"建立符號連結</li>
-<li>輸入"ls -ali /srv/hosts.soft"</li>
-![](https://i.imgur.com/n2NKr6b.png)
-<p>最前面的數字為inode</p>
-*符號連結為獨立的檔案，所以不會像實體連結一樣共用同一個inode
-</ol> 
+##2
+
+*root和同群組的帳號具有rwx權限，其他帳號則只有rx權限
+
+1.
+```
+#chmod 777 ~/script.sh
+```
+2.
+```
+#chmod u=rwx,g=rwx,o=rwx ~/script.sh
+```
+
+##3
+
+*實體連結是在目錄裡加一筆inode與檔名對應
+*符號連結是建立獨立檔案指向目的檔案
+
+*實體連結
+1.
+```
+#ll -i /etc/hosts
+``` 
+2.
+```
+#ln /etc/hosts .
+```
+3.(檢查) 
+```
+ll -i /etc/hosts hosts.real
+```
+
+*符號連結
+1.
+```
+#ln -s /etc/hosts hosts.symbo
+```
+2.(檢查) 
+```
+#ll -i /etc/hosts /root/hosts.symbo
+```
+
+##4
+*重啟測試系統打不開
