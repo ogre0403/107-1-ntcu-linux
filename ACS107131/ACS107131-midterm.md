@@ -66,4 +66,4 @@
 ### 4-4 請用`id`檢查`mailuser`使用者有在`mailgroup`. (8%)        
 ![4](https://github.com/edmundabc/107-1-ntcu-linux/blob/midterm/ACS107131/4.PNG?raw=true)                   
 ### 4-5 請用`grep`驗證此帳號無法透過shell登入。(8%) 
-                            
+![5](https://github.com/edmundabc/107-1-ntcu-linux/blob/midterm/ACS107131/5.PNG?raw=true)                               
