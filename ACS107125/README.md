@@ -1,7 +1,11 @@
 # 1.
+使用"**echo**"顯示變數
 
+![image](https://github.com/freshdiefish/107-1-ntcu-linux/blob/midterm/ACS107125/01.png)
 
+PATH環境變數定義了在任何目錄下皆可以使用的指令
 
+![image](https://github.com/freshdiefish/107-1-ntcu-linux/blob/midterm/ACS107125/02.png)
 
 # 2.
 
