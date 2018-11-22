@@ -2,7 +2,9 @@
 
 *公告:* 
 
-請同學至[作業成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的作業成績，若HW-1沒有成績(0分)，請至[HW-1 分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-1)確認是否有你的作業，若HW-2沒有成績，請至[HW-2分支](https://github.com/ogre0403/107-1-ntcu-linux/tree/HW-2)確認是否有你的作業，之後的作業依此類推。有些同學作業送到錯分支，一樣以0分記，請重新送一次。
+1. 請同學至[成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的期中成績，
+
+2. 12/12停課一次，11/28、11/5、12/19多上一節補課，感謝同學配合。
 
 ## HW6: Deadline: 2018/11/27 23:59
 
