@@ -10,7 +10,38 @@
 
 *注意:* HW-6之後遲交以及線上繳交不合規定有錯，一率不接受補交。
 
-TBD
+1. 依下列描述完成並說明各項問題：
+
+    * 請在家目錄下的`.bashrc`裡新增一個shell變數 `HOSTS_PATH=/etc/hosts`，(注意不需用export)，說明如何不登出讓`HOSTS_PATH`變數生效，執行`cat $HOST_PATH`確認有讀取到檔案內容。
+
+    * 在C語言程式可以用`getenv()`讀取LINUX的環境變數，範例程式如下。請在Linux裡編譯此範例程式並執行，請問否有讀到`HOSTS_PATH`以及`$?`的值為何，請說明。也許需透過`yum groupinstall "Development Tools"`安裝gcc。
+
+        ```c
+        #include <stdio.h>
+        #include <stdlib.h>
+        int main()
+        {
+            const char* s = getenv("HOSTS_PATH");
+            if(s == NULL){
+                printf("getenv() return NULL\n");
+                return 1;
+            }
+            
+            printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
+            printf("\n %s content is: \n", s);
+
+            int c;
+            FILE *file;
+            file = fopen(s, "r");
+            if (file) {
+                while ((c = getc(file)) != EOF)
+                        putchar(c);
+                fclose(file);
+            }
+        }
+        ```
+
+    * 在`.bashrc`裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
 ## HW5: Deadline: 2018/11/6 23:59
 
