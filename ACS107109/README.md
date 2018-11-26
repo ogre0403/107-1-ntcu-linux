@@ -1,88 +1,88 @@
 # HW6
 -----------------------------------------
-## ½Ð¦b®a¥Ø¿ý¤Uªº` .bashrc `¸Ì·s¼W¤@­ÓshellÅÜ¼Æ` HOSTS_PATH=/etc/hosts `¡A(ª`·N¤£»Ý¥Îexport)¡A»¡©ú¦p¦ó¤£µn¥XÅý` HOSTS_PATH `ÅÜ¼Æ¥Í®Ä¡A°õ¦æ` cat $HOST_PATH `½T»{¦³Åª¨ú¨ìÀÉ®×¤º®e¡C
-* ¦b®a¥Ø¿ý¤Uªº` .bashrc `¸Ì·s¼W¤@­ÓshellÅÜ¼Æ` HOSTS_PATH=/etc/hosts `
-  * ` vim .bashrc `¡C
-   > ¶i¤J«á¨Ï¥Î½s¿è¼Ò¦¡¡C
-  * ¦b³Ì¥½¦æ·s¼WshellÅÜ¼Æ` HOSTS_PATH=/etc/hosts `¡C
-   > Àx¦s«áÂ÷¶}¡C
+## è«‹åœ¨å®¶ç›®éŒ„ä¸‹çš„` .bashrc `è£¡æ–°å¢žä¸€å€‹shellè®Šæ•¸` HOSTS_PATH=/etc/hosts `ï¼Œ(æ³¨æ„ä¸éœ€ç”¨export)ï¼Œèªªæ˜Žå¦‚ä½•ä¸ç™»å‡ºè®“` HOSTS_PATH `è®Šæ•¸ç”Ÿæ•ˆï¼ŒåŸ·è¡Œ` cat $HOST_PATH `ç¢ºèªæœ‰è®€å–åˆ°æª”æ¡ˆå…§å®¹ã€‚
+* åœ¨å®¶ç›®éŒ„ä¸‹çš„` .bashrc `è£¡æ–°å¢žä¸€å€‹shellè®Šæ•¸` HOSTS_PATH=/etc/hosts `
+  * ` vim .bashrc `ã€‚
+   > é€²å…¥å¾Œä½¿ç”¨ç·¨è¼¯æ¨¡å¼ã€‚
+  * åœ¨æœ€æœ«è¡Œæ–°å¢žshellè®Šæ•¸` HOSTS_PATH=/etc/hosts `ã€‚
+   > å„²å­˜å¾Œé›¢é–‹ã€‚
 
 
-![image](1)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-6/ACS107109/img/1.png)
 
 
-* ¦p¦ó¤£µn¥XÅý` HOST_PATH `«K¤J¥Í®Ä?
-  * ¿é¤J` source .bashrc `¥i¤£¥Îµn¥X§Y¥iÅª¨ì¦¹·sªº³]©w¡C
-   > ¨Ï¥Î` echo $HOSTS_PATH `½T»{¡C
-  * °õ¦æ` cat $HOSTS_PATH `½T»{¦³Åª¨ú¨ìÀÉ®×¤º®e¡C
+* å¦‚ä½•ä¸ç™»å‡ºè®“` HOST_PATH `ä¾¿å…¥ç”Ÿæ•ˆ?
+  * è¼¸å…¥` source .bashrc `å¯ä¸ç”¨ç™»å‡ºå³å¯è®€åˆ°æ­¤æ–°çš„è¨­å®šã€‚
+   > ä½¿ç”¨` echo $HOSTS_PATH `ç¢ºèªã€‚
+  * åŸ·è¡Œ` cat $HOSTS_PATH `ç¢ºèªæœ‰è®€å–åˆ°æª”æ¡ˆå…§å®¹ã€‚
 
 
-![image](2)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-6/ACS107109/img/2.png)
 
 
 -----------------------------------------
-## ¦bC»y¨¥µ{¦¡¥i¥H¥Îgetenv()Åª¨úLINUXªºÀô¹ÒÅÜ¼Æ¡A½d¨Òµ{¦¡¦p¤U¡C½Ð¦bLinux¸Ì½sÄ¶¦¹½d¨Òµ{¦¡¨Ã°õ¦æ¡A½Ð°Ý§_¦³Åª¨ìHOSTS_PATH¥H¤Î$?ªº­È¬°¦ó¡A½Ð»¡©ú¡C¤]³\»Ý³z
-¹Lyum groupinstall "Development Tools"¦w¸Ëgcc¡C
-* ¦w¸Ëgcc¡C
-  > ` yum groupinstall "Development Tools" `¡C
+## åœ¨Cèªžè¨€ç¨‹å¼å¯ä»¥ç”¨getenv()è®€å–LINUXçš„ç’°å¢ƒè®Šæ•¸ï¼Œç¯„ä¾‹ç¨‹å¼å¦‚ä¸‹ã€‚è«‹åœ¨Linuxè£¡ç·¨è­¯æ­¤ç¯„ä¾‹ç¨‹å¼ä¸¦åŸ·è¡Œï¼Œè«‹å•å¦æœ‰è®€åˆ°HOSTS_PATHä»¥åŠ$?çš„å€¼ç‚ºä½•ï¼Œè«‹èªªæ˜Žã€‚ä¹Ÿè¨±éœ€é€
+éŽyum groupinstall "Development Tools"å®‰è£gccã€‚
+* å®‰è£gccã€‚
+  > ` yum groupinstall "Development Tools" `ã€‚
 
 
-![image](3)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-6/ACS107109/img/3.PNG)
 
 
-* ½sÄ¶½d¨Òµ{¦¡¡C
-  > ` vim test.c `¡C
-  > >¶i¤J«á¨Ï¥Î½sÄ¶¼Ò¦¡¡C
+* ç·¨è­¯ç¯„ä¾‹ç¨‹å¼ã€‚
+  > ` vim test.c `ã€‚
+  > >é€²å…¥å¾Œä½¿ç”¨ç·¨è­¯æ¨¡å¼ã€‚
 
-  > Àx¦s«áÂ÷¶}¡C
-
-
-![image](4)
+  > å„²å­˜å¾Œé›¢é–‹ã€‚
 
 
-* °õ¦æ½d¨Òµ{¦¡¡C
-  > ` gcc test.c `¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-6/ACS107109/img/4.PNG)
 
-  > ` ./a.out `¡C
+
+* åŸ·è¡Œç¯„ä¾‹ç¨‹å¼ã€‚
+  > ` gcc test.c `ã€‚
+
+  > ` ./a.out `ã€‚
   
 
-* ¦³µLÅª¨ì` HOSTS_PATH ` ¤Î ` $? `ªº­È¬°¦ó?
-  * ¨S¦³Åª¨ì` HOSTS_PATH `ªº­È¡C
-   > getenv() return NULL¡C
+* æœ‰ç„¡è®€åˆ°` HOSTS_PATH ` åŠ ` $? `çš„å€¼ç‚ºä½•?
+  * æ²’æœ‰è®€åˆ°` HOSTS_PATH `çš„å€¼ã€‚
+   > getenv() return NULLã€‚
 
-  * ` $? `ªº­È¬°1¡C(**¦³»~**)
-    > ` echo $? `¡C
+  * ` $? `çš„å€¼ç‚º1ã€‚(**æœ‰èª¤**)
+    > ` echo $? `ã€‚
 
 
-![image](5)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-6/ACS107109/img/5.png)
 
 ----------------------------------------
-## ¦b.bashrc¸Ì­n¦p¦ó­×¥¿¡AÅýC»y¨¥µ{¦¡¥i¥HÅª¨ìÀô¹ÒÅÜ¼Æ¨Ã±NÀÉ®×¤º®eÅã¥Ü¡C
+## åœ¨.bashrcè£¡è¦å¦‚ä½•ä¿®æ­£ï¼Œè®“Cèªžè¨€ç¨‹å¼å¯ä»¥è®€åˆ°ç’°å¢ƒè®Šæ•¸ä¸¦å°‡æª”æ¡ˆå…§å®¹é¡¯ç¤ºã€‚
 
 
-* ¶i¤J` .bashrc `¤¤­×¥¿¡C
-  > ` vim .bashrc `¡C
+* é€²å…¥` .bashrc `ä¸­ä¿®æ­£ã€‚
+  > ` vim .bashrc `ã€‚
 
-* ¦b­ì¥»ªº` HOSTS_PATH `¥[¤W**export**¡C
-  > `export HOSTS_PATH `¡C
+* åœ¨åŽŸæœ¬çš„` HOSTS_PATH `åŠ ä¸Š**export**ã€‚
+  > `export HOSTS_PATH `ã€‚
 
-  > Àx¦s«áÂ÷¶}¡C
-
-
-![image](6)
+  > å„²å­˜å¾Œé›¢é–‹ã€‚
 
 
-* **°O±o­n¨Ï¥Î `source HOSTS_PATH `¨ÏÅÜ¼Æ¥Í®Ä¡C**
-* °õ¦ætest.c¡C
-  > ` gcc test.c `¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-6/ACS107109/img/6.png)
 
-  > ` ./a.out¡C
 
-* §Y¥iÅª¨ìÀô¹ÒÅÜ¼Æ¨Ã±NÀÉ®×¤º®eÅã¥Ü¡C
-  > ¦p¹Ï¡C
+* **è¨˜å¾—è¦ä½¿ç”¨ `source HOSTS_PATH `ä½¿è®Šæ•¸ç”Ÿæ•ˆã€‚**
+* åŸ·è¡Œtest.cã€‚
+  > ` gcc test.c `ã€‚
 
-* $?ªº­È¬°0¡C(**µL»~**)
-  > ` echo $? `¡C
+  > ` ./a.outã€‚
+
+* å³å¯è®€åˆ°ç’°å¢ƒè®Šæ•¸ä¸¦å°‡æª”æ¡ˆå…§å®¹é¡¯ç¤ºã€‚
+  > å¦‚åœ–ã€‚
+
+* $?çš„å€¼ç‚º0ã€‚(**ç„¡èª¤**)
+  > ` echo $? `ã€‚
   
 
-![image](7)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-6/ACS107109/img/7.png)
