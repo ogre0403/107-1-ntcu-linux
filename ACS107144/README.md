@@ -2,15 +2,17 @@
 * 輸入`vi ~/.bashrc`
 > 進入 .bashrc 進行編輯
 * 輸入`HOSTS_PATH=/etc/hosts`
-> 新增變數  
+> 新增變數 
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-6/ACS107144/6-1-1.png)
 
 * 輸入`echo $HOSTS_PATH`
-> 確認有新增到 HOSTS_PATH                   `
+> 確認有新增到 HOSTS_PATH                   
 * 輸入`source .bashrc`
 > 讀取檔案內容
 * 輸入`cat $HOSTS_PATH`
 > 驗證有讀取到檔案內容
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-6/ACS107144/6-1-2.png)
 
 
@@ -18,6 +20,7 @@
 
 * 輸入`vim test.c`
 > 新增一個名為 test.c 的檔案，編輯其內容
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-6/ACS107144/6-2-1.png)
 
 ### 在Linux裡編譯此範例程式並執行
@@ -27,6 +30,7 @@
 > 輸出test.c的結果
 * 輸入`echo $?`
 > 印出?的內容
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-6/ACS107144/6-2-2.png)
 
 ### 請問否有讀到HOSTS_PATH以及$?的值為何，請說明。
@@ -39,15 +43,18 @@
 > 進入 .bashrc 進行編輯
 * 輸入`export HOSTS_PATH=/etc/hosts`
 > 在之前輸入之變數前加上export 
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-6/ACS107144/6-3-1.png)
 
 * 輸入`source .bashrc`
+> 讀取剛剛修改過的檔案內容
 * 輸入`gcc test.c`
 > 編譯 test.c
 * 輸入`./a.out`
 > 輸出test.c的結果
 * 輸入`echo $?`
 > 印出?的內容
+
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-6/ACS107144/6-3-2.png)
 
 ### 請問否有讀到HOSTS_PATH以及$?的值為何?
