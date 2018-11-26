@@ -16,32 +16,29 @@
 
 ### 也許需透過yum groupinstall "Development Tools"安裝gcc。
 
-`
 
-#include <stdio.h>
-#include <stdlib.h>
-int main()
-{
-    const char* s = getenv("HOSTS_PATH");
-    if(s == NULL){
-        printf("getenv() return NULL\n");
-        return 1;
-    }
+    #include <stdio.h>
+    #include <stdlib.h>
+    int main()
+    {
+        const char* s = getenv("HOSTS_PATH");
+        if(s == NULL){
+            printf("getenv() return NULL\n");
+            return 1;
+        }
+        
+        printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
+        printf("\n %s content is: \n", s);
     
-    printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
-    printf("\n %s content is: \n", s);
-
-    int c;
-    FILE *file;
-    file = fopen(s, "r");
-    if (file) {
-        while ((c = getc(file)) != EOF)
-                putchar(c);
-        fclose(file);
+        int c;
+        FILE *file;
+        file = fopen(s, "r");
+        if (file) {
+            while ((c = getc(file)) != EOF)
+                    putchar(c);
+            fclose(file);
+        }
     }
-}
-
-`
 
 ### 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
