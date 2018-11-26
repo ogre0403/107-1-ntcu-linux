@@ -7,7 +7,7 @@
 ### 請在家目錄下的.bashrc裡新增一個shell變數 HOSTS_PATH=/etc/hosts，(注意不需用export)，
 
 ### 說明如何不登出讓HOSTS_PATH變數生效，執行cat $HOST_PATH確認有讀取到檔案內容。
-    使用 ` vi `進入 .bashrc 檔
+    使用 `vi` 編輯進入 .bashrc 檔
 ![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-6/ACS107134/1.PNG)
 
 ### 在C語言程式可以用getenv()讀取LINUX的環境變數，範例程式如下。
