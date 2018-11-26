@@ -3,31 +3,46 @@
 ![]()
 空四個有另一種用法
 
-1.
-![1](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/1.PNG)
-## 請顯示目前PATH環境變數的值為何，並說明PATH的功用為何?
-ans: 
 
-(1) 如上圖
+### 請在家目錄下的.bashrc裡新增一個shell變數 HOSTS_PATH=/etc/hosts，(注意不需用export)，
 
-(2) 當輸入一個指令時，作業系統會依照PATH中存取的路徑順序，去依序尋找指令在哪裡
+### 說明如何不登出讓HOSTS_PATH變數生效，執行cat $HOST_PATH確認有讀取到檔案內容。
+![1]()
 
-2.這是一個資料夾，擁有者為root能讀、寫、執行。 群組為mail能讀、寫、執行。
+### 在C語言程式可以用getenv()讀取LINUX的環境變數，範例程式如下。
 
-其他人只能讀跟執行，非mail群組的人因為s，權限可以暫時提升為mail群組的權限。
+### 請在Linux裡編譯此範例程式並執行，請問是否有讀到HOSTS_PATH以及$?的值為何，請說明。
 
-![2](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/2.PNG)
+### 也許需透過yum groupinstall "Development Tools"安裝gcc。
 
-3.
-實體連結不會占用inode以及空間，符號連結會。
+`` #include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    const char* s = getenv("HOSTS_PATH");
+    if(s == NULL){
+        printf("getenv() return NULL\n");
+        return 1;
+    }
+    
+    printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
+    printf("\n %s content is: \n", s);
 
-若將原檔案刪除，實體連結並不會無法使用，但符號連結會因此無法使用。
+    int c;
+    FILE *file;
+    file = fopen(s, "r");
+    if (file) {
+        while ((c = getc(file)) != EOF)
+                putchar(c);
+        fclose(file);
+    }
+} ``
+在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
-![3](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/3.PNG)
+(1).
+# 編譯     : gcc file.c  一定要.c
+# 執行     : ./檔案
+> Ans : 無法透過getenv()讀到變數HOSTS_PATH的值。雖然沒有讀到傳回值但對程式來說判斷 " s " 為 NULL 有成立，所以 " $? " 有傳回值 1。
 
-4.
-![7](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/7.PNG)
-![8](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/8.PNG)
-![4](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/4.PNG)
-![5](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/5.PNG)
-![6](https://github.com/0905053883/107-1-ntcu-linux/blob/midterm/ACS107134/6.PNG)
+
+(2).
