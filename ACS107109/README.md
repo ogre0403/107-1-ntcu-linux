@@ -47,7 +47,7 @@
 
 * 有無讀到` HOSTS_PATH ` 及 ` $? `的值為何?
   * 沒有讀到` HOSTS_PATH `的值。
-   > getenv() return NULL。
+    > getenv() return NULL。
 
   * ` $? `的值為1。(**有誤**)
     > ` echo $? `。
