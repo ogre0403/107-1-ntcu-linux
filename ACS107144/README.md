@@ -6,10 +6,10 @@
 
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-6/ACS107144/6-1-1.png)
 
-* 輸入`echo $HOSTS_PATH`
-> 確認有新增到 HOSTS_PATH                   
 * 輸入`source .bashrc`
 > 讀取檔案內容
+* 輸入`echo $HOSTS_PATH`
+> 確認有新增到 HOSTS_PATH                   
 * 輸入`cat $HOSTS_PATH`
 > 驗證有讀取到檔案內容
 
