@@ -17,6 +17,7 @@
 ### 也許需透過yum groupinstall "Development Tools"安裝gcc。
 
 `
+
 #include <stdio.h>
 #include <stdlib.h>
 int main()
@@ -39,9 +40,10 @@ int main()
         fclose(file);
     }
 }
+
 `
 
-在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
+### 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
 #### (1).
 ##### 編譯 #    : gcc file.c  一定要.c
