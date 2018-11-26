@@ -21,8 +21,7 @@
 
 
 -----------------------------------------
-## 在C語言程式可以用getenv()讀取LINUX的環境變數，範例程式如下。請在Linux裡編譯此範例程式並執行，請問否有讀到HOSTS_PATH以及$?的值為何，請說明。也許需透
-過yum groupinstall "Development Tools"安裝gcc。
+## 在C語言程式可以用getenv()讀取LINUX的環境變數，範例程式如下。請在Linux裡編譯此範例程式並執行，請問否有讀到HOSTS_PATH以及$?的值為何，請說明。也許需透過yum groupinstall "Development Tools"安裝gcc。
 * 安裝gcc。
   > ` yum groupinstall "Development Tools" `。
 
