@@ -16,7 +16,7 @@
 
 ### 也許需透過yum groupinstall "Development Tools"安裝gcc。
 
-``
+`
 #include <stdio.h>
 #include <stdlib.h>
 int main()
@@ -39,14 +39,14 @@ int main()
         fclose(file);
     }
 }
-``
+`
 
 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
 (1).
 #### 編譯     : gcc file.c  一定要.c
 #### 執行     : ./檔案
-> Ans : 無法透過 ` getenv() `讀到變數* HOSTS_PATH *的值。雖然沒有讀到傳回值但對程式來說判斷 * s * 為 NULL 有成立，所以 * $? * 有傳回值 1。
-
+> Ans : 無法透過 ` getenv() `讀到變數 *HOSTS_PATH*的值。
+> 雖然沒有讀到傳回值但對程式來說判斷 * s * 為 NULL 有成立，所以 * $? * 有傳回值 1。
 
 (2).
