@@ -1,67 +1,63 @@
-##1
+### HW6
 
-1. 
+# 1.½Ğ¦b®a¥Ø¿ı¤Uªº```.bashrc```¸Ì·s¼W¤@­ÓshellÅÜ¼Æ```HOSTS_PATH=/etc/hosts```¡A(ª`·N¤£»İ¥Îexport)¡A»¡©ú¦p¦ó¤£µn¥XÅı```HOSTS_PATH```ÅÜ¼Æ¥Í®Ä¡A°õ¦æ```cat $HOST_PATH```½T»{¦³Åª¨ú¨ìÀÉ®×¤º®e¡C
 
-```#ver=$(uname -r)```
- 
-2.
-```
-#echo $ver
-``` 
-*é¡¯ç¤º3.10.0-862.e17.x86_64
-3.
-```
-#ver="my kernel version is 3.10"
-```
-4.(æª¢æŸ¥)
-```
-#echo $ver
-```
-*å‡ºç¾my kernel version is 3.10
+ * ¿é¤J```vi ~/.bashrc```¶}±Ò½s¿èÀÉ®×
+> «ö¤U```a```,```i```,```o```§Y¥i¶}©l½s¿è¡C 
+ * ¿é¤J```HOST_PATH="/etc/hosts```
+> «ö¤U```esc```¨Ã¿é¤J```:wq```¡A§YÀx¦sÂ÷¶}¡C
+![](https://i.imgur.com/nF9tMXn.png)
 
-*ä½œæ¥­ç³»çµ±æœƒä¾ç…§PATHç’°å¢ƒè®Šæ•¸ä¸­æ‰€è¨­å®šçš„è·¯å¾‘é †åºï¼Œä¾åºå°‹æ‰¾å„è·¯å¾‘ä¸‹æ˜¯å¦æœ‰é€™å€‹æŒ‡ä»¤ã€‚
+ * ¿é¤J```source ~/.bashrc```°õ¦æÀô¹Ò³]©wÀÉ«ü¥O
+ * ¿é¤J```cat $HOSTS_PATH```ÅçÃÒ¬O§_Åª¨ú¦¨¥\
+ ![](https://i.imgur.com/JbzMk59.png)
 
-##2
 
-*rootå’ŒåŒç¾¤çµ„çš„å¸³è™Ÿå…·æœ‰rwxæ¬Šé™ï¼Œå…¶ä»–å¸³è™Ÿå‰‡åªæœ‰rxæ¬Šé™
+# 2.¦bC»y¨¥µ{¦¡¥i¥H¥Î```getenv()```Åª¨úLINUXªºÀô¹ÒÅÜ¼Æ¡A½d¨Òµ{¦¡¦p¤U¡C½Ğ¦bLinux¸Ì½sÄ¶¦¹½d¨Òµ{¦¡¨Ã°õ¦æ¡A½Ğ°İ§_¦³Åª¨ì```HOSTS_PATH```¥H¤Î```$?```ªº­È¬°¦ó¡A½Ğ»¡©ú¡C¤]³\»İ³z¹L```yum groupinstall "Development Tools"```¦w¸Ëgcc¡C
 
-1.
-```
-#chmod 777 ~/script.sh
-```
-2.
-```
-#chmod u=rwx,g=rwx,o=rwx ~/script.sh
-```
+ * ¿é¤J```yum groupinstall "Development Tools```¦w¸Ëgcc¡C
+> ¦pªG¥X²{```cannot find a valid baseurl for repo base/7/x86_64```­n¥ı³s¤Wºô¸ô
+ * ¿é¤J```vi cprogram.c```¿é¤J¤U­±µ{¦¡½X¡A¨Ã«ö¤U```esc```¿é¤J```:wq```Àx¦sÂ÷¶} 
+>  ```	#include <stdio.h>
+		#include <stdlib.h>
+		int main()
+		{
+    	const char* s = getenv("HOSTS_PATH");
+    	if(s == NULL){
+        	printf("getenv() return NULL\n");
+        	return 1;
+    	}
+    
+    	printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
+    	printf("\n %s content is: \n", s);
 
-##3
+    	int c;
+    	FILE *file;
+    	file = fopen(s, "r");
+    	if (file) {
+        	while ((c = getc(file)) != EOF)
+           	     putchar(c);
+        	fclose(file);
+    		}
+		}```
+ * ¿é¤J```gcc cprogram.c```½sÄ¶
+ * ¿é¤J```gcc -c cprogram.c```
+ * ¿é¤J```ll cprogram*```·|¬İ¨ì:
+![](https://i.imgur.com/7pVvqnB.png)
+ * ¿é¤J```gcc -o cprogram cprogram.o```²£¥Í°õ¦æÀÉ
+ * ¿é¤J```ll cprogram*```·|¬İ¨ì:
+![](https://i.imgur.com/tskpEr5.png)
+ * ¿é¤J```./cprogram```°õ¦æ
+> ¥X²{```getenv() returrn NULL```¡C 
+ * ¿é¤J```echo $?```
+> ¨ä­È¬°```1```¡C 
+>	>```HOSTS_PATH```¬°°Ï°ìÅÜ¼Æ¡A¦Ó«D¥ş°ìÅÜ¼Æ¡A©Ò¥H```getenv```µLªkÅª¨ì¡A·|¥X²{```NULL```¡A©ó¬O½sÄ¶¨Ã°õ¦æ¦^¶Ç¤F```1```¡C
 
-*å¯¦é«”é€£çµæ˜¯åœ¨ç›®éŒ„è£¡åŠ ä¸€ç­†inodeèˆ‡æª”åå°æ‡‰
-*ç¬¦è™Ÿé€£çµæ˜¯å»ºç«‹ç¨ç«‹æª”æ¡ˆæŒ‡å‘ç›®çš„æª”æ¡ˆ
+# 3.¦b```.bashrc```¸Ì­n¦p¦ó­×¥¿¡AÅıC»y¨¥µ{¦¡¥i¥HÅª¨ìÀô¹ÒÅÜ¼Æ¨Ã±NÀÉ®×¤º®eÅã¥Ü¡C
+ * ¿é¤J```vi~/.bashrc```¡A½s¿è§ï¬°```export HOSTS_PATH```
+> «ö¤U```esc```¨Ã¿é¤J```:wq```¡A§YÀx¦sÂ÷¶}¡C 
+ * ¿é¤J```source ~/.bashrc```¥O«ü¥O¥Í®Ä
+ * ¿é¤J```./cprogram```°õ¦æ¨Ã¿é¤J```echo $?```µ²ªG¦p¤U
+![](https://i.imgur.com/SKKrAfb.png) 
+  
 
-*å¯¦é«”é€£çµ
-1.
-```
-#ll -i /etc/hosts
-``` 
-2.
-```
-#ln /etc/hosts .
-```
-3.(æª¢æŸ¥) 
-```
-ll -i /etc/hosts hosts.real
-```
-
-*ç¬¦è™Ÿé€£çµ
-1.
-```
-#ln -s /etc/hosts hosts.symbo
-```
-2.(æª¢æŸ¥) 
-```
-#ll -i /etc/hosts /root/hosts.symbo
-```
-
-##4
-*é‡å•Ÿæ¸¬è©¦ç³»çµ±æ‰“ä¸é–‹
