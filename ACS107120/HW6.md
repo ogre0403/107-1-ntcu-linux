@@ -28,13 +28,9 @@
   {
   
       const char* s = getenv("HOSTS_PATH");
-      
       if(s == NULL){
-      
           printf("getenv() return NULL\n");
-          
           return 1;
-          
       }
     
       printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
