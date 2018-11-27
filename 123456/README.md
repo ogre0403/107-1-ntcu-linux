@@ -6,9 +6,9 @@
 - source ~/.bashrc不登出儲存
 - cat $HOST_PATH檢查
 
-> ![image]()
+> ![image](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/HW-6/123456/1.PNG?raw=true)
 
-> ![image]()
+> ![image](https://github.com/JackyBigNose/107-1-ntcu-linux/blob/HW-6/123456/2.PNG?raw=true)
 
 ### 在C語言程式可以用getenv()讀取LINUX的環境變數，範例程式如下。請在Linux裡編譯此範例程式並執行，請問否有讀到HOSTS_PATH以及$?的值為何，請說明。也許需透過yum groupinstall "Development Tools"安裝gcc。
 
