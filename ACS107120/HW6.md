@@ -17,8 +17,11 @@
 4. 在Linux裡編譯此範例程式並執行
   
   vim test.c
+  
   #include <stdio.h>
+  
   #include <stdlib.h>
+  
   int main()
   {
       const char* s = getenv("HOSTS_PATH");
