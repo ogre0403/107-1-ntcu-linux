@@ -44,6 +44,7 @@
   }
   
   gcc.test.c
+  
   ./a.out
   
 5. 請問是否有讀到HOSTS_PATH以及$?的值為何
