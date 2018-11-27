@@ -3,7 +3,9 @@
 1. 在家目錄下的.bashrc裡新增一個shell變數 HOSTS_PATH=/etc/hosts
 
   vim .bashrc
+  
   HOSTS_PATH="/etc/hosts"
+  
   esc離開編輯模式
 
 2. 如何不登出讓HOSTS_PATH變數生效
