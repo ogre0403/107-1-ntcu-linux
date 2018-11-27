@@ -1,106 +1,106 @@
-#½Ð¦b®a¥Ø¿ý¤Uªº.bashrc¸Ì·s¼W¤@­ÓshellÅÜ¼Æ HOSTS_PATH=/etc/hosts¡A(ª`·N¤£»Ý¥Îexport)¡A»¡©ú¦p¦ó¤£µn¥XÅýHOSTS_PATHÅÜ¼Æ¥Í®Ä¡A°õ¦æcat $HOST_PATH½T»{¦³Åª¨ú¨ìÀÉ®×¤º®e¡C
+#è«‹åœ¨å®¶ç›®éŒ„ä¸‹çš„.bashrcè£¡æ–°å¢žä¸€å€‹shellè®Šæ•¸ HOSTS_PATH=/etc/hostsï¼Œ(æ³¨æ„ä¸éœ€ç”¨export)ï¼Œèªªæ˜Žå¦‚ä½•ä¸ç™»å‡ºè®“HOSTS_PATHè®Šæ•¸ç”Ÿæ•ˆï¼ŒåŸ·è¡Œcat $HOST_PATHç¢ºèªæœ‰è®€å–åˆ°æª”æ¡ˆå…§å®¹ã€‚
 
-*¿é¤Jvi ~/.bashrc
+*è¼¸å…¥vi ~/.bashrc
 
->·s¼WÀÉ®×
+>æ–°å¢žæª”æ¡ˆ
 
-*¿é¤Ji
+*è¼¸å…¥i
 
->±Ò¥Î½s¿è
+>å•Ÿç”¨ç·¨è¼¯
 
-*¿é¤JHOSTS_PATH="/etc/hoats"
+*è¼¸å…¥HOSTS_PATH="/etc/hoats"
 
->·s¼WÅÜ¼Æ
+>æ–°å¢žè®Šæ•¸
 
-*«öESCÁä¡÷:wq
+*æŒ‰ESCéµâ†’:wq
 
->§Y¥iÀx¦s¨ÃÂ÷¶}
+>å³å¯å„²å­˜ä¸¦é›¢é–‹
 
-*¿é¤Jsource ~/.bashrc
+*è¼¸å…¥source ~/.bashrc
 
->ÅªÀô¹Ò³]©wÀÉªº«ü¥O
+>è®€ç’°å¢ƒè¨­å®šæª”çš„æŒ‡ä»¤
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-6/ACS107104/1.PNG)
 
-*¿é¤Jcat $HOSTS_PATH
+*è¼¸å…¥cat $HOSTS_PATH
 
->¬d¬Ý¦³µL¦¨¥\
+>æŸ¥çœ‹æœ‰ç„¡æˆåŠŸ
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-6/ACS107104/2.PNG)
 
 ---------------------------------------
 
-#¦bC»y¨¥µ{¦¡¥i¥H¥Îgetenv()Åª¨úLINUXªºÀô¹ÒÅÜ¼Æ¡A½d¨Òµ{¦¡¦p¤U¡C½Ð¦bLinux¸Ì½sÄ¶¦¹½d¨Òµ{¦¡¨Ã°õ¦æ¡A½Ð°Ý§_¦³Åª¨ìHOSTS_PATH¥H¤Î$?ªº­È¬°¦ó¡A½Ð»¡©ú¡C¤]³\»Ý³z¹Lyum groupinstall "Development Tools"¦w¸Ëgcc¡C
+#åœ¨Cèªžè¨€ç¨‹å¼å¯ä»¥ç”¨getenv()è®€å–LINUXçš„ç’°å¢ƒè®Šæ•¸ï¼Œç¯„ä¾‹ç¨‹å¼å¦‚ä¸‹ã€‚è«‹åœ¨Linuxè£¡ç·¨è­¯æ­¤ç¯„ä¾‹ç¨‹å¼ä¸¦åŸ·è¡Œï¼Œè«‹å•å¦æœ‰è®€åˆ°HOSTS_PATHä»¥åŠ$?çš„å€¼ç‚ºä½•ï¼Œè«‹èªªæ˜Žã€‚ä¹Ÿè¨±éœ€é€éŽyum groupinstall "Development Tools"å®‰è£gccã€‚
 
-*¿é¤Jyum groupinstall "Development Tools"
+*è¼¸å…¥yum groupinstall "Development Tools"
 
->¦w¸Ëgcc
+>å®‰è£gcc
 
-*¿é¤J'vi test.c'
+*è¼¸å…¥'vi test.c'
 
->·s¼WÀÉ®×
+>æ–°å¢žæª”æ¡ˆ
 
-*¿é¤Ji
+*è¼¸å…¥i
 
->±Ò¥Î½s¿è
+>å•Ÿç”¨ç·¨è¼¯
 
-*¿é¤Jµ{¦¡
+*è¼¸å…¥ç¨‹å¼
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-6/ACS107104/3.PNG)
 
-*¿é¤J'gcc test.c'
+*è¼¸å…¥'gcc test.c'
 
->½sÄ¶
+>ç·¨è­¯
 
-*¿é¤J'./a.out'
+*è¼¸å…¥'./a.out'
 
->¿é¥Xµ²ªG
+>è¼¸å‡ºçµæžœ
 
-*¿é¤J'echo $?'
+*è¼¸å…¥'echo $?'
 
->¦L¥X¤º®e
+>å°å‡ºå…§å®¹
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-6/ACS107104/4.PNG)
 
-*¨S¦³Åª¨ìHOSTS_PATH
+*æ²’æœ‰è®€åˆ°HOSTS_PATH
 
->¦]¬°Åã¥Ü'getenv() return NULL'
+>å› ç‚ºé¡¯ç¤º'getenv() return NULL'
 
-*$?ªº­È¬°1
+*$?çš„å€¼ç‚º1
 
->¿ù»~
+>éŒ¯èª¤
 
 -----------------------------------
-#¦b.bashrc¸Ì­n¦p¦ó­×¥¿¡AÅýC»y¨¥µ{¦¡¥i¥HÅª¨ìÀô¹ÒÅÜ¼Æ¨Ã±NÀÉ®×¤º®eÅã¥Ü¡C
+#åœ¨.bashrcè£¡è¦å¦‚ä½•ä¿®æ­£ï¼Œè®“Cèªžè¨€ç¨‹å¼å¯ä»¥è®€åˆ°ç’°å¢ƒè®Šæ•¸ä¸¦å°‡æª”æ¡ˆå…§å®¹é¡¯ç¤ºã€‚
 
-*¿é¤J'vi ~/.bashrc'
+*è¼¸å…¥'vi ~/.bashrc'
 
->½s¿è.bashrc
+>ç·¨è¼¯.bashrc
 
-*¿é¤J'export HOSTS_PATH=/etc/hosts'
+*è¼¸å…¥'export HOSTS_PATH=/etc/hosts'
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-6/ACS107104/5.PNG)
 
-*¿é¤J'source .bashrc'
+*è¼¸å…¥'source .bashrc'
 
-*¿é¤J'gcc test.c'
+*è¼¸å…¥'gcc test.c'
 
->½sÄ¶
+>ç·¨è­¯
 
-*¿é¤J'./a.out'
+*è¼¸å…¥'./a.out'
 
->¿é¥Xµ²ªG
+>è¼¸å‡ºçµæžœ
 
-*¿é¤J'echo $?'
+*è¼¸å…¥'echo $?'
 
->¦L¥X¤º®e
+>å°å‡ºå…§å®¹
 
-*¦³Åª¨ìHOSTS_PATH
+*æœ‰è®€åˆ°HOSTS_PATH
 
->¦]¬°¦³Åã¥ÜHOSTS_PATH
+>å› ç‚ºæœ‰é¡¯ç¤ºHOSTS_PATH
 
-*$?ªº­È¬°0
+*$?çš„å€¼ç‚º0
 
->¥¿½T
+>æ­£ç¢º
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-6/ACS107104/6.PNG)
