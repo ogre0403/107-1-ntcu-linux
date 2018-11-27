@@ -22,6 +22,7 @@
   
   #include <stdlib.h>
   
+  
   int main()
   {
       const char* s = getenv("HOSTS_PATH");
@@ -42,6 +43,7 @@
           fclose(file);
       }
   }
+  
   
   gcc.test.c
   
