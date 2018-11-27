@@ -1,3 +1,7 @@
+### HW6
+
+# 請在家目錄下的.bashrc裡新增一個shell變數 HOSTS_PATH=/etc/hosts，(注意不需用export)，說明如何不登出讓HOSTS_PATH變數生效，執行cat $HOST_PATH確認有讀取到檔案內容。
+
 <ol><li>輸入```vi ~/.bashrc```開啟編輯檔案</li>
 > 按下```a```,```i```,```o```即可開始編輯
 	<li>
