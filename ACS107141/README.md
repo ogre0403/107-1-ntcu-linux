@@ -1,9 +1,9 @@
 ##1
 
 1. 
-```
-#ver=$(uname -r)
-``` 
+
+```#ver=$(uname -r)```
+ 
 2.
 ```
 #echo $ver
