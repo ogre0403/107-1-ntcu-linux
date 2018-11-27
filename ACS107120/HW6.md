@@ -26,7 +26,6 @@
   int main()
   
   {
-  
       const char* s = getenv("HOSTS_PATH");
       if(s == NULL){
           printf("getenv() return NULL\n");
