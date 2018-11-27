@@ -1,23 +1,23 @@
 ### HW6
 
-# 1.½Ğ¦b®a¥Ø¿ı¤Uªº```.bashrc```¸Ì·s¼W¤@­ÓshellÅÜ¼Æ```HOSTS_PATH=/etc/hosts```¡A(ª`·N¤£»İ¥Îexport)¡A»¡©ú¦p¦ó¤£µn¥XÅı```HOSTS_PATH```ÅÜ¼Æ¥Í®Ä¡A°õ¦æ```cat $HOST_PATH```½T»{¦³Åª¨ú¨ìÀÉ®×¤º®e¡C
+# 1.è«‹åœ¨å®¶ç›®éŒ„ä¸‹çš„```.bashrc```è£¡æ–°å¢ä¸€å€‹shellè®Šæ•¸```HOSTS_PATH=/etc/hosts```ï¼Œ(æ³¨æ„ä¸éœ€ç”¨export)ï¼Œèªªæ˜å¦‚ä½•ä¸ç™»å‡ºè®“```HOSTS_PATH```è®Šæ•¸ç”Ÿæ•ˆï¼ŒåŸ·è¡Œ```cat $HOST_PATH```ç¢ºèªæœ‰è®€å–åˆ°æª”æ¡ˆå…§å®¹ã€‚
 
- * ¿é¤J```vi ~/.bashrc```¶}±Ò½s¿èÀÉ®×
-> «ö¤U```a```,```i```,```o```§Y¥i¶}©l½s¿è¡C 
- * ¿é¤J```HOST_PATH="/etc/hosts```
-> «ö¤U```esc```¨Ã¿é¤J```:wq```¡A§YÀx¦sÂ÷¶}¡C
+ * è¼¸å…¥```vi ~/.bashrc```é–‹å•Ÿç·¨è¼¯æª”æ¡ˆ
+> æŒ‰ä¸‹```a```,```i```,```o```å³å¯é–‹å§‹ç·¨è¼¯ã€‚ 
+ * è¼¸å…¥```HOST_PATH="/etc/hosts```
+> æŒ‰ä¸‹```esc```ä¸¦è¼¸å…¥```:wq```ï¼Œå³å„²å­˜é›¢é–‹ã€‚
 ![](https://i.imgur.com/nF9tMXn.png)
 
- * ¿é¤J```source ~/.bashrc```°õ¦æÀô¹Ò³]©wÀÉ«ü¥O
- * ¿é¤J```cat $HOSTS_PATH```ÅçÃÒ¬O§_Åª¨ú¦¨¥\
+ * è¼¸å…¥```source ~/.bashrc```åŸ·è¡Œç’°å¢ƒè¨­å®šæª”æŒ‡ä»¤
+ * è¼¸å…¥```cat $HOSTS_PATH```é©—è­‰æ˜¯å¦è®€å–æˆåŠŸ
  ![](https://i.imgur.com/JbzMk59.png)
 
 
-# 2.¦bC»y¨¥µ{¦¡¥i¥H¥Î```getenv()```Åª¨úLINUXªºÀô¹ÒÅÜ¼Æ¡A½d¨Òµ{¦¡¦p¤U¡C½Ğ¦bLinux¸Ì½sÄ¶¦¹½d¨Òµ{¦¡¨Ã°õ¦æ¡A½Ğ°İ§_¦³Åª¨ì```HOSTS_PATH```¥H¤Î```$?```ªº­È¬°¦ó¡A½Ğ»¡©ú¡C¤]³\»İ³z¹L```yum groupinstall "Development Tools"```¦w¸Ëgcc¡C
+# 2.åœ¨Cèªè¨€ç¨‹å¼å¯ä»¥ç”¨```getenv()```è®€å–LINUXçš„ç’°å¢ƒè®Šæ•¸ï¼Œç¯„ä¾‹ç¨‹å¼å¦‚ä¸‹ã€‚è«‹åœ¨Linuxè£¡ç·¨è­¯æ­¤ç¯„ä¾‹ç¨‹å¼ä¸¦åŸ·è¡Œï¼Œè«‹å•å¦æœ‰è®€åˆ°```HOSTS_PATH```ä»¥åŠ```$?```çš„å€¼ç‚ºä½•ï¼Œè«‹èªªæ˜ã€‚ä¹Ÿè¨±éœ€é€é```yum groupinstall "Development Tools"```å®‰è£gccã€‚
 
- * ¿é¤J```yum groupinstall "Development Tools```¦w¸Ëgcc¡C
-> ¦pªG¥X²{```cannot find a valid baseurl for repo base/7/x86_64```­n¥ı³s¤Wºô¸ô
- * ¿é¤J```vi cprogram.c```¿é¤J¤U­±µ{¦¡½X¡A¨Ã«ö¤U```esc```¿é¤J```:wq```Àx¦sÂ÷¶} 
+ * è¼¸å…¥```yum groupinstall "Development Tools```å®‰è£gccã€‚
+> å¦‚æœå‡ºç¾```cannot find a valid baseurl for repo base/7/x86_64```è¦å…ˆé€£ä¸Šç¶²è·¯
+ * è¼¸å…¥```vi cprogram.c```è¼¸å…¥ä¸‹é¢ç¨‹å¼ç¢¼ï¼Œä¸¦æŒ‰ä¸‹```esc```è¼¸å…¥```:wq```å„²å­˜é›¢é–‹ 
 >  ```	#include <stdio.h>
 		#include <stdlib.h>
 		int main()
@@ -39,25 +39,25 @@
            	     putchar(c);
         	fclose(file);
     		}
-		}```
- * ¿é¤J```gcc cprogram.c```½sÄ¶
- * ¿é¤J```gcc -c cprogram.c```
- * ¿é¤J```ll cprogram*```·|¬İ¨ì:
+		} ```
+ * è¼¸å…¥```gcc cprogram.c```ç·¨è­¯
+ * è¼¸å…¥```gcc -c cprogram.c```
+ * è¼¸å…¥```ll cprogram*```æœƒçœ‹åˆ°:
 ![](https://i.imgur.com/7pVvqnB.png)
- * ¿é¤J```gcc -o cprogram cprogram.o```²£¥Í°õ¦æÀÉ
- * ¿é¤J```ll cprogram*```·|¬İ¨ì:
+ * è¼¸å…¥```gcc -o cprogram cprogram.o```ç”¢ç”ŸåŸ·è¡Œæª”
+ * è¼¸å…¥```ll cprogram*```æœƒçœ‹åˆ°:
 ![](https://i.imgur.com/tskpEr5.png)
- * ¿é¤J```./cprogram```°õ¦æ
-> ¥X²{```getenv() returrn NULL```¡C 
- * ¿é¤J```echo $?```
-> ¨ä­È¬°```1```¡C 
->	>```HOSTS_PATH```¬°°Ï°ìÅÜ¼Æ¡A¦Ó«D¥ş°ìÅÜ¼Æ¡A©Ò¥H```getenv```µLªkÅª¨ì¡A·|¥X²{```NULL```¡A©ó¬O½sÄ¶¨Ã°õ¦æ¦^¶Ç¤F```1```¡C
+ * è¼¸å…¥```./cprogram```åŸ·è¡Œ
+> å‡ºç¾```getenv() returrn NULL```ã€‚ 
+ * è¼¸å…¥```echo $?```
+> å…¶å€¼ç‚º```1```ã€‚ 
+>	>```HOSTS_PATH```ç‚ºå€åŸŸè®Šæ•¸ï¼Œè€Œéå…¨åŸŸè®Šæ•¸ï¼Œæ‰€ä»¥```getenv```ç„¡æ³•è®€åˆ°ï¼Œæœƒå‡ºç¾```NULL```ï¼Œæ–¼æ˜¯ç·¨è­¯ä¸¦åŸ·è¡Œå›å‚³äº†```1```ã€‚
 
-# 3.¦b```.bashrc```¸Ì­n¦p¦ó­×¥¿¡AÅıC»y¨¥µ{¦¡¥i¥HÅª¨ìÀô¹ÒÅÜ¼Æ¨Ã±NÀÉ®×¤º®eÅã¥Ü¡C
- * ¿é¤J```vi~/.bashrc```¡A½s¿è§ï¬°```export HOSTS_PATH```
-> «ö¤U```esc```¨Ã¿é¤J```:wq```¡A§YÀx¦sÂ÷¶}¡C 
- * ¿é¤J```source ~/.bashrc```¥O«ü¥O¥Í®Ä
- * ¿é¤J```./cprogram```°õ¦æ¨Ã¿é¤J```echo $?```µ²ªG¦p¤U
+# 3.åœ¨```.bashrc```è£¡è¦å¦‚ä½•ä¿®æ­£ï¼Œè®“Cèªè¨€ç¨‹å¼å¯ä»¥è®€åˆ°ç’°å¢ƒè®Šæ•¸ä¸¦å°‡æª”æ¡ˆå…§å®¹é¡¯ç¤ºã€‚
+ * è¼¸å…¥```vi~/.bashrc```ï¼Œç·¨è¼¯æ”¹ç‚º```export HOSTS_PATH```
+> æŒ‰ä¸‹```esc```ä¸¦è¼¸å…¥```:wq```ï¼Œå³å„²å­˜é›¢é–‹ã€‚ 
+ * è¼¸å…¥```source ~/.bashrc```ä»¤æŒ‡ä»¤ç”Ÿæ•ˆ
+ * è¼¸å…¥```./cprogram```åŸ·è¡Œä¸¦è¼¸å…¥```echo $?```çµæœå¦‚ä¸‹
 ![](https://i.imgur.com/SKKrAfb.png) 
   
 
