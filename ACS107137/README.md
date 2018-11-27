@@ -23,7 +23,7 @@ echo $? (顯示1＞＞錯誤)
 
 ```
 vi ~/.bashrc
-將**export**打在HOSTS_PATH=/etc/hosts前面
+將export打在HOSTS_PATH=/etc/hosts前面
 gcc test.c
 ./a.out
 echo $? (顯示0＞＞正確)
