@@ -24,11 +24,17 @@
   
   
   int main()
+  
   {
+  
       const char* s = getenv("HOSTS_PATH");
+      
       if(s == NULL){
+      
           printf("getenv() return NULL\n");
+          
           return 1;
+          
       }
     
       printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
@@ -52,6 +58,7 @@
 5. 請問是否有讀到HOSTS_PATH以及$?的值為何
   
   否，因為變數不在子程序裡
+  
   $?=1
   
 6. 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示
