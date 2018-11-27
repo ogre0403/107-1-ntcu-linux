@@ -58,6 +58,6 @@ why?因為 **$HOSTS_PATH**為區域變數而非環境變數，無法給其他的程式進行使用
 
 執行 **./a.out**可以確認**getenv()**抓到了我們設定的變數
 
-最後**echo $?**由程式碼可知成功執行完此檔案，回傳值為0
+最後**echo $?** 由程式碼可知成功執行完此檔案，回傳值為0
 
 ![image](https://github.com/freshdiefish/107-1-ntcu-linux/blob/HW-6/ACS107125/5.jpg)
