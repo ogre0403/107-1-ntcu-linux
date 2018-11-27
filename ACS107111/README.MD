@@ -1,25 +1,25 @@
-+ —pvi .bashrci“üŒã‰ÁãHOSTS_PATH=/etc/hosts
-![GITHUB](https://imgur.com/tALweLG.jpg"gitš¤¦")
++ ç”¨vi .bashrcé€²å…¥å¾ŒåŠ ä¸ŠPATH=/etc/hosts
+![GITHUB](https://imgur.com/tALweLG.jpg"gitÅ¡Â¤Å½Â¦")
 
-+ —psource ~/.bashrcgÌÉ¶Á
-![GITHUB](https://imgur.com/2bUR0N9.jpg"gitš¤¦")
++ ç”¨source ~/.bashrcä½¿è®Šæ•¸ç”Ÿæ•ˆ
+![GITHUB](https://imgur.com/2bUR0N9.jpg"gitÅ¡Â¤Å½Â¦")
 
-+ —pcat $HOSTS_PATH Šm”F—L–³æ¤æ“
-![GITHUB](https://imgur.com/Mld7hhe.jpg"gitš¤¦")
++ ç”¨cat $HOSTS_PATH ç¢ºèªæœ‰ç„¡è®€å–åˆ°
+![GITHUB](https://imgur.com/Mld7hhe.jpg"gitÅ¡Â¤Å½Â¦")
 
-+ —pvi‘Å“ü’ö®áù
-![GITHUB](https://imgur.com/jsuUA52.jpg"gitš¤¦")
++ ç”¨viæ‰“å…¥ç¨‹å¼ç¢¼
+![GITHUB](https://imgur.com/jsuUA52.jpg"gitÅ¡Â¤Å½Â¦")
 
-+ g—pgcc ./a.out·s’ö®Cg—pecho $?èû¦1
-![GITHUB](https://imgur.com/jrW2uWh.jpg"gitš¤¦")
++ ä½¿ç”¨gcc ./a.outåŸ·è¡Œç¨‹å¼ï¼Œä½¿ç”¨echo $?é¡¯ç¤º1
+![GITHUB](https://imgur.com/jrW2uWh.jpg"gitÅ¡Â¤Å½Â¦")
 
-+ ˆöˆ×¥™½ˆæÌÉŠˆÈ–³–@æ¤æ
++ å› ç‚ºæ˜¯å€åŸŸè®Šæ•¸æ‰€ä»¥ç„¡æ³•è®€å–
 
 
-+ ‰Á“üexport HOSTS_PATH
-![GITHUB](https://imgur.com/e5dWaZ1.jpg"gitš¤¦")
++ åŠ å…¥export HOSTS_PATH
+![GITHUB](https://imgur.com/e5dWaZ1.jpg"gitÅ¡Â¤Å½Â¦")
 
-+ g—psource ~/.bashrcŒãÄ·sˆêŸ’ö®
-![GITHUB](https://imgur.com/mmWXPkx.jpg"gitš¤¦")
++ ä½¿ç”¨source ~/.bashrcå¾Œå†åŸ·è¡Œä¸€æ¬¡ç¨‹å¼
+![GITHUB](https://imgur.com/mmWXPkx.jpg"gitÅ¡Â¤Å½Â¦")
 
-+ ”\æ¤æ“ÌÉecho $?ˆ×0
++ èƒ½è®€å–åˆ°è®Šæ•¸echo $?ç‚º0
