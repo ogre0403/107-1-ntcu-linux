@@ -50,10 +50,17 @@
 6. 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示
   
   用export將變數放入子程序
+  
   vim ~/.bashrc
+  
   export HOSTS_PATH="/etc/hosts"
+  
   source ~/.bashrc
+  
   gcc.cp.c
+  
   ll cp.c a.out
+  
   ./a.out
+  
   $?=0代表成功
