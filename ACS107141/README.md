@@ -17,29 +17,7 @@
 
  * 輸入```yum groupinstall "Development Tools```安裝gcc。
 > 如果出現```cannot find a valid baseurl for repo base/7/x86_64```要先連上網路
- * 輸入```vi cprogram.c```輸入下面程式碼，並按下```esc```輸入```:wq```儲存離開 
->  ```	#include <stdio.h>
-		#include <stdlib.h>
-		int main()
-		{
-    	const char* s = getenv("HOSTS_PATH");
-    	if(s == NULL){
-        	printf("getenv() return NULL\n");
-        	return 1;
-    	}
-    
-    	printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
-    	printf("\n %s content is: \n", s);
-
-    	int c;
-    	FILE *file;
-    	file = fopen(s, "r");
-    	if (file) {
-        	while ((c = getc(file)) != EOF)
-           	     putchar(c);
-        	fclose(file);
-    		}
-		} ```
+ * 輸入```vi cprogram.c```輸入程式碼，並按下```esc```輸入```:wq```儲存離開 
  * 輸入```gcc cprogram.c```編譯
  * 輸入```gcc -c cprogram.c```
  * 輸入```ll cprogram*```會看到:
