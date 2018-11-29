@@ -6,6 +6,19 @@
 
 2. 12/12停課一次，11/28、11/5、12/19多上一節補課，感謝同學配合。
 
+## HW7: Deadline: 2018/12/4 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業7改用HW-7分支
+
+1. [apache log](https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log)是apache web server的日誌檔
+
+    * 請查詢 `curl` 或 `wget` 的用法後，用其中一個指令下載此日誌檔。
+
+    * 使用bash的pipe指令，例如`grep`、`cat`...等等，將此日誌中error發生的原因輸出至螢幕，但其他資訊不需要呈現。
+
+2. `tar`是linux下用來打包壓縮目錄的工具，請自行查詢`tar`的用法後，用`一般使用者`身份打包並壓縮`/var`目錄。在`tar`執行過程中，忽略正常輸出結果，但需將錯誤訊息輸出至`tar-err.log`檔案。
+
+
 ## HW6: Deadline: 2018/11/27 23:59
 
 *注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業6改用HW-6分支
