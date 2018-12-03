@@ -6,7 +6,7 @@
 * 先下載安裝` wget `。
   > ` yum -y install wget `
 
-![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/tree/HW-7/ACS107109/img)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-7/ACS107109/img/1.PNG)
 
 
 ##### **再來記得切換成一般使用者身分 並使用一般使用者身分操作**
