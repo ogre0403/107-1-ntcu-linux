@@ -1,30 +1,30 @@
-#apache log¬Oapache web serverªº¤é»xÀÉ
+#apache logæ˜¯apache web serverçš„æ—¥èªŒæª”
 
-##½Ð¬d¸ß curl ©Î wget ªº¥Îªk«á¡A¥Î¨ä¤¤¤@­Ó«ü¥O¤U¸ü¦¹¤é»xÀÉ¡C
+##è«‹æŸ¥è©¢ curl æˆ– wget çš„ç”¨æ³•å¾Œï¼Œç”¨å…¶ä¸­ä¸€å€‹æŒ‡ä»¤ä¸‹è¼‰æ­¤æ—¥èªŒæª”ã€‚
 
 
-*¿é¤Jcurl https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log
+*è¼¸å…¥curl https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log
 
->¤U¸ü¤é»xÀÉ
+>ä¸‹è¼‰æ—¥èªŒæª”
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-7/ACS107104/7-1.PNG)
 
-##¨Ï¥Îbashªºpipe«ü¥O¡A¨Ò¦pgrep¡Bcat...µ¥µ¥¡A±N¦¹¤é»x¤¤errorµo¥Íªº­ì¦]¿é¥X¦Ü¿Ã¹õ¡A¦ý¨ä¥L¸ê°T¤£»Ý­n§e²{¡C
+##ä½¿ç”¨bashçš„pipeæŒ‡ä»¤ï¼Œä¾‹å¦‚grepã€cat...ç­‰ç­‰ï¼Œå°‡æ­¤æ—¥èªŒä¸­errorç™¼ç”Ÿçš„åŽŸå› è¼¸å‡ºè‡³èž¢å¹•ï¼Œä½†å…¶ä»–è³‡è¨Šä¸éœ€è¦å‘ˆç¾ã€‚
 
-*¿é¤Jcat web.log | grep error
+*è¼¸å…¥cat web.log | grep error
 
->¥u§â¤é»x¤¤errorµo¥Íªº­ì¦]¿é¥X¦Ü¿Ã¹õ
+>åªæŠŠæ—¥èªŒä¸­errorç™¼ç”Ÿçš„åŽŸå› è¼¸å‡ºè‡³èž¢å¹•
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-7/ACS107104/7-2.PNG)
 
-#tar¬Olinux¤U¥Î¨Ó¥´¥]À£ÁY¥Ø¿ýªº¤u¨ã¡A½Ð¦Û¦æ¬d¸ßtarªº¥Îªk«á¡A¥Î¤@¯ë¨Ï¥ÎªÌ¨­¥÷¥´¥]¨ÃÀ£ÁY/var¥Ø¿ý¡C¦btar°õ¦æ¹Lµ{¤¤¡A©¿²¤¥¿±`¿é¥Xµ²ªG¡A¦ý»Ý±N¿ù»~°T®§¿é¥X¦Ütar-err.logÀÉ®×¡C
+#taræ˜¯linuxä¸‹ç”¨ä¾†æ‰“åŒ…å£“ç¸®ç›®éŒ„çš„å·¥å…·ï¼Œè«‹è‡ªè¡ŒæŸ¥è©¢tarçš„ç”¨æ³•å¾Œï¼Œç”¨ä¸€èˆ¬ä½¿ç”¨è€…èº«ä»½æ‰“åŒ…ä¸¦å£“ç¸®/varç›®éŒ„ã€‚åœ¨taråŸ·è¡ŒéŽç¨‹ä¸­ï¼Œå¿½ç•¥æ­£å¸¸è¼¸å‡ºçµæžœï¼Œä½†éœ€å°‡éŒ¯èª¤è¨Šæ¯è¼¸å‡ºè‡³tar-err.logæª”æ¡ˆã€‚
 
-*¿é¤Jtar -jcv -f filename.tar.bz2 /var 2> tar-err.log
+*è¼¸å…¥tar -jcv -f filename.tar.bz2 /var 2> tar-err.log
 
->tar -jcv -f filename.tar.bz2¥Î¨ÓÀ£ÁY¡A/varÀÉ®×¦WºÙ¡A2> tar-err.log§â¿ù»~°T®§¿é¥X¦Ütar-err.log¸Ì
+>tar -jcv -f filename.tar.bz2ç”¨ä¾†å£“ç¸®ï¼Œ/varæª”æ¡ˆåç¨±ï¼Œ2> tar-err.logæŠŠéŒ¯èª¤è¨Šæ¯è¼¸å‡ºè‡³tar-err.logè£¡
 
-*¿é¤Jcat tar-err.log
+*è¼¸å…¥cat tar-err.log
 
->Åã¥ÜÀÉ®×¤º®e
+>é¡¯ç¤ºæª”æ¡ˆå…§å®¹
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-7/ACS107104/7-3.PNG)
