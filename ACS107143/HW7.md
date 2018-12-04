@@ -4,7 +4,7 @@
 
 * 先確認是否已經安裝 wget ，若沒安裝則輸入"yum -y install wget"。
 
-* 輸入"wget https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log"，就可以下載此檔案
+* 輸入"wget https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log" ，就可以下載此檔案
 
 
 ![1](1.jpg)
