@@ -9,9 +9,11 @@
 >使用bash的pipe指令，例如grep、cat...等等，將此日誌中error發生的原因輸出至螢幕，但其他資訊不需要呈現。
 
 
-======
+-----
+
 使用指令: curl https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log | grep eror > aaa ; cat aaa
-======
+
+-----
 
 
 ![1](https://images2.imgbox.com/04/34/az0QudFL_o.png)
@@ -25,9 +27,11 @@
 >tar是linux下用來打包壓縮目錄的工具，請自行查詢tar的用法後，用一般使用者身份打包並壓縮/var目錄。在tar執行過程中，忽略正常輸出結果，但需將錯誤訊息輸出至tar-err.log檔案。
 
 
-=====
+-----
+
 使用指令: tar -c /var > /dev/null 2> tar-err.log ; cat tar-err.log
-=====
+
+-----
 
 
 ![2](https://images2.imgbox.com/86/c2/WEOO1y3I_o.png)
