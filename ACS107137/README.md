@@ -11,7 +11,7 @@ ex: wegt https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/reso
 ```
 cat web.log |grep error
 ```
-![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/2.PNG?raw=true)<br>
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/1.PNG?raw=true)<br>
 ### 3.tar是linux下用來打包壓縮目錄的工具，請自行查詢tar的用法後，用一般使用者身份打包並壓縮/var目錄。在tar執行過程中，忽略正常輸出結果，但需將錯誤訊息輸出至tar-err.log檔案。<br>
 
 ```
@@ -22,5 +22,5 @@ tar -c -f 檔名 目標資料夾 2>目標檔案
 
 ex: tar -c -f homework.tar /var 2> rat.err.log
 ```
-![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/1.PNG?raw=true)<br>
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/2.PNG?raw=true)<br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/3.PNG?raw=true)<br>
