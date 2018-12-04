@@ -10,7 +10,7 @@
 > * yum -y install wget 下載wget
 >* wget 是在進行"網路資料"的取得，語法: wget [-option] [url]
 
-` wget https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log `
+##使用 ` wget https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log `
 
 會產生出一個web.log檔，裡面有所有的資料
 ![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-7/ACS107134/1.PNG)
@@ -25,16 +25,16 @@
 tar -cf (打包的檔名) (想要打包的檔案OR目錄)
 
 c跟f一定要
-其中子功能*c 是建立tar檔的，所以一定需要
+其中子功能* c 是建立tar檔的，所以一定需要
 
-再來子功能*f 指定檔案，如果要tar的是跟檔案有關的都要加
+再來子功能* f 指定檔案，如果要tar的是跟檔案有關的都要加
 
-至於如果要壓縮成bzip檔 則要子功能*j
+至於如果要壓縮成bzip檔 則要子功能* j
  
-gzip檔 則要子功能*z 
+gzip檔 則要子功能* z 
 
 ![4](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-7/ACS107134/4.PNG)
-` cat tar-err.log` 
+##使用 ` cat tar-err.log` 
 
 可以看到傳到tar-err.log的錯誤資訊
 ![3](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-7/ACS107134/3.PNG)
