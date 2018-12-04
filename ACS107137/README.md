@@ -4,10 +4,8 @@
 ```
 wegt 網址(下載完後的檔案為 web.log)
 
-wegt https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log
+ex: wegt https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log
 ```
-
-![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/1.PNG?raw=true)<br>
 ### 2.使用bash的pipe指令，例如grep、cat...等等，將此日誌中error發生的原因輸出至螢幕，但其他資訊不需要呈現。<br>
 
 ```
@@ -24,4 +22,5 @@ tar -c -f 檔名 目標資料夾 2>目標檔案
 
 ex: tar -c -f homework.tar /var 2> rat.err.log
 ```
+![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/1.PNG?raw=true)<br>
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-7/ACS107137/img/3.PNG?raw=true)<br>
