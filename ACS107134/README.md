@@ -23,13 +23,18 @@
 
 * tar 只能打包不能壓縮，需要經過tar再經過gzip or bzip2的格式壓縮。
 tar -cf (打包的檔名) (想要打包的檔案OR目錄)
-c跟f一定要
-其中子功能* c *是建立tar檔的，所以一定需要
-再來子功能* f *指定檔案，如果要tar的是跟檔案有關的都要加
-至於如果要壓縮成bzip檔 則要子功能* j *
 
-                gzip檔 則要子功能* z *
+c跟f一定要
+其中子功能*c 是建立tar檔的，所以一定需要
+
+再來子功能*f 指定檔案，如果要tar的是跟檔案有關的都要加
+
+至於如果要壓縮成bzip檔 則要子功能*j
+ 
+gzip檔 則要子功能*z 
 
 ![4](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-7/ACS107134/4.PNG)
-` cat tar-err.log` 可以看到傳到tar-err.log的錯誤資訊
+` cat tar-err.log` 
+
+可以看到傳到tar-err.log的錯誤資訊
 ![3](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-7/ACS107134/3.PNG)
