@@ -3,50 +3,26 @@
 ![]()
 空四個有另一種用法
 
-### 請在家目錄下的.bashrc裡新增一個shell變數 HOSTS_PATH=/etc/hosts，(注意不需用export)，
+### 1.apache log是apache web server的日誌檔
 
-### 說明如何不登出讓HOSTS_PATH變數生效，執行cat $HOST_PATH確認有讀取到檔案內容。
-    使用 vi 編輯進入 .bashrc 檔
-    之後使用source filename 來不登出讓更改生效
-![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-6/ACS107134/1.PNG)
+### 請查詢 curl 或 wget 的用法後，用其中一個指令下載此日誌檔。
 
-### 在C語言程式可以用getenv()讀取LINUX的環境變數，範例程式如下。
+### 使用bash的pipe指令，例如grep、cat...等等，將此日誌中error發生的原因輸出至螢幕，但其他資訊不需要呈現。
 
-### 請在Linux裡編譯此範例程式並執行，請問是否有讀到HOSTS_PATH以及$?的值為何，請說明。
+    yum -y install wget 下載wget
+    wget 是在進行"網路資料"的取得，語法: wget [-option] [url]
+![1]()
+![2]()
 
-### 也許需透過yum groupinstall "Development Tools"安裝gcc。
-
-
-    #include <stdio.h>
-    #include <stdlib.h>
-    int main()
-    {
-        const char* s = getenv("HOSTS_PATH");
-        if(s == NULL){
-            printf("getenv() return NULL\n");
-            return 1;
-        }
-        
-        printf("HOSTS_PATH :%s\n",(s!=NULL)? s : "getenv returned NULL");
-        printf("\n %s content is: \n", s);
+` wget https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log `
+    會產生出一個web.log檔，裡面有所有的資料
     
-        int c;
-        FILE *file;
-        file = fopen(s, "r");
-        if (file) {
-            while ((c = getc(file)) != EOF)
-                    putchar(c);
-            fclose(file);
-        }
-    }
+    我們透過 cat web.log | grep error 讓他輸出error的資訊。
 
-### 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
-#### (1).
-##### 編譯     : gcc file.c  一定要.c
-##### 執行     : ./檔案
-> Ans : 無法透過 ` getenv() `讀到變數 *HOSTS_PATH*的值。
-> 雖然沒有讀到傳回值但對程式來說判斷 *s* 為 NULL 有成立，所以 *$?* 有傳回值 1。
+### 2.tar是linux下用來打包壓縮目錄的工具，請自行查詢tar的用法後，用一般使用者身份打包並壓縮/var目錄。
+### 在tar執行過程中，忽略正常輸出結果，但需將錯誤訊息輸出至tar-err.log檔案。
 
-#### (2).
-    我不會
+    tar 只能打包不能壓縮，需要經過tar再經過gzip or bzip2的格式壓縮。
+
+![3]()
