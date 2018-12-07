@@ -19,9 +19,10 @@
 
 ### 將二台虛擬機器的網路設定存至/etc/sysconfig/network-scripts/下相對應的ifcfg-*檔案，重新啟動虛擬機器，確認網路ip設定無誤。
 
-使用 ` reboot ` 重新啟動
+> 使用 ` reboot ` 重新啟動
 ![4](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-8/ACS107134/4.PNG)
 
 ### 從虛擬機器-1 ping 虛擬機器-2確認網路是連通，並從虛擬機器-2 ping 虛擬機器-1，確認網路也是連通。
-####* 成功!!
+
+#### 成功!!
 ![5](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-8/ACS107134/5.PNG)
