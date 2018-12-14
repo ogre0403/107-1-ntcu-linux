@@ -7,7 +7,7 @@
 ##### ip address add 198.168.100.100/24 broadcast + dev enp0s8 (需先切換為root)<br>
 ##### ip address show enp0s8 查看
 <center class="half">
-    <img src="https://github.com/ACS107135/107-1-ntcu-linux/blob/HW_8/ACS107135/photo/1.52.PNG"/><img src="https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-8/ACS107135/photo/2.PNG">
+    <img src="https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-8/ACS107135/photo/1.52.PNG"/><img src="https://github.com/ACS107135/107-1-ntcu-linux/blob/HW-8/ACS107135/photo/2.PNG">
 </center>
 
 #### ˙建立虛擬機器-2，並啟用host-only網路卡，透過ifconfig或ip指令，設定虛擬機器-2的網路為192.168.100.200/24<br>
