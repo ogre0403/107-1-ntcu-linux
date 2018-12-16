@@ -4,7 +4,7 @@
 
 
 ### 在VirtalBox內建立一個新的Host-only 網路卡，網段為` 192.168.100.1/24 `
-* 點選右上角的**權域工具**進入設定
+* 點選右上角的**全域工具**進入設定
 
 
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/1.png)
@@ -81,6 +81,8 @@
   > 將二台虛擬機器的網路設定存至` /etc/sysconfig/network-scripts/ `下相對應的` ifcfg-* `檔案
 
   * 虛擬機1:test1
+  
+  
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/7.png)
     * ONBOOT要開啟唷!這樣開基的時候就會自動開啟了
       > ONBOOT=yes
@@ -95,6 +97,8 @@
 
 
   * 虛擬機2:test2
+  
+  
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/9.png)
     * ONBOOT要開啟唷!這樣開基的時候就會自動開啟了
       > ONBOOT=yes
