@@ -33,7 +33,7 @@
 * 開啟**設定值**至**網路**啟用剛剛新設定的host-only網路卡
 
 
-![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/3.PNG)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/03.PNG)
 
 
 * **由於是全新新增的虛擬機器，所以要開啟網路卡，並安裝ifconfig。**
@@ -59,7 +59,7 @@
 * 開啟**設定值**至**網路**啟用剛剛新設定的host-only網路卡
 
 
-![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/5.PNG)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/05.PNG)
 
 
 * **由於是全新新增的虛擬機器，所以要開啟網路卡，並安裝ifconfig。**
