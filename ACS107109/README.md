@@ -86,13 +86,13 @@
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/7.png)
 
 
-    * ONBOOT要開啟唷!這樣開基的時候就會自動開啟了
+   * ONBOOT要開啟唷!這樣開基的時候就會自動開啟了
       > ONBOOT=yes
 
-    * 新增對應IP位址
+   * 新增對應IP位址
       > IPADDR=192.168.100.100
 
-    * 儲存離開
+   * 儲存離開
 
 
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/8.png)
@@ -104,13 +104,13 @@
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/9.png)
 
 
-    * ONBOOT要開啟唷!這樣開基的時候就會自動開啟了
+   * ONBOOT要開啟唷!這樣開基的時候就會自動開啟了
       > ONBOOT=yes
 
-    * 新增對應IP位址
+   * 新增對應IP位址
       > IPADDR=192.168.100.200
 
-    * 儲存離開
+   * 儲存離開
 
 
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-8/ACS107109/imgs/10.png)
