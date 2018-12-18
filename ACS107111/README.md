@@ -1,12 +1,12 @@
-+ VŒšHost-only–Ô’iˆ×192.168.100.1/24
-![GITHUB](https://imgur.com/Ut1jdvF.jpg"git¹Ï¥Ü")
-+ —pifconfig enp0s8 192.168.100.100/24 192.168.100.200/24‰üip
-![GITHUB](https://imgur.com/YegxdaC.jpg"git¹Ï¥Ü")
-+ —pifconfigŠÅ¥”Û‰ü¬Œ÷
-![GITHUB](https://imgur.com/26MugvU.jpg"git¹Ï¥Ü")
-+ ‰üvi /etc/sysconfig/network-scripts/ifcfg-enp0s8
-![GITHUB](https://imgur.com/F0BGaam.jpg"git¹Ï¥Ü")
-+ dŠJ‹@Œã—pifconfigŠÅip
-![GITHUB](https://imgur.com/ulzRmFG.jpg"git¹Ï¥Ü")
-+ —pping 192.168.100.200 ping 192.168.100.100Šm”F¥”Û˜A’Ê
-![GITHUB](https://imgur.com/3ptEd2A.jpg"git¹Ï¥Ü")
++ æ–°å»ºHost-onlyç¶²æ®µç‚º192.168.100.1/24
+![GITHUB](https://imgur.com/Ut1jdvF.jpg"gitåœ–ç¤º")
++ ç”¨ifconfig enp0s8 192.168.100.100/24 192.168.100.200/24æ”¹ip
+![GITHUB](https://imgur.com/YegxdaC.jpg"gitåœ–ç¤º")
++ ç”¨ifconfigçœ‹æ˜¯å¦æ”¹æˆåŠŸ
+![GITHUB](https://imgur.com/26MugvU.jpg"gitåœ–ç¤º")
++ æ”¹vi /etc/sysconfig/network-scripts/ifcfg-enp0s8
+![GITHUB](https://imgur.com/F0BGaam.jpg"gitåœ–ç¤º")
++ é‡é–‹æ©Ÿå¾Œç”¨ifconfigçœ‹ip
+![GITHUB](https://imgur.com/ulzRmFG.jpg"gitåœ–ç¤º")
++ ç”¨ping 192.168.100.200 ping 192.168.100.100ç¢ºèªæ˜¯å¦é€£é€š
+![GITHUB](https://imgur.com/3ptEd2A.jpg"gitåœ–ç¤º")
