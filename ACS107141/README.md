@@ -1,14 +1,44 @@
-### HW6
+# HW8
 
-# apache log是apache web server的日誌檔
-# 請查詢 curl 或 wget 的用法後，用其中一個指令下載此日誌檔。
-# 使用bash的pipe指令，例如grep、cat...等等，將此日誌中error發生的原因輸出至螢幕，但其他資訊不需要呈現。
+## 在VirtalBox內建立一個新的Host-only 網路卡，網段為```192.168.100.1/24```
 
- * 輸入```curl https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log | grep error > out```
-![](https://i.imgur.com/7XnSu2Y.png)
+- 點擊「全域工具」&gt;「主機網路管理員」
+![](https://i.imgur.com/sQgC2dq.png)
 
-# tar是linux下用來打包壓縮目錄的工具，請自行查詢tar的用法後，用一般使用者身份打包並壓縮/var目錄。在tar執行過程中，忽略正常輸出結果，但需將錯誤訊息輸出至tar-err.log檔案。
+- 點擊「建立」&gt;「內容」
+- 將IPv4位址改成`192.168.100.1`，套用後啟用
+![](https://i.imgur.com/wdgBZX6.png)
+***
 
- * 輸入```tar -jcv -f filename.tar.bz2 /var 2> tar-err.log```
- * 輸入```cat tar-err.log```以查看 tar-err.log 的內容 
+## <p>建立虛擬機器-1，並啟用host-only網路卡，透過ifconfig 或 ip指令，設定虛擬機器-1的網路為`192.168.100.100/24`</p><p>建立虛擬機器-2，並啟用host-only網路卡，透過ifconfig 或 ip指令，設定虛擬機器-2的網路為`192.168.100.200/24`</p>
+
+- 建立名為`CentOS TEST-1`和`CentOS TEST-2`的虛擬機器，完成後以root登入
+- 輸入`yum install net-tools`
+- 分別輸入以下指令修改IP<p>`ifconfig enp0s8 192.168.100.100/24`</p><p>`ifconfig enp0s8 192.168.100.200/24`</p>
+![](https://i.imgur.com/hFCv8pM.png)
+
+- 輸入`ifconfig enp0s8`檢查是否修改成功
+![](https://i.imgur.com/VHNVVCY.png)
+***
+
+## 將二台虛擬機器的網路設定存至`/etc/sysconfig/network-scripts/`下相對應的`ifcfg-*`檔案，重新啟動虛擬機器，確認網路IP設定無誤
+
+- 輸入`vi /etc/sysconfig/network-scripts/ifcfg-enp0s8`
+    > 輸入a、i、o開啟編輯
+- 將`ONBOOT=no`改成`ONBOOT=yes`<p>將`dhcp`改成`static`</p>
+- CentOS TEST-1 輸入 `IPADDR=192.168.100.100`<p>CentOS TEST-2 輸入 `IPADDR=192.168.100.200`</p>
+![](https://i.imgur.com/IjbGyTQ.png)
+    > 按下`ESC`並輸入:wq儲存
+***
+
+## 從虛擬機器-1 ping 虛擬機器-2確認網路是連通，並從虛擬機器-2 ping 虛擬機器-1，確認網路也是連通。
+
+- 重啟兩台虛擬機
+- CentOS TEST-1輸入`ping 192.168.100.200`<p>CentOS TEST-2輸入`ping 192.168.100.100`</p>
+![](https://i.imgur.com/qEQYUnP.png)
+![](https://i.imgur.com/3S0pD9U.png)
+
+    # 確認連通!
+
+
 
