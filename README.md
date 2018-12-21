@@ -4,8 +4,14 @@
 
 1. 請同學至[成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的期中成績，
 
-2. 12/12停課一次，11/28、11/5、12/19多上一節補課，感謝同學配合。
 
+## HW9: Deadline: 2019/1/1 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業9改用HW-9分支
+
+1. yum 是透過設定檔的規範去找到安裝/升級伺服器，預設的 CentOS 7 的設定檔的檔名為 /etc/yum.repos.d/CentOS-Base.repo。Red Hat 提供了 EPEL 的計畫，提供額外打包好的軟體，提供給用戶使用。但這些軟體並非官網提供， 因此其軟體庫並沒有在預設的設定檔內。
+
+    * 請閱讀 https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ 後，依照其作法，啟用epel repoisitory，並安裝`htop`
 
 ## HW8: Deadline: 2018/12/18 23:59
 
