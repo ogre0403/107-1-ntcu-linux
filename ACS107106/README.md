@@ -1,23 +1,25 @@
-### 1.¦w¸ËEPEL repo 
+### 1.å®‰è£EPEL repo 
 + yum install epel-release
-+ (¦p¹Ï1¡B2)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/1.png)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/2.png)
 
-### 2.¬d¬İepel repo 
+### 2.æŸ¥çœ‹epel repo 
 + yum repolist
-+ (¦p¹Ï3)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/3.png)
 
-### 3.¦C¥X¦W¬°epelªºrepo¤Uªº©Ò¦³¥i¥Î¦w¸Ë¥]
+### 3.åˆ—å‡ºåç‚ºepelçš„repoä¸‹çš„æ‰€æœ‰å¯ç”¨å®‰è£åŒ…
 + yum --disablerepo="*" --enablerepo="epel" list available
-+ (¦p¹Ï4)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/4.png)
 
-### 4.·j´Mhtop¦w¸Ë¥] 
+### 4.æœå°‹htopå®‰è£åŒ… 
 + yum search htop
-+ (¦p¹Ï5)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/5.png)
 
-### 5.¦C¥X§ó¦h¦³Ãöhtopªº«H®§ (¦p¹Ï6)
+### 5.åˆ—å‡ºæ›´å¤šæœ‰é—œhtopçš„ä¿¡æ¯ (å¦‚åœ–6)
 + yum info  htop
-+ (¦p¹Ï6)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/6.png)
 
-### 6.¦w¸Ëhtop (¦p¹Ï7¡B8)
+### 6.å®‰è£htop (å¦‚åœ–7ã€8)
 + yum install  htop
-+ (¦p¹Ï7¡B8)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/7.png)
+![image](https://github.com/gigilin7/107-1-ntcu-linux/blob/HW-9/ACS107106/8.png)
