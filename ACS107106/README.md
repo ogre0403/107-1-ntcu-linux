@@ -1,14 +1,21 @@
-#(1)
-點選進入"全域工具"，建立新的網路卡，按"內容"將IPv4位址設定為"192.168.100.1"，並勾選"啟用"。
-#(2)
-新增一個新的虛擬機器-1，按"設定值"裡的"網路"，選擇"僅限主機介面卡"(名稱就是剛剛建立的網路卡)，安裝 yum install net-tools，接著輸入ip address add 192.168.100.100/24 broadcast + dev enp0s8。
-#(3)
-新增另一個虛擬機器-2，步驟同上，接著輸入ip address add 192.168.100.200/24 broadcast + dev enp0s8。
-#(4)
-虛擬機器-1:輸入vi /etc/sysconfig/network-scripts/ifcfg-*，接著改ONBOOT=yes，並新增ip位址IPADDR=192.168.100.100，打wq儲存離開。
+# 請依說明完成下列操作讓虛擬機器彼此間能夠透過網路相互溝通：
 
-虛擬機器-2:輸入vi /etc/sysconfig/network-scripts/ifcfg-*，接著改ONBOOT=yes，並新增ip位址IPADDR=192.168.100.200，打wq儲存離開。
-#(5)
-虛擬機器-1:輸入ping 192.168.100.200 確認網路是連通
+# 在VirtalBox內建立一個新的Host-only 網路卡，網段為192.168.100.1/24
+-->如圖1
 
-虛擬機器-2:輸入ping 192.168.100.100 確認網路也是連通
+## 建立虛擬機器-1，並啟用host-only網路卡，透過ifconfig 或 ip指令，設定虛擬機器-1的網路為192.168.100.100/24
+-->ifconfig enp0s8 192.168.100.100
+-->如圖2，圖3，圖4
+
+# 建立虛擬機器-2，並啟用host-only網路卡，透過ifconfig 或 ip指令，設定虛擬機器-2的網路為192.168.100.200/24
+-->ifconfig enp0s8 192.168.100.200
+-->如圖5，圖6
+
+# 將二台虛擬機器的網路設定存至/etc/sysconfig/network-scripts/下相對應的ifcfg-*檔案，重新啟動虛擬機器，確認網路ip設定無誤
+-->vi /etc/sysconfig/network-scripts/ifcfg-enp0s8
+-->如圖7，圖8，圖9，圖10，圖11
+
+# 從虛擬機器-1 ping 虛擬機器-2確認網路是連通，並從虛擬機器-2 ping 虛擬機器-1，確認網路也是連通
+-->ping 192.168.100.100
+-->ping 192.168.100.200
+-->如圖12，圖13
