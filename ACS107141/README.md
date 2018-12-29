@@ -1,27 +1,25 @@
 # HW9
 
-## ½Ğ¾\Åª https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ «á¡A¨Ì·Ó¨ä§@ªk¡A±Ò¥Î`epel repo isitory`¡A¨Ã¦w¸Ë`htop`¡C
-    yum ¬O³z¹L³]©wÀÉªº³W½d¥h§ä¨ì¦w¸Ë/¤É¯Å¦øªA¾¹¡A¹w³]ªº CentOS 7 ªº³]©wÀÉªºÀÉ¦W
-    ¬° /etc/yum.repos.d/CentOS-Base.repo¡CRed Hat ´£¨Ñ¤F EPEL ªº­pµe¡A´£¨ÑÃB
-    ¥~¥´¥]¦nªº³nÅé¡A´£¨Ñµ¹¥Î¤á¨Ï¥Î¡C¦ı³o¨Ç³nÅé¨Ã«D©xºô´£¨Ñ¡A ¦]¦¹¨ä³nÅé®w¨Ã¨S¦³¦b
-    ¹w³]ªº³]©wÀÉ¤º¡C
+## è«‹é–±è®€ https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ å¾Œï¼Œä¾ç…§å…¶ä½œæ³•ï¼Œå•Ÿç”¨`epel repo isitory`ï¼Œä¸¦å®‰è£`htop`ã€‚
+    yum æ˜¯é€éè¨­å®šæª”çš„è¦ç¯„å»æ‰¾åˆ°å®‰è£/å‡ç´šä¼ºæœå™¨ï¼Œé è¨­çš„ CentOS 7 çš„è¨­å®šæª”çš„æª”åç‚º /etc/yum.repos.d/CentOS-Base.repoã€‚Red Hat æä¾›äº† EPEL çš„è¨ˆç•«ï¼Œæä¾›é¡
+    å¤–æ‰“åŒ…å¥½çš„è»Ÿé«”ï¼Œæä¾›çµ¦ç”¨æˆ¶ä½¿ç”¨ã€‚ä½†é€™äº›è»Ÿé«”ä¸¦éå®˜ç¶²æä¾›ï¼Œ å› æ­¤å…¶è»Ÿé«”åº«ä¸¦æ²’æœ‰åœ¨é è¨­çš„è¨­å®šæª”å…§ã€‚
 
-+ ¿é¤J`yum install epel-release`¦w¸Ë <b>EPEL repo</b>
++ è¼¸å…¥`yum install epel-release`å®‰è£ <b>EPEL repo</b>
 ![](https://i.imgur.com/7uCNcoU.png)
 
-+ ¿é¤J`yum repolist`¬d¬İ
++ è¼¸å…¥`yum repolist`æŸ¥çœ‹
 ![](https://i.imgur.com/WHe7FXU.png)
 
-+ ¿é¤J`yum --disablerepo="*" --enablerepo="epel" list available`¦C¥X¦W¬°`epel`ªºrepo¤§©Ò¦³¥i¥Î¦w¸Ë¥]
++ è¼¸å…¥`yum --disablerepo="*" --enablerepo="epel" list available`åˆ—å‡ºåç‚º`epel`çš„repoä¹‹æ‰€æœ‰å¯ç”¨å®‰è£åŒ…
 
-+ ¿é¤J`yum search htop`·j´M`htop`¦w¸Ë¥]
++ è¼¸å…¥`yum search htop`æœå°‹`htop`å®‰è£åŒ…
 ![](https://i.imgur.com/bI8kN4d.png)
 
-+ ¿é¤J`yum info htop`¦C¥X`htop`¬ÛÃö°T®§
++ è¼¸å…¥`yum info htop`åˆ—å‡º`htop`ç›¸é—œè¨Šæ¯
 ![](https://i.imgur.com/ZE1psap.png)
 
-+ ¿é¤J`yum install htop`¦w¸Ë`htop`
++ è¼¸å…¥`yum install htop`å®‰è£`htop`
 ![](https://i.imgur.com/fpMSnVh.png)
 
-## <b>¦w¸Ë¦¨¥\¡I¡I</b>
+## <b>å®‰è£æˆåŠŸï¼ï¼</b>
 
