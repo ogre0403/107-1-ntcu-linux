@@ -1,39 +1,39 @@
-#yum ¬O³z¹L³]©wÀÉªº³W½d¥h§ä¨ì¦w¸Ë/¤É¯Å¦øªA¾¹¡A¹w³]ªº CentOS 7 ªº³]©wÀÉªºÀÉ¦W¬° /etc/yum.repos.d/CentOS-Base.repo¡CRed Hat ´£¨Ñ¤F EPEL ªº­pµe¡A´£¨ÑÃB¥~¥´¥]¦nªº³nÅé¡A´£¨Ñµ¹¥Î¤á¨Ï¥Î¡C¦ý³o¨Ç³nÅé¨Ã«D©xºô´£¨Ñ¡A ¦]¦¹¨ä³nÅé®w¨Ã¨S¦³¦b¹w³]ªº³]©wÀÉ¤º¡C
+#yum æ˜¯é€éŽè¨­å®šæª”çš„è¦ç¯„åŽ»æ‰¾åˆ°å®‰è£/å‡ç´šä¼ºæœå™¨ï¼Œé è¨­çš„ CentOS 7 çš„è¨­å®šæª”çš„æª”åç‚º /etc/yum.repos.d/CentOS-Base.repoã€‚Red Hat æä¾›äº† EPEL çš„è¨ˆç•«ï¼Œæä¾›é¡å¤–æ‰“åŒ…å¥½çš„è»Ÿé«”ï¼Œæä¾›çµ¦ç”¨æˆ¶ä½¿ç”¨ã€‚ä½†é€™äº›è»Ÿé«”ä¸¦éžå®˜ç¶²æä¾›ï¼Œ å› æ­¤å…¶è»Ÿé«”åº«ä¸¦æ²’æœ‰åœ¨é è¨­çš„è¨­å®šæª”å…§ã€‚
 
-##½Ð¾\Åª https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ «á¡A¨Ì·Ó¨ä§@ªk¡A±Ò¥Îepel repo?isitory¡A¨Ã¦w¸Ëhtop
+##è«‹é–±è®€ https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ å¾Œï¼Œä¾ç…§å…¶ä½œæ³•ï¼Œå•Ÿç”¨epel repo?isitoryï¼Œä¸¦å®‰è£htop
 
-*¿é¤Jyum install epel-release
+*è¼¸å…¥yum install epel-release
 
->¦bCentos 7¤W¦w¸Ëepel-release³n¥ó¥]
+>åœ¨Centos 7ä¸Šå®‰è£epel-releaseè»Ÿä»¶åŒ…
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-9/ACS107104/(0).PNG)
 
-*¿é¤Jyum repolist
+*è¼¸å…¥yum repolist
 
->¦w¸Ërepolist¬d¬Ýepel repo
+>å®‰è£repolistæŸ¥çœ‹epel repo
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-9/ACS107104/(1).PNG)
 
-*¿é¤Jyum  --disablerepo="*" --enablerepo="epel" list available
+*è¼¸å…¥yum  --disablerepo="*" --enablerepo="epel" list available
 
->¦bCentOS / RHEL / Fedora Linux¤W¦C¥XEPEL Repo¤Uªº©Ò¦³¥i¥Î³n¥ó¥]
+>åœ¨CentOS / RHEL / Fedora Linuxä¸Šåˆ—å‡ºEPEL Repoä¸‹çš„æ‰€æœ‰å¯ç”¨è»Ÿä»¶åŒ…
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-9/ACS107104/(2).PNG)
 
-*¿é¤Jyum search htop
+*è¼¸å…¥yum search htop
 
 >search it
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-9/ACS107104/(3).PNG)
 
-*¿é¤Jyum info htop
+*è¼¸å…¥yum info htop
 
 >get more info, if found 
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-9/ACS107104/(4).PNG)
 
-*¿é¤Jyum install htop
+*è¼¸å…¥yum install htop
 
 >install it
 
-![image]()
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/HW-9/ACS107104/(5).PNG)
