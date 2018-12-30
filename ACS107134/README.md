@@ -18,7 +18,7 @@
 因此想要下載htop就要先下載epel這個repo，下載指令是
 > yum -y install epel-release
 
-![1]()
+![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-9/ACS107134/1.PNG)
 
 找到之後可以使用
 > yum repolist < 來看看epel有沒有安裝成功
@@ -28,6 +28,7 @@
 > yum install htop > 
 就可以安裝囉
 
+![2](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-9/ACS107134/2.PNG)
 
 
 sudo yum --disablerepo="*" --enablerepo="epel" list available
