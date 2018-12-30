@@ -21,9 +21,13 @@
 ![1](https://github.com/0905053883/107-1-ntcu-linux/blob/HW-9/ACS107134/1.PNG)
 
 找到之後可以使用
-> yum repolist < 來看看epel有沒有安裝成功
-用 > yum search htop < 可以查看htop 是否在目前所擁有的repos裡
-> yum info htop < 可以看看htop的資訊
+> yum repolist > 來看看epel有沒有安裝成功
+
+用 > yum search htop < 
+
+可以查看htop 是否在目前所擁有的repos裡
+> yum info htop <  可以看看htop的資訊
+
 最後用
 > yum install htop > 
 就可以安裝囉
