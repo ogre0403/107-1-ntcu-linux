@@ -1,0 +1,39 @@
+# HW9
+-----------------------------------------
+## yum 是透過設定檔的規範去找到安裝/升級伺服器，預設的 CentOS 7 的設定檔的檔名為 /etc/yum.repos.d/CentOS-Base.repo。Red Hat 提供了 EPEL 的計畫，提供額外打包好的軟體，提供給用戶使用。但這些軟體並非官網提供， 因此其軟體庫並沒有在預設的設定檔內。
+### 請閱讀< https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ >後，依照其作法，啟用epel repoisitory，並安裝` htop `。
+
+* 安裝epel:` yum install epel-release `。
+
+
+![image](01)
+
+
+![image](02)
+
+
+* 檢查epel有無成功安裝:` sudo yum repolist `。
+
+
+![image](03)
+
+
+* 檢查htop package有無存在epel repo:` yum search htop `。
+
+
+![image](04)
+
+
+* 查看更多htop package的資訊:` yum info htop `。
+
+
+![image](05)
+
+
+* 安裝htop:` yum install htop `。
+
+
+![image](06)
+
+
+![image](07)
