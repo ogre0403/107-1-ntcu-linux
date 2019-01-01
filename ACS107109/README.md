@@ -1,39 +1,39 @@
 # HW9
 -----------------------------------------
-## yum ¬O³z¹L³]©wÀÉªº³W½d¥h§ä¨ì¦w¸Ë/¤É¯Å¦øªA¾¹¡A¹w³]ªº CentOS 7 ªº³]©wÀÉªºÀÉ¦W¬° /etc/yum.repos.d/CentOS-Base.repo¡CRed Hat ´£¨Ñ¤F EPEL ªº­pµe¡A´£¨ÑÃB¥~¥´¥]¦nªº³nÅé¡A´£¨Ñµ¹¥Î¤á¨Ï¥Î¡C¦ı³o¨Ç³nÅé¨Ã«D©xºô´£¨Ñ¡A ¦]¦¹¨ä³nÅé®w¨Ã¨S¦³¦b¹w³]ªº³]©wÀÉ¤º¡C
-### ½Ğ¾\Åª< https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ >«á¡A¨Ì·Ó¨ä§@ªk¡A±Ò¥Îepel repoisitory¡A¨Ã¦w¸Ë` htop `¡C
+## yum æ˜¯é€éè¨­å®šæª”çš„è¦ç¯„å»æ‰¾åˆ°å®‰è£/å‡ç´šä¼ºæœå™¨ï¼Œé è¨­çš„ CentOS 7 çš„è¨­å®šæª”çš„æª”åç‚º /etc/yum.repos.d/CentOS-Base.repoã€‚Red Hat æä¾›äº† EPEL çš„è¨ˆç•«ï¼Œæä¾›é¡å¤–æ‰“åŒ…å¥½çš„è»Ÿé«”ï¼Œæä¾›çµ¦ç”¨æˆ¶ä½¿ç”¨ã€‚ä½†é€™äº›è»Ÿé«”ä¸¦éå®˜ç¶²æä¾›ï¼Œ å› æ­¤å…¶è»Ÿé«”åº«ä¸¦æ²’æœ‰åœ¨é è¨­çš„è¨­å®šæª”å…§ã€‚
+### è«‹é–±è®€< https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/ >å¾Œï¼Œä¾ç…§å…¶ä½œæ³•ï¼Œå•Ÿç”¨epel repoisitoryï¼Œä¸¦å®‰è£` htop `ã€‚
 
-* ¦w¸Ëepel:` yum install epel-release `¡C
-
-
-![image](01)
+* å®‰è£epel:` yum install epel-release `ã€‚
 
 
-![image](02)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-9/ACS107109/img/01.PNG)
 
 
-* ÀË¬depel¦³µL¦¨¥\¦w¸Ë:` sudo yum repolist `¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-9/ACS107109/img/02.PNG)
 
 
-![image](03)
+* æª¢æŸ¥epelæœ‰ç„¡æˆåŠŸå®‰è£:` sudo yum repolist `ã€‚
 
 
-* ÀË¬dhtop package¦³µL¦s¦bepel repo:` yum search htop `¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-9/ACS107109/img/03.png)
 
 
-![image](04)
+* æª¢æŸ¥htop packageæœ‰ç„¡å­˜åœ¨epel repo:` yum search htop `ã€‚
 
 
-* ¬d¬İ§ó¦hhtop packageªº¸ê°T:` yum info htop `¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-9/ACS107109/img/04.png)
 
 
-![image](05)
+* æŸ¥çœ‹æ›´å¤šhtop packageçš„è³‡è¨Š:` yum info htop `ã€‚
 
 
-* ¦w¸Ëhtop:` yum install htop `¡C
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-9/ACS107109/img/05.PNG)
 
 
-![image](06)
+* å®‰è£htop:` yum install htop `ã€‚
 
 
-![image](07)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-9/ACS107109/img/06.PNG)
+
+
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-9/ACS107109/img/07.PNG)
