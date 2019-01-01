@@ -1,9 +1,9 @@
-# ¦w¸Ëhtop
-* ### ¿é¤J yum install epel-release
+# å®‰è£htop
+* ### è¼¸å…¥ yum install epel-release
 ![](https://i.imgur.com/wFAQKVl.png)
-* ### ¿é¤Jyum repolist ½T»{¦w¸Ë
+* ### è¼¸å…¥yum repolist ç¢ºèªå®‰è£
 ![](https://i.imgur.com/dnC6V6F.png)
-* ### ¿é¤Jyum info htop ¬d¬Ýhtop¸ê°T
+* ### è¼¸å…¥yum info htop æŸ¥çœ‹htopè³‡è¨Š
 ![](https://i.imgur.com/CTNIufL.png)
-* ### ¿é¤Jyum install htop ¦w¸Ëhtop
+* ### è¼¸å…¥yum install htop å®‰è£htop
 ![](https://i.imgur.com/j9vS4o1.png)
