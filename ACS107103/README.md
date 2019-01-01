@@ -9,7 +9,7 @@
 ![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-9/ACS107103/centos-2019-01-02-03-02-16.png)
 ![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-9/ACS107103/centos-2019-01-02-03-02-31.png)
 + 再來要準備安裝htop
-+ 先執行yum search htop進行搜索
++ 先執行yum search htop進行搜索(這步可以省略)
 ![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-9/ACS107103/centos-2019-01-02-03-03-45.png)
 + 確認已搜索到htop後執行yum install htop進行安裝
 ![image](https://github.com/j6s94e04/107-1-ntcu-linux/blob/HW-9/ACS107103/centos-2019-01-02-03-05-07.png)
