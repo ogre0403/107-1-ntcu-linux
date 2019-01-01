@@ -1,23 +1,26 @@
-使用之前用的 **yum** 指令下載  
-**→** **yum -y install wget**  
-    
-![](https://ppt.cc/f4HcXx@.png)  
+#HW9  
+###1.  
+只需在CentOS 7 鍵入以下yum命令  
+ **yum install epel-release**
+![](https://ppt.cc/fx7b7x@.png)
+###2.  
+安裝完成後，使用以下yum repolist命令查看epel repo  
+**yum repolist**  
+![](https://ppt.cc/fIstZx@.png)
 
-然後使用 **wget** 來下載  
-**wget https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log**
-  
-  
-然後使用 **cat web.log | grep error** 將此日誌中error發生的原因輸出至螢幕
-
-![](https://ppt.cc/fh8EWx@.png)  
-  
-然後換成一般使用者(記得不要用root)    
-  
-打指令製造一個壓縮檔，並以**tar-err.log**存在當前目錄裡  
-**tar -jcv -f filename.tar.bz2 /var 2> tar-err.log**    
-  
-![](https://ppt.cc/fE1Zhx@.png)
-  
-最後 **cat tar-err.log**，抓出存在檔案中的錯誤訊息  
-
-![](https://ppt.cc/f6TOSx@.png)
+###3.  
+要列出名為epel的repo下的所有可用包，請輸入：  
+**yum --disablerepo="*" --enablerepo="epel" list available**  
+![](https://ppt.cc/fSa0Lx@.png)
+###4.  
+然後使用搜尋  
+**yum search htop** 
+![](https://ppt.cc/fdkwEx@.png)
+###5.  
+列出更多有關htop的信息用  
+**yum info htop**
+![](https://ppt.cc/fgjqIx@.png)
+###6.  
+最後安裝htop使用  
+**yum install htop**  
+![](https://ppt.cc/fNtRox@.png)
