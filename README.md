@@ -5,6 +5,20 @@
 1. 請同學至[成績](https://github.com/ogre0403/107-1-ntcu-linux/tree/score)確認自己的期中成績，
 
 
+## HW10: Deadline: 2019/1/8 23:59
+
+*注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業10改用HW-10分支
+
+1. 請仿照課堂上練習，透過systemd管理二個sshd服務，並讓第二個sshd服務的 port 放行於 2222。完成後可以使用指令 `netstat -alntp | grep ssh` 確認是否啟動二個sshd服務，範例如下：
+
+```sh
+$ netstat -alntp | grep ssh
+tcp        0      0 0.0.0.0:22     0.0.0.0:*     LISTEN      1300/sshd
+tcp        0      0 0.0.0.0:2222   0.0.0.0:*     LISTEN      15275/sshd
+tcp6       0      0 :::22          :::*          LISTEN      1300/sshd
+tcp6       0      0 :::2222        :::*          LISTEN      15275/sshd
+```
+
 ## HW9: Deadline: 2019/1/1 23:59
 
 *注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業9改用HW-9分支
