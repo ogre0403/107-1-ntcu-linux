@@ -19,6 +19,16 @@ tcp6       0      0 :::22          :::*          LISTEN      1300/sshd
 tcp6       0      0 :::2222        :::*          LISTEN      15275/sshd
 ```
 
+    Note 1: CentOS有使用SELinux ，故預設只允許 SSH 使用埠號 22，若要使用埠號 2222，使請用下列指開啟並檢查
+
+    ```sh
+    $ semanage port -a -t ssh_port_t -p tcp 2222
+    $ semanage port -l | grep ssh
+    ssh_port_t tcp 2202, 22
+    ```  
+
+    Note 2: CentOS預設的防火牆firewalld會禁止訪問埠號2222，若要透過2222埠連ssh，請先關閉firewalld。
+
 ## HW9: Deadline: 2019/1/1 23:59
 
 *注意:* 請依[Git繳交作業流程](#Git繳交作業流程), 唯一不同處是作業2用HW-2的地方在作業9改用HW-9分支
