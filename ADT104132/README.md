@@ -7,11 +7,11 @@
 ![2](img/2.png)</br>
 複製sshd.service，製造成sshd2.service，並編輯</br>
 ![3](img/3.png)</br>
-將ExecStart=/usr/sbin/sshd -f /etc/ssh/sshd2_config -D $SSHD_OPTS</br>
+將ExecStart 改成ExecStart=/usr/sbin/sshd -f /etc/ssh/sshd2_config -D $SSHD_OPTS</br>
 ![4](img/4.png)</br>
 用systemctl指令重啟</br>
 ![5](img/5.png)</br>
-安裝policycoreutils-python-utils，安裝此第三方包才能執行下一航程式</br>
+安裝policycoreutils-python-utils，安裝此第三方包才能執行下一行程式</br>
 ![7](img/7.png)</br>
 <pre><code>semanage port -a -t ssh_port_t -p tcp 2222</code></pre>
 ![6](img/6.png)</br>
