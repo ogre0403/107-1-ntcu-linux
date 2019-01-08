@@ -43,7 +43,7 @@
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-10/ACS107144/10-1-07.png)
 ![image](https://github.com/KAORIKOU/107-1-ntcu-linux/blob/HW-10/ACS107144/10-1-08.png)
 
-* 確定 port 為 2000 設定成功
+* 確定 port 為 2222 設定成功
   * 輸入 `semanage port -a -t ssh_port_t -p tcp 2222`
 
   * 輸入 `semanage port -l | grep ssh`
