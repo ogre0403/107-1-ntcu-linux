@@ -20,37 +20,37 @@ tcp6       0      0 :::2222        :::*          LISTEN      15275/sshd
 
 ####  先用`cd /etc/ssh`進入ssh。
 ####  用`cp sshd_config sshd2_config`將sshd_config的內容複製至sshd2_config。
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/1.png)</br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/1.png)</br>
 
 ####  輸入`vi sshd2_config`進入編輯。
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/2.png)</br>
-####  將"Port 22"改為"Port 2222"
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/3.png)</br></br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/2.png)</br>
+####  將"#Port 22"改為"Port 2222"(記得刪除#)
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/3.png)</br></br>
 
 ####  輸入`cd /etc/systemd/system`。
 ####  輸入`cp /usr/lib/systemd/system/sshd.service sshd2.service`將sshd.service的內容複製至sshd2.service。
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/4.png)</br></br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/4.png)</br></br>
 
 ####  `vi sshd2.service`進入編輯。
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/5.png)</br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/5.png)</br>
 ####  將"Type"改成"simple"，方便之後閱讀。
 ####  將"ExecStart"的內容改成"/usr/sbin/sshd -f /etc/ssh/sshd2_config -D $OPTIONS"。
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/6.png)</br></br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/6.png)</br></br>
 
 ####  使用`yum`指令，查詢需要使用的相關指令包並進行安裝。
 ####  <li>`yum provides semanage`</br>
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/7.png)</br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/7.png)</br>
 ####  <li>`yum install policycoreutils-python`</br>
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/8.png)</br></br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/8.png)</br></br>
 
 ####  使用`semanage`指令確認已經設定成功。
 #####  <li>`semanage port -a -t ssh_port_t -p tcp 2222`</br>
 #####  <li>`semanage port -l | grep ssh`</br>
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/9.png)</br></br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/9.png)</br></br>
 
 ####  <li>用`systemctl daemon-reload`重新讀取。
 ####  <li>用`systemctl start sshd2.service`開啟。
 ####  最後執行`netstat -alntp | grep ssh`。
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/master/ACS107127/screen/10.png)</br></br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-10/ACS107127/screen/10.png)</br></br>
 
 完成~~~
