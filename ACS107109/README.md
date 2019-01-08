@@ -17,7 +17,7 @@
  > cd /etc/ssh
 
 * 將sshd_config的資料複製至sshd2_config
- > cp sshd_config sshd_config
+ > cp sshd_config sshd2_config
 
 * 編輯sshd2_config中的資料(**修改Port為2222**)
   * **注意!!要將Port 2222前的井字號刪掉!!不然在後面要start sshd2時會有問題!!**
