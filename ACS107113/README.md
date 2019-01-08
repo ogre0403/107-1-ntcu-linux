@@ -1,36 +1,32 @@
 ## HW10
-#### ½Ğ¥é·Ó½Ò°ó¤W½m²ß¡A³z¹LsystemdºŞ²z¤G­ÓsshdªA°È¡A¨ÃÅı²Ä¤G­ÓsshdªA°Èªº port ©ñ¦æ©ó 2222¡C§¹¦¨«á¥i¥H¨Ï¥Î«ü¥O netstat -alntp | grep ssh ½T»{¬O§_±Ò°Ê¤G­ÓsshdªA°È¡C
+#### è«‹ä»¿ç…§èª²å ‚ä¸Šç·´ç¿’ï¼Œé€ésystemdç®¡ç†äºŒå€‹sshdæœå‹™ï¼Œä¸¦è®“ç¬¬äºŒå€‹sshdæœå‹™çš„ port æ”¾è¡Œæ–¼ 2222ã€‚å®Œæˆå¾Œå¯ä»¥ä½¿ç”¨æŒ‡ä»¤ netstat -alntp | grep ssh ç¢ºèªæ˜¯å¦å•Ÿå‹•äºŒå€‹sshdæœå‹™ã€‚
 
-+ systemctl status sshd ¡A¬d¬İsshdªºª¬ºA
-![GITHUB]( https://imgur.com/55E9tRz.jpg"git¹Ï¥Ü")
++ systemctl status sshd ï¼ŒæŸ¥çœ‹sshdçš„ç‹€æ…‹
+![GITHUB]( https://imgur.com/55E9tRz.jpg"gitåœ–ç¤º")
 
-+ ¦w¸Ëvsftpd¡Ayum install vsftpd¡C
-![GITHUB]( https://imgur.com/BxZInaJ.jpg"git¹Ï¥Ü")
++ åˆ‡æ›åˆ°ç›®éŒ„cd /etc/sshã€‚è¤‡è£½æª”æ¡ˆï¼Œcp sshd_config sshd2_configã€‚
+![GITHUB]( https://imgur.com/FgH0M4P.jpg"gitåœ–ç¤º")
 
-![GITHUB]( https://imgur.com/G7vhfFy.jpg"git¹Ï¥Ü")
-+ ¶}±Ò¤u¨ã¡Ayum provides semanage¡C
-![GITHUB]( https://imgur.com/UAUta9G.jpg"git¹Ï¥Ü")
++ æ›´æ”¹å…§å®¹ï¼ŒPort=22 -> Port=2222ï¼Œvi sshd2_config ã€‚
+![GITHUB]( https://imgur.com/UUzrHVv.jpg"gitåœ–ç¤º")
 
-+ ¦w¸Ëpolicycoreutils-python¡Ayum install policycoreutils-python¡C
-![GITHUB]( https://imgur.com/uHeJjPE.jpg"git¹Ï¥Ü")
-![GITHUB]( https://imgur.com/2SJvF4D.jpg"git¹Ï¥Ü")
++ åˆ‡æ›åˆ°ç›®éŒ„cd /etc/systemd/system ã€‚è¤‡è£½æª”æ¡ˆï¼Œcp /usr/lib/systemd/system/sshd.service sshd2.serviceã€‚
+![GITHUB]( https://imgur.com/3BuEEwA.jpg"gitåœ–ç¤º")
 
-+ ¤Á´«¨ì¥Ø¿ıcd /etc/ssh¡C½Æ»sÀÉ®×¡Acp sshd_config sshd2_config¡C
-![GITHUB]( https://imgur.com/FgH0M4P.jpg"git¹Ï¥Ü")
++ æ›´æ”¹å…§å®¹ï¼Œvi sshd2.serviceã€‚
+![GITHUB]( https://imgur.com/SZfm1oc.jpg"gitåœ–ç¤º")
 
-+ §ó§ï¤º®e¡APort=22 -> Port=2222¡Avi sshd2_config ¡C
-![GITHUB]( https://imgur.com/UUzrHVv.jpg"git¹Ï¥Ü")
++ é–‹å•Ÿå·¥å…·ï¼Œyum provides semanageã€‚
+![GITHUB]( https://imgur.com/UAUta9G.jpg"gitåœ–ç¤º")
 
-+ ¤Á´«¨ì¥Ø¿ıcd /etc/systemd/system ¡C½Æ»sÀÉ®×¡Acp /usr/lib/systemd/system/sshd.service sshd2.service¡C
-![GITHUB]( https://imgur.com/3BuEEwA.jpg"git¹Ï¥Ü")
++ å®‰è£policycoreutils-pythonï¼Œyum install policycoreutils-pythonã€‚
+![GITHUB]( https://imgur.com/uHeJjPE.jpg"gitåœ–ç¤º")
+![GITHUB]( https://imgur.com/2SJvF4D.jpg"gitåœ–ç¤º")
 
-+ §ó§ï¤º®e¡Avi sshd2.service¡C
-![GITHUB]( https://imgur.com/SZfm1oc.jpg"git¹Ï¥Ü")
++ semanage port -a -t ssh_port_t -p tcp 2222ä¿®æ­£ã€‚semanage port -l | grep sshæŸ¥çœ‹ã€‚
+![GITHUB]( https://imgur.com/VMSDAx3.jpg"gitåœ–ç¤º")
 
-+ semanage port -a -t ssh_port_t -p tcp 2222­×¥¿¡Csemanage port -l | grep ssh¬d¬İ¡C
-![GITHUB]( https://imgur.com/VMSDAx3.jpg"git¹Ï¥Ü")
++ systemctl daemon-reloadï¼Œè®“å…¶é‡æ–°è®€å–ï¼Œå•Ÿå‹•sshd2_serviceï¼Œsystemctl start sshd2.serviceã€‚
+![GITHUB]( https://imgur.com/Y92l5Ub.jpg"gitåœ–ç¤º")
 
-+ systemctl daemon-reload¡AÅı¨ä­«·sÅª¨ú¡A±Ò°Êsshd2_service¡Asystemctl start sshd2.service¡C
-![GITHUB]( https://imgur.com/Y92l5Ub.jpg"git¹Ï¥Ü")
-
-+ netstat -alntp | grep ssh¡A¬d¬İµ²ªG¡C
++ netstat -alntp | grep sshï¼ŒæŸ¥çœ‹çµæœã€‚
