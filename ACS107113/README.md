@@ -8,7 +8,7 @@
 ![GITHUB]( https://imgur.com/FgH0M4P.jpg"git圖示")
 
 + 更改內容，Port=22 -> Port=2222，vi sshd2_config 。
-![GITHUB]( https://imgur.com/UUzrHVv.jpg"git圖示")
+![GITHUB]( https://imgur.com/vgpVFMo.jpg"git圖示")
 
 + 切換到目錄cd /etc/systemd/system 。複製檔案，cp /usr/lib/systemd/system/sshd.service sshd2.service。
 ![GITHUB]( https://imgur.com/3BuEEwA.jpg"git圖示")
