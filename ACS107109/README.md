@@ -1,109 +1,109 @@
 # HW10
 -------------------------------------
-## ½Ð¥é·Ó½Ò°ó¤W½m²ß¡A³z¹LsystemdºÞ²z¤G­ÓsshdªA°È¡A¨ÃÅý²Ä¤G­ÓsshdªA°Èªº port ©ñ¦æ©ó 2222¡C§¹¦¨«á¥i¥H¨Ï¥Î«ü¥O` netstat -alntp | grep ssh `½T»{¬O§_±Ò°Ê¤G­ÓsshdªA°È¡C
-* ÀË¬d¥Ø«esshd.serviceªºª¬ºA
+## è«‹ä»¿ç…§èª²å ‚ä¸Šç·´ç¿’ï¼Œé€éŽsystemdç®¡ç†äºŒå€‹sshdæœå‹™ï¼Œä¸¦è®“ç¬¬äºŒå€‹sshdæœå‹™çš„ port æ”¾è¡Œæ–¼ 2222ã€‚å®Œæˆå¾Œå¯ä»¥ä½¿ç”¨æŒ‡ä»¤` netstat -alntp | grep ssh `ç¢ºèªæ˜¯å¦å•Ÿå‹•äºŒå€‹sshdæœå‹™ã€‚
+* æª¢æŸ¥ç›®å‰sshd.serviceçš„ç‹€æ…‹
  > systemctl status sshd.service
 
-![image](01)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/01.png)
 
 
-* ¬d¬ÝExecStart:¹ê»Ú°õ¦æ¦¹daemonªº«ü¥O©Î¸}¥»µ{¦¡
+* æŸ¥çœ‹ExecStart:å¯¦éš›åŸ·è¡Œæ­¤daemonçš„æŒ‡ä»¤æˆ–è…³æœ¬ç¨‹å¼
  > cat /usr/lib/systemd/system/sshd.service
 
-![image](02)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/02.png)
 
 
-* ¤Á´«¦Üsshªº¥Ø¿ý
+* åˆ‡æ›è‡³sshçš„ç›®éŒ„
  > cd /etc/ssh
 
-* ±Nsshd_configªº¸ê®Æ½Æ»s¦Üsshd2_config
+* å°‡sshd_configçš„è³‡æ–™è¤‡è£½è‡³sshd2_config
  > cp sshd_config sshd_config
 
-* ½s¿èsshd2_config¤¤ªº¸ê®Æ(**­×§ïPort¬°2222**)
-  * **ª`·N!!­n±NPort 2222«eªº¤«¦r¸¹§R±¼!!¤£µM¦b«á­±­nstart sshd2®É·|¦³°ÝÃD!!**
+* ç·¨è¼¯sshd2_configä¸­çš„è³‡æ–™(**ä¿®æ”¹Portç‚º2222**)
+  * **æ³¨æ„!!è¦å°‡Port 2222å‰çš„äº•å­—è™ŸåˆªæŽ‰!!ä¸ç„¶åœ¨å¾Œé¢è¦start sshd2æ™‚æœƒæœ‰å•é¡Œ!!**
  > vim sshd2_config
 
-![image](03)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/03.png)
 
 
-![image](04)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/04.png)
 
 
-* ¤Á´«¦Üsystemªº¥Ø¿ý¤U
+* åˆ‡æ›è‡³systemçš„ç›®éŒ„ä¸‹
   > cd /etc/systemd/system
 
-* ±N/usr/lib/systemd/system/sshd.serviceªº¤º®e½Æ»s¦Üsshd2.service
+* å°‡/usr/lib/systemd/system/sshd.serviceçš„å…§å®¹è¤‡è£½è‡³sshd2.service
   > cp /usr/lib/systemd/system/sshd.service sshd2.service
 
-* ½s¿èsshd2.service¤¤ªº¸ê®Æ
+* ç·¨è¼¯sshd2.serviceä¸­çš„è³‡æ–™
   > vim sshd2.service
 
-![image](05)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/05.png)
 
 
-* ­×§ï¨ä¤¤ªºDescription¦C¡A¦b³Ì«á­±¥[¤W**2**
-  > ¦]¬°¬O¥t¤@­ÓdaemonªA°È¡A©Ò¥H­n±N±qsshd½Æ»s¹L¨ÓªºÀÉ®×­×§ï±¼³á!(¤£µM·|¦³°ÝÃD)
+* ä¿®æ”¹å…¶ä¸­çš„Descriptionåˆ—ï¼Œåœ¨æœ€å¾Œé¢åŠ ä¸Š**2**
+  > å› ç‚ºæ˜¯å¦ä¸€å€‹daemonæœå‹™ï¼Œæ‰€ä»¥è¦å°‡å¾žsshdè¤‡è£½éŽä¾†çš„æª”æ¡ˆä¿®æ”¹æŽ‰å–”!(ä¸ç„¶æœƒæœ‰å•é¡Œ)
 
-* ÁÙ¦³­×§ï¨äExecStart:ÂÐ»\¥ý«e¤w³]¸mªº/usr/sbin/sshd
+* é‚„æœ‰ä¿®æ”¹å…¶ExecStart:è¦†è“‹å…ˆå‰å·²è¨­ç½®çš„/usr/sbin/sshd
   > ExecStart=/usr/sbin/sshd **-f /etc/ssh/sshd2_config** -D $OPTIONS
 
-![image](06)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/06.png)
 
 
-* ­«·sÅª¨ú³]©wÀÉ(­×§ï«á³£­n°õ¦æ)
+* é‡æ–°è®€å–è¨­å®šæª”(ä¿®æ”¹å¾Œéƒ½è¦åŸ·è¡Œ)
   > systemctl daemon-reload
 
-* ³]©w¤U¦¸¶}¾÷®É¡Asshd2·|³Q±Ò°Ê
+* è¨­å®šä¸‹æ¬¡é–‹æ©Ÿæ™‚ï¼Œsshd2æœƒè¢«å•Ÿå‹•
   > systemctl enable sshd2
 
-* ¥ß¨è±Ò°Êsshd2
+* ç«‹åˆ»å•Ÿå‹•sshd2
   > systemctl start sshd2
 
-  > ¦ý·|µo²{¬OFailedªº°ÝÃD¡A¤£¹L¡A§O¾á¤ß¡A±µµÛ°µ«á­±ªº¨BÆJ³o­Ó°ÝÃD´N·|³Q¸Ñ¨MÅo!
+  > ä½†æœƒç™¼ç¾æ˜¯Failedçš„å•é¡Œï¼Œä¸éŽï¼Œåˆ¥æ“”å¿ƒï¼ŒæŽ¥è‘—åšå¾Œé¢çš„æ­¥é©Ÿé€™å€‹å•é¡Œå°±æœƒè¢«è§£æ±ºå›‰!
 
-![image](07)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/07.png)
 
-* §Q¥Î**tail**¦C¥X«á­±´X¦æªº¸ê°T
+* åˆ©ç”¨**tail**åˆ—å‡ºå¾Œé¢å¹¾è¡Œçš„è³‡è¨Š
   > tail -n 20 /var/log/messages
 
-  > -n munber:Åã¥Ü«D¤Q¦æªº¸ê°T(­ì¥ý¹w³]¬OÅã¥Ü¤Q¦æ¡A¦ý­nÅã¥Ü«D®É¦æªº¸ê°T­n¥[¤W` -n number `ªº¿ï¶µ)
+  > -n munber:é¡¯ç¤ºéžåè¡Œçš„è³‡è¨Š(åŽŸå…ˆé è¨­æ˜¯é¡¯ç¤ºåè¡Œï¼Œä½†è¦é¡¯ç¤ºéžæ™‚è¡Œçš„è³‡è¨Šè¦åŠ ä¸Š` -n number `çš„é¸é …)
 
-  > /var/log/messagesÀH®É·|¦³¸ê®Æ¼g¤J¡A©Ò¥H¥i¹î¬Ý·s¥[¤Jªº¸ê®Æ
+  > /var/log/messageséš¨æ™‚æœƒæœ‰è³‡æ–™å¯«å…¥ï¼Œæ‰€ä»¥å¯å¯Ÿçœ‹æ–°åŠ å…¥çš„è³‡æ–™
 
-![image](08)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/08.png)
 
-![image](09)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/09.PNG)
 
-* ¦A¨Ó¥ý¦w¸Ë` semanage `ªº®M¥ó¡A¥H§Q¤§«áªº¨BÆJ¶i¦æ¡C
+* å†ä¾†å…ˆå®‰è£` semanage `çš„å¥—ä»¶ï¼Œä»¥åˆ©ä¹‹å¾Œçš„æ­¥é©Ÿé€²è¡Œã€‚
   > yum install policycoreutils-python
 
-![image](10)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/10.png)
 
-    > ¸Ñ¨Msemanage command not foundªº°ÝÃD¡C
+   > è§£æ±ºsemanage command not foundçš„å•é¡Œã€‚
       >  https://www.opencli.com/linux/fix-semanage-command-not-found 
 
-    > semanage ¬O¥i¥H³]©w SELinux ªº¤u¨ã¡A¦b RHEL / CentOS minimal ¦w¸Ë«á¡A¨Ã¨S¦³¦w¸Ë semanage¡A©Ò¥H°õ¦æ·|¥X²{ command not found
+   > semanage æ˜¯å¯ä»¥è¨­å®š SELinux çš„å·¥å…·ï¼Œåœ¨ RHEL / CentOS minimal å®‰è£å¾Œï¼Œä¸¦æ²’æœ‰å®‰è£ semanageï¼Œæ‰€ä»¥åŸ·è¡Œæœƒå‡ºç¾ command not found
   
-  > °O±o­n¤Á´«¨ì¥D¥Ø¿ý¤U¸ü³á¡A¤£µM·|¹³§Ú¤@¶}©l¤@¼Ë·|¦³°ÝÃD(³o¬O¦w¸Ë¥¢±Ñªºµe­±!)
-![image](11)
+  > è¨˜å¾—è¦åˆ‡æ›åˆ°ä¸»ç›®éŒ„ä¸‹è¼‰å–”ï¼Œä¸ç„¶æœƒåƒæˆ‘ä¸€é–‹å§‹ä¸€æ¨£æœƒæœ‰å•é¡Œ(é€™æ˜¯å®‰è£å¤±æ•—çš„ç•«é¢!)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/11.png)
 
-  > ³o¬O¦¨¥\¦w¸Ëªºµe­±!
-![image](12)
+  > é€™æ˜¯æˆåŠŸå®‰è£çš„ç•«é¢!
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/12.PNG)
 
-* Åý ssh ªA°È¨Ï¥Î` 2222 `³o­Ó¦Û­qªº³s±µ°ð¸¹¡A±N³o­Ó³s±µ°ð¸¹¥[¤J` ssh_port_t `¦Cªí¤¤
+* è®“ ssh æœå‹™ä½¿ç”¨` 2222 `é€™å€‹è‡ªè¨‚çš„é€£æŽ¥åŸ è™Ÿï¼Œå°‡é€™å€‹é€£æŽ¥åŸ è™ŸåŠ å…¥` ssh_port_t `åˆ—è¡¨ä¸­
   > semanage port -a -t ssh_port_t -p tcp 2222
 
-* ¥ß¨è±Ò°Êsshd2(³o¦¸´N¤£·|¦³°ÝÃDÅo¡A¥H¤Wªº¨BÆJ¥H¸Ñ¨M¥ý«e¿ù»~ªº³¡¤À)
+* ç«‹åˆ»å•Ÿå‹•sshd2(é€™æ¬¡å°±ä¸æœƒæœ‰å•é¡Œå›‰ï¼Œä»¥ä¸Šçš„æ­¥é©Ÿä»¥è§£æ±ºå…ˆå‰éŒ¯èª¤çš„éƒ¨åˆ†)
   > systemctl start sshd2
 
-  > ¥Ñ©ó¤@¶}©lªºport³s±µ°ð¸¹©|¥¼³s±µ¦¨¥\¡A©Ò¥H¤~¤£·|±Ò°Ê¦¨¥\ªº³á!
+  > ç”±æ–¼ä¸€é–‹å§‹çš„porté€£æŽ¥åŸ è™Ÿå°šæœªé€£æŽ¥æˆåŠŸï¼Œæ‰€ä»¥æ‰ä¸æœƒå•Ÿå‹•æˆåŠŸçš„å–”!
 
-* ½T»{¬O§_¦³±Ò°Ê¨â­ÓsshdªA°È
+* ç¢ºèªæ˜¯å¦æœ‰å•Ÿå‹•å…©å€‹sshdæœå‹™
   > netstat -tlnp | grep ssh
 
-![image](13)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/13.png)
 
 
-* netstat -tlnp | grep ssh©Mnetstat -alntp | grep ssh·|Åã¥Ü¤@¼Ëªº¤º®e¸ê°T
+* netstat -tlnp | grep sshå’Œnetstat -alntp | grep sshæœƒé¡¯ç¤ºä¸€æ¨£çš„å…§å®¹è³‡è¨Š
 
-![image](14)
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/14.png)
