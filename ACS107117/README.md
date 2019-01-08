@@ -3,7 +3,7 @@
 可以先關個防火牆  
 ![Imgur](https://i.imgur.com/f2727Sw.png)  
   
-也安裝一下東西 
+也安裝一下東西  
 ![Imgur](https://i.imgur.com/B34YLi3.png)  
 ![Imgur](https://i.imgur.com/OcwZiOT.png)
 
