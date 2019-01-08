@@ -66,7 +66,7 @@
 * 利用**tail**列出後面幾行的資訊
   > tail -n 20 /var/log/messages
 
-  > -n munber:顯示非十行的資訊(原先預設是顯示十行，但要顯示非時行的資訊要加上` -n number `的選項)
+  > -n number:顯示非十行的資訊(原先預設是顯示十行，但要顯示非時行的資訊要加上` -n number `的選項)
 
   > /var/log/messages隨時會有資料寫入，所以可察看新加入的資料
 
