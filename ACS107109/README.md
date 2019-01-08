@@ -80,7 +80,7 @@
 ![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/HW-10/ACS107109/img/10.png)
 
    > 解決semanage command not found的問題。
-      >  https://www.opencli.com/linux/fix-semanage-command-not-found 
+     >  https://www.opencli.com/linux/fix-semanage-command-not-found 
 
    > semanage 是可以設定 SELinux 的工具，在 RHEL / CentOS minimal 安裝後，並沒有安裝 semanage，所以執行會出現 command not found
   
