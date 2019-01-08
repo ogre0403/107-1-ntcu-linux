@@ -59,8 +59,8 @@
     >按下esc並輸入`:wq`儲存
 
 * 輸入<b>`systemctl daemon-reload`</b>重新讀取設定檔
-    <p>輸入<b>`systemctl enable sshd2`</b>設定重啟後，sshd2會被啟動</p>
-    <p>輸入<b>`systemctl start sshd2`</b>啟動sshd2</p>
+    <p>輸入`systemctl enable sshd2`設定重啟後，sshd2會被啟動</p>
+    <p>輸入`systemctl start sshd2`啟動sshd2</p>
 ![](https://i.imgur.com/w2fVcN1.png)
     ><font color="#dd0000"><b>↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑FAILED↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑</b></font>
 
