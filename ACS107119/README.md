@@ -1,0 +1,3 @@
+
+#1
+netstat -alntp檢查目前的連線狀況,systemctl start sshd 啟動 sshd服務,再次netstat -alntp檢查 sshd 服務是否使用,用 cd /etc轉換目錄,ll | grep ssh 確認資料夾在/etc這個目錄裡面, 用 cd /etc/ssh 轉進去 ssh 資料夾裡面,cp sshd_config sshd2_config 把資料複製進去新的檔案,vi sshd2_config 編輯文件,更改 port 的部分,yum provides semanage 找到下載semanage 指令,yum install policycoreutils-python 安裝指令照老師的提示操作,cp /usr/lib/systemd/system/sshd.servicesshd2.service 把檔案複製,vi sshd2.service 更改資料,systemctl start sshd2.service 啟動sshd服務,systemctl daemon-reload 重新啟動資料,systemctl start sshd2.service 再次啟動sshd2 服務,netstat -alntp | grep ssh 找出題目要求的東西。
