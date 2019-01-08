@@ -1,6 +1,6 @@
 # HW10
 
-## ½Ğ¥é·Ó½Ò°ó¤W½m²ß¡A³z¹LsystemdºŞ²z¤G­ÓsshdªA°È¡A¨ÃÅı²Ä¤G­ÓsshdªA°Èªº port ©ñ¦æ©ó 2222¡C§¹¦¨«á¥i¥H¨Ï¥Î«ü¥O `netstat -alntp | grep ssh`½T»{¬O§_±Ò°Ê¤G­ÓsshdªA°È¡C
+## è«‹ä»¿ç…§èª²å ‚ä¸Šç·´ç¿’ï¼Œé€ésystemdç®¡ç†äºŒå€‹sshdæœå‹™ï¼Œä¸¦è®“ç¬¬äºŒå€‹sshdæœå‹™çš„ port æ”¾è¡Œæ–¼ 2222ã€‚å®Œæˆå¾Œå¯ä»¥ä½¿ç”¨æŒ‡ä»¤ `netstat -alntp | grep ssh`ç¢ºèªæ˜¯å¦å•Ÿå‹•äºŒå€‹sshdæœå‹™ã€‚
 
     $ netstat -alntp | grep ssh
     tcp        0      0 0.0.0.0:22     0.0.0.0:*         LISTEN      1300/sshd
@@ -8,8 +8,7 @@
     tcp6       0      0 :::22          :::*              LISTEN      1300/sshd
     tcp6       0      0 :::2222        :::*              LISTEN      15275/sshd
     
-    Note 1: CentOS¦³¨Ï¥ÎSELinux ¡A¬G¹w³]¥u¤¹³\ SSH ¨Ï¥Î°ğ¸¹ 22¡A­Y­n¨Ï¥Î°ğ¸¹ 2222¡A¨Ï½Ğ¥Î¤U¦C
-            «ü¶}±Ò¨ÃÀË¬d
+    Note 1: CentOSæœ‰ä½¿ç”¨SELinux ï¼Œæ•…é è¨­åªå…è¨± SSH ä½¿ç”¨åŸ è™Ÿ 22ï¼Œè‹¥è¦ä½¿ç”¨åŸ è™Ÿ 2222ï¼Œä½¿è«‹ç”¨ä¸‹åˆ—æŒ‡ç¤ºé–‹å•Ÿä¸¦æª¢æŸ¥
 
     sh
     $ semanage port -a -t ssh_port_t -p tcp 2222
@@ -17,66 +16,64 @@
     ssh_port_t tcp 2202, 22
  
 
-    Note 2: CentOS¹w³]ªº¨¾¤õÀğfirewalld·|¸T¤î³X°İ°ğ¸¹2222¡A­Y­n³z¹L2222°ğ³sssh¡A½Ğ¥ıÃö³¬
-    firewalld
+    Note 2: CentOSé è¨­çš„é˜²ç«ç‰†firewalldæœƒç¦æ­¢è¨ªå•åŸ è™Ÿ2222ï¼Œè‹¥è¦é€é2222åŸ é€£sshï¼Œè«‹å…ˆé—œé–‰firewalld
 --- 
-* ¿é¤J<b>`systemctl stop firewalld`</b>Ãö³¬¨¾¤õÀğ(¥ıÃö¥H¨¾¸U¤@)
+* è¼¸å…¥<b>`systemctl stop firewalld`</b>é—œé–‰é˜²ç«ç‰†(å…ˆé—œä»¥é˜²è¬ä¸€)
 ![](https://i.imgur.com/EPccK5A.png)
 
 
-* ¿é¤J<b>`systemctl status sshd.service`</b>ÀË¬d¥Ø«e<b>`sshd.service`</b>ª¬ºA
+* è¼¸å…¥<b>`systemctl status sshd.service`</b>æª¢æŸ¥ç›®å‰<b>`sshd.service`</b>ç‹€æ…‹
 ![](https://i.imgur.com/t1WYGxh.png)
 
 
-* ¿é¤J<b>`cd /etc/ssh`</b>¶i¤J<b>`/etc/ssh`</b>¸Ì
+* è¼¸å…¥<b>`cd /etc/ssh`</b>é€²å…¥<b>`/etc/ssh`</b>è£¡
 ![](https://i.imgur.com/907w41P.png)
 
 
-* ¿é¤J<b>`cp sshd_config sshd2_config`</b>½Æ»s<b>`sshd_config`</b>¦Ü<b>`sshd2_config`</b>
+* è¼¸å…¥<b>`cp sshd_config sshd2_config`</b>è¤‡è£½<b>`sshd_config`</b>è‡³<b>`sshd2_config`</b>
 ![](https://i.imgur.com/8D8PEOl.png)
 
 
-* ¿é¤J<b>`vi sshd2_config`</b>¶i¤J½s¿è¼Ò¦¡
+* è¼¸å…¥<b>`vi sshd2_config`</b>é€²å…¥ç·¨è¼¯æ¨¡å¼
 ![](https://i.imgur.com/WAoHSVU.png)
-    > «ö¤Ua,i,o¶}©l½s¿è
+    > æŒ‰ä¸‹a,i,oé–‹å§‹ç·¨è¼¯
 
 
-* ±N<b>`#Port 22`</b>§ï¦¨<b>`Port 2222`</b>
+* å°‡<b>`#Port 22`</b>æ”¹æˆ<b>`Port 2222`</b>
 ![](https://i.imgur.com/OjHaxEF.png)
-    > «ö¤Uesc¨Ã¿é¤J`:wq`Àx¦s
+    > æŒ‰ä¸‹escä¸¦è¼¸å…¥`:wq`å„²å­˜
 
-* ¿é¤J<b>`cd /etc/systemd/system`</b>¤Á´«¦Ü<b>`/etc/systemd/system`</b>
+* è¼¸å…¥<b>`cd /etc/systemd/system`</b>åˆ‡æ›è‡³<b>`/etc/systemd/system`</b>
 ![](https://i.imgur.com/oZDNbn0.png)
 
-* ¿é¤J<b>`cp /usr/lib/systemd/system/sshd.service sshd2.service`</b>±N<b>`sshd.service`</b>ªº¤º®e½Æ»s¨ì<b>`sshd2.service`</b>
+* è¼¸å…¥<b>`cp /usr/lib/systemd/system/sshd.service sshd2.service`</b>å°‡<b>`sshd.service`</b>çš„å…§å®¹è¤‡è£½åˆ°<b>`sshd2.service`</b>
 ![](https://i.imgur.com/KeyykQ9.png)
 
-* ¿é¤J<b>`vi sshd2.service`</b>¶i¤J½s¿è¼Ò¦¡
+* è¼¸å…¥<b>`vi sshd2.service`</b>é€²å…¥ç·¨è¼¯æ¨¡å¼
 ![](https://i.imgur.com/o2Xdhs1.png)
-    >«ö¤Ua,i,o¶}©l½s¿è
+    >æŒ‰ä¸‹a,i,oé–‹å§‹ç·¨è¼¯
 
-* <b>`Description=OpenSSH server daemon`</b>«á­±¥[¤W¤@­Ó<b>`2`</b>
-    <b>`ExecStart=/usr/sbin/sshd -D $OPTIONS`</b>¤¤¶¡¥[¤J<b>`-f /etc/ssh/sshd2_config`</b>
+* <b>`Description=OpenSSH server daemon`</b>å¾Œé¢åŠ ä¸Šä¸€å€‹<b>`2`</b>
+    <b>`ExecStart=/usr/sbin/sshd -D $OPTIONS`</b>ä¸­é–“åŠ å…¥<b>`-f /etc/ssh/sshd2_config`</b>
 ![](https://i.imgur.com/hylpC8T.png)
-    >«ö¤Uesc¨Ã¿é¤J`:wq`Àx¦s
+    >æŒ‰ä¸‹escä¸¦è¼¸å…¥`:wq`å„²å­˜
 
-* ¿é¤J<b>`systemctl daemon-reload`</b>­«·sÅª¨ú³]©wÀÉ
-    ¿é¤J<b>`systemctl enable sshd2`</b>³]©w­«±Ò«á¡Asshd2·|³Q±Ò°Ê
-    ¿é¤J<b>`systemctl start sshd2`</b>±Ò°Êsshd2
+* è¼¸å…¥<b>`systemctl daemon-reload`</b>é‡æ–°è®€å–è¨­å®šæª”
+    <p>è¼¸å…¥<b>`systemctl enable sshd2`</b>è¨­å®šé‡å•Ÿå¾Œï¼Œsshd2æœƒè¢«å•Ÿå‹•</p>
+    <p>è¼¸å…¥<b>`systemctl start sshd2`</b>å•Ÿå‹•sshd2</p>
 ![](https://i.imgur.com/w2fVcN1.png)
-    ><font color="#dd0000"><b>¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ôFAILED¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô</b></font>
+    ><font color="#dd0000"><b>â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘FAILEDâ†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘</b></font>
 
-* ¿é¤J<b>`yum install policycoreutils-python`</b>
-    ¿é¤J<b>`yum provides semanage`</b>¦w¸Ësemanageªº®M¥ó
+* è¼¸å…¥<b>`yum install policycoreutils-python`</b>å®‰è£semanageçš„å¥—ä»¶
 ![](https://i.imgur.com/QkSYLkk.png)
 
-* ¿é¤J<b>`semanage port -a -t ssh_port_t -p tcp 2222`</b>
-    ¿é¤J<b>`semanage port -l | grep ssh`</b>ÀË¬d Port ¬O§_¬° 2222
+* è¼¸å…¥<b>`semanage port -a -t ssh_port_t -p tcp 2222`</b>
+    è¼¸å…¥<b>`semanage port -l | grep ssh`</b>æª¢æŸ¥ Port æ˜¯å¦ç‚º 2222
 ![](https://i.imgur.com/rLUaPXa.png)
 
-* ¿é¤J<b>`systemctl start sshd2`</b>­«·s±Ò°Êsshd2
+* è¼¸å…¥<b>`systemctl start sshd2`</b>é‡æ–°å•Ÿå‹•sshd2
 ![](https://i.imgur.com/GsO8rUn.png)
 
-* ¿é¤J<b>`netstat -tlnp | grep ssh`</b>©Î<b>`netstat -alntp | grep ssh`</b>½T»{¬O§_¦³¦¨¥\±Ò°Ê¨â­ÓsshdªA°È![](https://i.imgur.com/MWnOvhd.png)
+* è¼¸å…¥<b>`netstat -tlnp | grep ssh`</b>æˆ–<b>`netstat -alntp | grep ssh`</b>ç¢ºèªæ˜¯å¦æœ‰æˆåŠŸå•Ÿå‹•å…©å€‹sshdæœå‹™![](https://i.imgur.com/MWnOvhd.png)
 
-    # <font color=red size=72>¦¨¥\¡I¡I¡I¡I¡I</font>
+    # <font color=red size=72>æˆåŠŸï¼ï¼ï¼ï¼ï¼</font>
