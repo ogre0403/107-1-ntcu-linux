@@ -1,4 +1,4 @@
-## 請仿照課堂上練習，透過systemd管理二個sshd服務，並讓第二個sshd服務的 port 放行於 2222。完成後可以使用指令 netstat -alntp | grep ssh 確認是否啟動二個sshd服務，範例如下：
+##請仿照課堂上練習，透過systemd管理二個sshd服務，並讓第二個sshd服務的 port 放行於 2222。完成後可以使用指令 netstat -alntp | grep ssh 確認是否啟動二個sshd服務，範例如下：
 ```
 $ netstat -alntp | grep ssh
 tcp        0      0 0.0.0.0:22     0.0.0.0:*     LISTEN      1300/sshd
@@ -18,6 +18,7 @@ ssh_port_t tcp 2202, 22
 Note 2: CentOS預設的防火牆firewalld會禁止訪問埠號2222，若要透過2222埠連ssh，請先關閉firewalld。
 ```
 
+### Ans
 ```
 cd /etc/ssh
 cp sshd_config sshd2_config (將sshd_config的內容複製到sshd2_config)
@@ -32,7 +33,6 @@ vi sshd2_config (編輯sshd2_config)
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-10/ACS107137/img/2.PNG?raw=true)
 ![image](https://github.com/bill0330/107-1-ntcu-linux/blob/HW-10/ACS107137/img/3.PNG?raw=true)
 
-### Ans
 ```
 cd /etc/systemd/system
 cp /usr/lib/systemd/system/sshd.service sshd2.service (將sshd.service的內容複製到sshd2.service)
