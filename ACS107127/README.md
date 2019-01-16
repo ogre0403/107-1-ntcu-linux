@@ -27,6 +27,6 @@ enabled=1 `
 ![]()</br></br>
 
 * 在Linux裡，用`curl`連線至192.168.200.100。抓?圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)
-![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/final/ACS107127/screen/8.png)</br></br>
+![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/final/ACS107127/screen/9.png)</br></br>
 
 * nginx的日誌檔位於`/?var/log/nginx`目錄下，當連線不存在的網頁時，nginx會記錄相關資訊，格式如下。其中client欄位為客戶端ip。 (30%)
