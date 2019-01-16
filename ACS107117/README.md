@@ -12,4 +12,11 @@
 ![](https://ppt.cc/foLFLx@.png)  
 ###4.  
 使用curl來進入192.168.200.100
-![](https://ppt.cc/feFhIx@.png)
+![](https://ppt.cc/feFhIx@.png)  
+###5.  
+使用find找到nginx.conf
+![](https://ppt.cc/fvVhtx@.png)  
+然後vi /usr/local/webserver/nginx/conf/nginx.conf  
+在裡面尋找error.log的位置  
+接著cd /usr/local/nginx/logs/
+![](https://ppt.cc/fR5DYx@.png)
