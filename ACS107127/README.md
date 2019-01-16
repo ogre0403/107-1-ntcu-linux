@@ -10,11 +10,11 @@
 * nginx是一套網頁伺服器軟體，請用`yum`安裝，透過`systemctl`啟動後，使用`netstat`驗證nginx有在使用Port 80。(25%)</br></br>
 
 輸入`vi /etc/yum.repos.d/nginx.repo`，並在內容新增</br>
-`[nginx]</br>
-name=nginx repo</br>
-baseurl=http://nginx.org/packages/centos/7/$basearch/</br>
-gpgcheck=0</br>
-enabled=1`</br>
+`[nginx] 
+name=nginx repo 
+baseurl=http://nginx.org/packages/centos/7/$basearch/ 
+gpgcheck=0 
+enabled=1 `
 接著就可以下指令安裝`yum install nginx`</br>
 ![1](https://github.com/ad8902210302/107-1-ntcu-linux/blob/final/ACS107127/screen/5.png)</br></br>
 
