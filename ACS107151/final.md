@@ -1,6 +1,6 @@
 ### 一.
 ## 1.
-![](https://imgur.com/a/BdM0BPH.png)
+![Github](https://imgur.com/a/BdM0BPH.png)
 + 可見付檔 1.png
 ## 2.
 + 1.輸入 sudo yum install epel-release
@@ -8,7 +8,7 @@
 + 3.sudo systemctl start nginx
 + 4.最後 http://192.168.200.100/
 + 5.用 netstat -alntp 確認
-![](https://imgur.com/a/2VYylt7.png)
+![Github](https://imgur.com/a/2VYylt7.png)
 + 可見付檔 2.png
 ## 3.
 ## 4.
