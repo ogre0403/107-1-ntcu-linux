@@ -24,6 +24,7 @@
    請使用管線指令，找出每個ip連線錯誤的次數。
   
   curl 不存在的網頁 | grep error > out
+  
   cat out | cut -d , -f 2 | sort | uniq -c
 
   
