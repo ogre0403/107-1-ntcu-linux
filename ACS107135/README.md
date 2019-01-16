@@ -1,0 +1,49 @@
+## 請依下述情境完成系統操作後再用相關指令進行驗證，請抓驗證指令的圖：</br>
+
+### <li>設定virtualbox虛擬機器，加入一張host-only網路卡，在Linux裡設定虛擬機器的網路為192.168.200.100/24。請用 `ifconfig`驗證。(25%)</br><br> 
+
+#### `ifconfig enp0s8 192.168.200.100/24 netmask 255.255.255.0`設定網路
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/1.PNG)</br></br>
+
+#### `ifconfig`驗證
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/2.PNG)</br></br>
+
+--------------------------------------
+### <li>nginx是一套網頁伺服器軟體，請用`yum`安裝，透過`systemctl`啟動後，使用`netstat`驗證nginx有在使用Port 80。(25%)</br></br>
+
+#### `yum install nginx`安裝nginx
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/3.PNG)</br>
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/4.PNG)</br></br>
+
+#### `systemctl start nginx`啟動
+#### `netstat -alntp | grep nginx`驗證 nginx 正在使用 Port 80
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/5.PNG)</br></br>
+
+--------------------------------------
+### <li>透過實體 windows 上的瀏覽器，連線至192.168.200.100。抓?圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)</br></br>
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/6.PNG)</br></br>
+
+--------------------------------------
+### <li>在Linux裡，用`curl`連線至192.168.200.100。抓?圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)</br></br>
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/7.PNG)</br></br>
+
+--------------------------------------
+### <li>nginx的日誌檔位於`/?var/log/nginx`目錄下，當連線不存在的網頁時，nginx會記錄相關資訊，格式如下。其中client欄位為客戶端ip。 (30%)
+	```
+    2019/01/15 19:28:28 [error] 12337#0: *4 open() "/usr/share/nginx/html/aa" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /aa HTTP/1.1", host: "127.0.0.1"
+    ```
+
+    請使用管線指令，找出每個ip連線錯誤的次數。你可能需要使用 `cat`、`cut -d` 、 `sort` 、 `uniq -c`
+
+    最後輸出格式，表示自127.0.0.1來的ip發生二次錯誤，自192.168.200.100來的ip發生二次錯誤. 
+    
+    ```
+        2  127.0.0.1
+        1  192.168.200.100
+    ```
+
+#### `cut -d " " -f 16`顯示指定部分
+#### `uniq -c`顯示重複出現的次數
+#### `sort` 以行為單位進行排序</br>
+由於此處資料只有一筆，無法顯示`sort`之作用</br>
+![image](https://github.com/ACS107135/107-1-ntcu-linux/blob/final/ACS107135/photo/8.PNG)</br>
