@@ -14,7 +14,7 @@
   
 3. 透過實體 windows 上的瀏覽器，連線至192.168.200.100。
   
-  ![image]()
+  ![image](https://github.com/CHANGYUNEN/107-1-ntcu-linux/blob/final/4.JPG)
 
 4. 在Linux裡，用`curl`連線至192.168.200.100。
   
