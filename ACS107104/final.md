@@ -1,14 +1,14 @@
-#³]©wvirtualboxµêÀÀ¾÷¾¹¡A¥[¤J¤@±ihost-onlyºô¸ô¥d¡A¦bLinux¸Ì³]©wµêÀÀ¾÷¾¹ªººô¸ô¬°192.168.200.100/24¡C½Ğ¥Î `ifconfig`ÅçÃÒ¡C
+#è¨­å®švirtualboxè™›æ“¬æ©Ÿå™¨ï¼ŒåŠ å…¥ä¸€å¼µhost-onlyç¶²è·¯å¡ï¼Œåœ¨Linuxè£¡è¨­å®šè™›æ“¬æ©Ÿå™¨çš„ç¶²è·¯ç‚º192.168.200.100/24ã€‚è«‹ç”¨ `ifconfig`é©—è­‰ã€‚
 
-*¶i¤JvirtuallboxÂI¿ï¥k¤W¨¤¥ş°ì¤u¨ã¡÷ÂI¿ï¥D¾÷ºô¸ôºŞ²z­û¡÷ÂI¿ï«Ø¥ß¡÷¦b¦ì§} ¿é¤J192.168.100.1;ºô¸ô¾B¸n ¿é¤J255.255.255.0¡÷«ö«á¤è±Ò¥Î§Y¥i§¹¦¨
+*é€²å…¥virtuallboxé»é¸å³ä¸Šè§’å…¨åŸŸå·¥å…·â†’é»é¸ä¸»æ©Ÿç¶²è·¯ç®¡ç†å“¡â†’é»é¸å»ºç«‹â†’åœ¨ä½å€ è¼¸å…¥192.168.100.1;ç¶²è·¯é®ç½© è¼¸å…¥255.255.255.0â†’æŒ‰å¾Œæ–¹å•Ÿç”¨å³å¯å®Œæˆ
 
-*¿é¤Jip address add 192.168.200.100/24 broadcast + dev enp0s8
+*è¼¸å…¥ip address add 192.168.200.100/24 broadcast + dev enp0s8
 
-*¿é¤Jip addr(¦]¬°¿é¤JifconfigµLªk¶]¥X¡A©Ò¥H¥Hip addr¥N´À)
+*è¼¸å…¥ip addr(å› ç‚ºè¼¸å…¥ifconfigç„¡æ³•è·‘å‡ºï¼Œæ‰€ä»¥ä»¥ip addrä»£æ›¿)
 
-![image](1)
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/final/ACS107104/11-1.PNG)
 
-#nginx¬O¤@®Mºô­¶¦øªA¾¹³nÅé¡A½Ğ¥Î`yum`¦w¸Ë¡A³z¹L`systemctl`±Ò°Ê«á¡A¨Ï¥Î`netstat`ÅçÃÒnginx¦³¦b¨Ï¥ÎPort 80¡C
+#nginxæ˜¯ä¸€å¥—ç¶²é ä¼ºæœå™¨è»Ÿé«”ï¼Œè«‹ç”¨`yum`å®‰è£ï¼Œé€é`systemctl`å•Ÿå‹•å¾Œï¼Œä½¿ç”¨`netstat`é©—è­‰nginxæœ‰åœ¨ä½¿ç”¨Port 80ã€‚
 
 *sudo rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 
@@ -16,20 +16,20 @@
 
 *sudo systemctl start nginx.service
 
-![image](2)
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/final/ACS107104/11-2.PNG)
 
-#³z¹L¹êÅé windows ¤WªºÂsÄı¾¹¡A³s½u¦Ü192.168.200.100¡C§ì?¹ÏÅçÃÒ¥i¥H³s½u¦ÜLinux¤Wªºnginxºô­¶¦øªA¾¹¡C
+#é€éå¯¦é«” windows ä¸Šçš„ç€è¦½å™¨ï¼Œé€£ç·šè‡³192.168.200.100ã€‚æŠ“?åœ–é©—è­‰å¯ä»¥é€£ç·šè‡³Linuxä¸Šçš„nginxç¶²é ä¼ºæœå™¨ã€‚
 
 *
 
 ![image](3)
 
-#¦bLinux¸Ì¡A¥Î`curl`³s½u¦Ü192.168.200.100¡C§ì?¹ÏÅçÃÒ¥i¥H³s½u¦ÜLinux¤Wªºnginxºô­¶¦øªA¾¹¡C
+#åœ¨Linuxè£¡ï¼Œç”¨`curl`é€£ç·šè‡³192.168.200.100ã€‚æŠ“?åœ–é©—è­‰å¯ä»¥é€£ç·šè‡³Linuxä¸Šçš„nginxç¶²é ä¼ºæœå™¨ã€‚
 
 *curl 192.168.200.100
 
-![image](4)
+![image](https://github.com/ACS107104/107-1-ntcu-linux/blob/final/ACS107104/11-4.PNG)
 
-#nginxªº¤é»xÀÉ¦ì©ó`/?var/log/nginx`¥Ø¿ı¤U¡A·í³s½u¤£¦s¦bªººô­¶®É¡Anginx·|°O¿ı¬ÛÃö¸ê°T¡A®æ¦¡¦p¤U¡C¨ä¤¤clientÄæ¦ì¬°«È¤áºİip¡C
+#nginxçš„æ—¥èªŒæª”ä½æ–¼`/?var/log/nginx`ç›®éŒ„ä¸‹ï¼Œç•¶é€£ç·šä¸å­˜åœ¨çš„ç¶²é æ™‚ï¼Œnginxæœƒè¨˜éŒ„ç›¸é—œè³‡è¨Šï¼Œæ ¼å¼å¦‚ä¸‹ã€‚å…¶ä¸­clientæ¬„ä½ç‚ºå®¢æˆ¶ç«¯ipã€‚
 
 *
