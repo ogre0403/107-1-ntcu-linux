@@ -1,38 +1,41 @@
 #final
 -----------------------------------
-## ²Ä¤@ÃD
+## ç¬¬ä¸€é¡Œ
 
 
-·Ó¤ù:04.05
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/04.PNG)
 
+
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/05.PNG)
+
+-----------------------------------
+## ç¬¬äºŒé¡Œ
+
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/06.PNG)
+
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/07.PNG)
+
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/08.PNG)
+
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/09.PNG)
+
+-----------------------------------
+## ç¬¬ä¸‰é¡Œ
+
+
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/11.PNG)
 
 
 -----------------------------------
-## ²Ä¤GÃD
+## ç¬¬å››é¡Œ
 
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/12.PNG)
 
-·Ó¤ù:06.07.08.09
-
-
-
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/13.PNG)
 
 -----------------------------------
-## ²Ä¤TÃD
+## ç¬¬äº”é¡Œ
 
 
-·Ó¤ù:11
-
-
------------------------------------
-## ²Ä¥|ÃD
-
-
-·Ó¤ù:12.13
-
-
------------------------------------
-## ²Ä¤­ÃD
-
-
-·Ó¤ù:14
+![image](https://github.com/YANGshujun1110/107-1-ntcu-linux/blob/final/ACS107109/final_img/14.PNG)
 
